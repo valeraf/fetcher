@@ -1,0 +1,21 @@
+@mixin h2 {
+    font-family: $effra;font-weight: 500;font-size: 32px;line-height: 1;
+}
+@mixin h1 {
+    font-family: $effra;font-weight: 500;font-size: 56px;line-height: 52px;
+}
+@mixin h3 {
+    font-family: $effra;font-weight: 500;font-size: 19px;line-height: 24px;
+}
+@mixin h4 {
+    font-family: $effra;font-weight: 400;font-size: 19px;line-height: 24px;
+}
+@mixin p-text {
+    font-family: $pt-serif;font-weight: 400;font-size: 18px;line-height: 24px;
+}
+@mixin small {
+    font-family: $effra;font-weight: 400;font-size: 14px;
+}
+@mixin label {
+    font-family: $mono;font-weight: 400;font-size: 11px;text-transform: uppercase;letter-spacing: 2px;color: #919191;
+}

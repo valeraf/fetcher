@@ -1,0 +1,27 @@
+.vacancy-page {
+    margin-bottom: 56px;margin-top: 32px;
+    p {@include p-text;color: #191919;margin-bottom: 24px;}
+}
+.vp-item-title {
+    @include h1;margin-bottom: 16px;
+}
+.vp-money {
+    @include h3;
+    &-label {
+        @include label;
+    }
+}
+.vp-apply {
+    padding-top: 48px;
+    small {@include small;text-transform: none;text-align: center;letter-spacing: 0;display: block;color: #919191;line-height: 1.2;}
+}
+.vp-apply-btn {
+    @include black-btn;display: block;margin-bottom: 16px;
+}
+.vp-top {
+    position: relative;
+    img {vertical-align: top;}
+}
+.vp-userpic {
+    position: absolute;left: 32px;top: 16px;
+}

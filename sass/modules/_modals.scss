@@ -1,0 +1,59 @@
+.modal-title {
+    @include h2;
+}
+.modal-header {
+    border-bottom: 1px solid #191919;padding: 0 0 4px;
+}
+.modal-content {border-radius: 0;padding: 24px 32px;}
+.modal-body {padding: 16px 0;}
+button.close {
+    width: 32px;height: 32px;background: url(../images/svg/close.svg) center no-repeat #919191;border-radius: 50%;text-indent: -9999px;overflow: hidden;position: absolute;right: -16px;top: -16px;opacity: 1;
+    &:hover {opacity: 1;}
+}
+.pre-modal-text {
+    @include small;margin-bottom: 80px;
+    a {@include label;color: $orange;}
+}
+.modal-lg {
+    max-width: 928px;width: 100%;
+    @include bp(max-width, 1000px){
+        margin-left: 32px;margin-right: 32px;width: auto;
+    }
+    @include bp(max-width, 768px){
+        margin-left: 16px;margin-right: 16px;
+    }
+}
+.modal-content-middle {
+    max-width: 640px;margin: 0 auto;
+    p {
+        @include small;line-height: 20px;color: #919191;margin-bottom: 32px;margin-top: 16px;
+    }
+}
+.modal-content {
+    h3 {
+        @include h3;border-bottom: 1px solid #e1dcdc;margin-bottom: 16px;padding-bottom: 4px;
+    }
+    .input-box {margin-bottom: 8px;}
+}
+.form-label {
+    @include label;margin-bottom: 8px;
+}
+.modal-auth {
+    padding-top: 24px;margin-bottom: 88px;
+}
+.form-btn {
+    border-radius: 2px;height: 40px;display: block;text-align: center;@include h3;color: #fff;border: none;background: #191919;width: 100%;transition: all 0.2s ease-in-out;
+}
+.auth-vk {background: #53729c;}
+.auth-fb {background: #455ca1;}
+.already-registered {line-height: 32px;text-align: center;@include label;}
+.btn-disabled {opacity: 0;}
+.subscr-price {
+    @include h4;color: #d7d7d7;
+}
+.price-label {
+    @include label;margin-bottom: 8px;color: #919191;
+}
+.profile-form {
+    .row {margin-bottom: 64px;}
+}

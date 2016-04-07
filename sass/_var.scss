@@ -1,0 +1,15 @@
+$mono: 'PT Mono';
+$effra: "effra", sans-serif;
+$pt-serif: 'PT Serif', serif;
+$body-bg: #281414;
+$orange: #ff5014;
+
+@mixin black-btn {
+    @include h3;color: #fff;background: #000;border: none;border-radius: 0;transition: all 0.2s ease-in-out;
+    &:hover {
+        background: #191919;color: #fff;
+    }
+    &:active, &:focus {
+        background: #64463c;color: #fff;
+    }
+}

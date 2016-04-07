@@ -1,0 +1,33 @@
+.top-employer {
+    margin-bottom: 32px;
+    @include bp(max-width, 768px){
+        margin-bottom: 0;
+    }
+    @include bp(max-width, 640px){
+        margin-bottom: 16px;
+    }
+}
+.te-item {
+    height: 416px;position: relative;padding-top: 50%;position: relative;
+    @include bp(max-width, 768px){
+        margin-bottom: 32px;height: auto;padding-top: 112px;
+    }
+    @include bp(max-width, 640px){
+        margin-bottom: 16px;
+    }
+}
+.te-item-avatar {
+    position: absolute;top: 16px;left: 16px;
+}
+.te-item-text {
+    padding: 16px;height: 100%;
+}
+.te-item-name {
+    @include small;margin-bottom: 24px;color: #fff;
+    span {
+        @include label;margin-right: 4px;
+    }
+}
+.te-item-vacancy {
+    @include h2;color: #fff;
+}

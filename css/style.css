@@ -334,8 +334,20 @@ button.close:hover {
 .modal-content .input-box {
   margin-bottom: 8px;
 }
+/* line 39, ../sass/modules/_modals.scss */
+.modal-content .checkboxed:after {
+  background: #e1dcdc;
+}
+/* line 40, ../sass/modules/_modals.scss */
+.modal-content .checkboxed.checked:after {
+  background: #4b4b4b;
+}
+/* line 41, ../sass/modules/_modals.scss */
+.modal-content .checkboxed:before {
+  background-image: url("../images/svg/checkbox_on_white.svg");
+}
 
-/* line 38, ../sass/modules/_modals.scss */
+/* line 44, ../sass/modules/_modals.scss */
 .form-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -346,13 +358,13 @@ button.close:hover {
   margin-bottom: 8px;
 }
 
-/* line 41, ../sass/modules/_modals.scss */
+/* line 47, ../sass/modules/_modals.scss */
 .modal-auth {
   padding-top: 24px;
   margin-bottom: 88px;
 }
 
-/* line 44, ../sass/modules/_modals.scss */
+/* line 50, ../sass/modules/_modals.scss */
 .form-btn {
   border-radius: 2px;
   height: 40px;
@@ -369,17 +381,27 @@ button.close:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 47, ../sass/modules/_modals.scss */
+/* line 53, ../sass/modules/_modals.scss */
+.cancel-btn {
+  background: #919191;
+  color: #fff;
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+/* line 54, ../sass/modules/_modals.scss */
 .auth-vk {
   background: #53729c;
 }
 
-/* line 48, ../sass/modules/_modals.scss */
+/* line 55, ../sass/modules/_modals.scss */
 .auth-fb {
   background: #455ca1;
 }
 
-/* line 49, ../sass/modules/_modals.scss */
+/* line 56, ../sass/modules/_modals.scss */
 .already-registered {
   line-height: 32px;
   text-align: center;
@@ -391,12 +413,12 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 50, ../sass/modules/_modals.scss */
+/* line 57, ../sass/modules/_modals.scss */
 .btn-disabled {
   opacity: 0;
 }
 
-/* line 51, ../sass/modules/_modals.scss */
+/* line 58, ../sass/modules/_modals.scss */
 .subscr-price {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -405,7 +427,7 @@ button.close:hover {
   color: #d7d7d7;
 }
 
-/* line 54, ../sass/modules/_modals.scss */
+/* line 61, ../sass/modules/_modals.scss */
 .price-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -417,9 +439,51 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 58, ../sass/modules/_modals.scss */
+/* line 65, ../sass/modules/_modals.scss */
 .profile-form .row {
   margin-bottom: 64px;
+}
+
+/* line 69, ../sass/modules/_modals.scss */
+.panel-group .panel-heading {
+  padding: 0 0 16px;
+  background: none;
+}
+/* line 72, ../sass/modules/_modals.scss */
+.panel-group .panel-heading.active .acc-btn {
+  color: #919191;
+}
+/* line 75, ../sass/modules/_modals.scss */
+.panel-group .panel-body {
+  border: none !important;
+}
+/* line 76, ../sass/modules/_modals.scss */
+.panel-group .acc-btn {
+  background: none;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  color: #d7d7d7;
+}
+/* line 77, ../sass/modules/_modals.scss */
+.panel-group .panel-body {
+  padding: 0;
+}
+
+/* line 79, ../sass/modules/_modals.scss */
+.panel-default {
+  border: none;
+  box-shadow: none;
+}
+
+/* line 83, ../sass/modules/_modals.scss */
+#acc-func .panel {
+  border-bottom: 1px solid #e1dcdc;
+  margin-bottom: 16px;
+}
+/* line 84, ../sass/modules/_modals.scss */
+#acc-func .panel-body {
+  padding-bottom: 16px;
 }
 
 /* line 1, ../sass/pages/_vacancy-page.scss */
@@ -803,12 +867,36 @@ a:hover {
 }
 
 /* line 96, ../sass/_main.scss */
+.labeled {
+  position: relative;
+  overflow: hidden;
+  background: #e1dcdc;
+  color: #919191;
+  cursor: pointer;
+}
+/* line 98, ../sass/_main.scss */
+.labeled.checked {
+  color: #fff;
+  background: #ffa000;
+}
+/* line 101, ../sass/_main.scss */
+.labeled input {
+  opacity: 0;
+  position: absolute;
+}
+/* line 102, ../sass/_main.scss */
+.labeled:after, .labeled:before {
+  display: none;
+  opacity: 0;
+}
+
+/* line 105, ../sass/_main.scss */
 .jobs-list-item {
   padding-bottom: 40px;
   margin: 0 0 8px;
 }
 
-/* line 98, ../sass/_main.scss */
+/* line 107, ../sass/_main.scss */
 .jl-item-employer {
   font-family: "effra", sans-serif;
   margin-bottom: 24px;
@@ -817,7 +905,7 @@ a:hover {
   margin-bottom: 32px;
   padding-top: 32px;
 }
-/* line 100, ../sass/_main.scss */
+/* line 109, ../sass/_main.scss */
 .jl-item-employer span {
   font-family: "PT Mono";
   font-weight: 400;
@@ -828,7 +916,7 @@ a:hover {
   margin-right: 4px;
 }
 
-/* line 104, ../sass/_main.scss */
+/* line 113, ../sass/_main.scss */
 .jl-item-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -838,7 +926,7 @@ a:hover {
   margin-bottom: 16px;
 }
 
-/* line 107, ../sass/_main.scss */
+/* line 116, ../sass/_main.scss */
 .jl-item-text {
   font-family: "PT Serif", serif;
   font-weight: 400;
@@ -846,7 +934,7 @@ a:hover {
   line-height: 24px;
   color: #191919;
 }
-/* line 109, ../sass/_main.scss */
+/* line 118, ../sass/_main.scss */
 .jl-item-text a {
   font-family: "PT Mono";
   font-weight: 400;
@@ -859,17 +947,17 @@ a:hover {
   color: #ff5014;
 }
 
-/* line 111, ../sass/_main.scss */
+/* line 120, ../sass/_main.scss */
 .jl-item-avatar {
   padding-top: 16px;
 }
 
-/* line 114, ../sass/_main.scss */
+/* line 123, ../sass/_main.scss */
 .jl-item-info {
   padding-top: 32px;
   margin-bottom: 32px;
 }
-/* line 116, ../sass/_main.scss */
+/* line 125, ../sass/_main.scss */
 .jl-item-info span {
   display: inline-block;
   margin-right: 4px;
@@ -882,7 +970,7 @@ a:hover {
   letter-spacing: 2px;
   color: #919191;
 }
-/* line 117, ../sass/_main.scss */
+/* line 126, ../sass/_main.scss */
 .jl-item-info div {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -891,7 +979,7 @@ a:hover {
   color: #4b4b4b;
 }
 
-/* line 119, ../sass/_main.scss */
+/* line 128, ../sass/_main.scss */
 .jl-item-tags-title {
   font-family: "PT Mono";
   text-transform: uppercase;
@@ -902,7 +990,7 @@ a:hover {
   margin-bottom: 8px;
 }
 
-/* line 123, ../sass/_main.scss */
+/* line 132, ../sass/_main.scss */
 .related-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -912,12 +1000,12 @@ a:hover {
   margin-bottom: 4px;
 }
 
-/* line 127, ../sass/_main.scss */
+/* line 136, ../sass/_main.scss */
 .big-btns-row {
   margin-bottom: 8px;
 }
 
-/* line 128, ../sass/_main.scss */
+/* line 137, ../sass/_main.scss */
 .big-btns {
   padding: 24px 24px 64px;
   float: left;
@@ -928,31 +1016,31 @@ a:hover {
   font-weight: 500;
   color: #fff;
 }
-/* line 130, ../sass/_main.scss */
+/* line 139, ../sass/_main.scss */
 .big-btns:hover {
   color: #fff;
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 128, ../sass/_main.scss */
+  /* line 137, ../sass/_main.scss */
   .big-btns {
     width: 100%;
     margin-bottom: 8px;
   }
 }
 
-/* line 135, ../sass/_main.scss */
+/* line 144, ../sass/_main.scss */
 .vacancy-new {
   background: #3c50b4;
 }
 
-/* line 138, ../sass/_main.scss */
+/* line 147, ../sass/_main.scss */
 .new-profile {
   background: #ffa000;
   float: right;
 }
 
-/* line 141, ../sass/_main.scss */
+/* line 150, ../sass/_main.scss */
 .big-btns-title {
   font-size: 56px;
   line-height: 52px;
@@ -960,7 +1048,7 @@ a:hover {
   margin-bottom: 88px;
 }
 
-/* line 142, ../sass/_main.scss */
+/* line 151, ../sass/_main.scss */
 .big-btns-text {
   text-align: center;
   display: block;
@@ -968,12 +1056,12 @@ a:hover {
   line-height: 24px;
 }
 
-/* line 144, ../sass/_main.scss */
+/* line 153, ../sass/_main.scss */
 .blue {
   background: #3D50B6;
 }
 
-/* line 147, ../sass/_main.scss */
+/* line 156, ../sass/_main.scss */
 .orange {
   background: #ff5014;
 }

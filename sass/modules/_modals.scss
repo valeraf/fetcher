@@ -34,6 +34,12 @@ button.close {
         @include h3;border-bottom: 1px solid #e1dcdc;margin-bottom: 16px;padding-bottom: 4px;
     }
     .input-box {margin-bottom: 8px;}
+
+    .checkboxed {
+        &:after {background: #e1dcdc;}
+        &.checked:after {background: #4b4b4b;}
+        &:before {background-image: url("../images/svg/checkbox_on_white.svg");}
+    }
 }
 .form-label {
     @include label;margin-bottom: 8px;
@@ -44,6 +50,7 @@ button.close {
 .form-btn {
     border-radius: 2px;height: 40px;display: block;text-align: center;@include h3;color: #fff;border: none;background: #191919;width: 100%;transition: all 0.2s ease-in-out;
 }
+.cancel-btn {background: #919191;color: #fff;@include h3;}
 .auth-vk {background: #53729c;}
 .auth-fb {background: #455ca1;}
 .already-registered {line-height: 32px;text-align: center;@include label;}
@@ -56,4 +63,24 @@ button.close {
 }
 .profile-form {
     .row {margin-bottom: 64px;}
+}
+
+.panel-group {
+    .panel-heading {
+        padding: 0 0 16px;background: none;
+        &.active {
+            .acc-btn {color: #919191;}
+        }
+    }
+    .panel-body {border: none !important;}
+    .acc-btn {background: none;padding: 0;text-decoration: none;border: none;color: #d7d7d7;}
+    .panel-body {padding: 0;}
+}
+.panel-default {
+    border: none;box-shadow: none;
+}
+#acc-func {
+    .panel {border-bottom: 1px solid #e1dcdc;margin-bottom: 16px;}
+    .panel-body {padding-bottom: 16px;}
+
 }

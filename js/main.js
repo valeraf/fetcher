@@ -14,6 +14,7 @@ $(function(){
             searchField: ['name']
         });
         $('.modal-auth input').on('blur', app.checkAuthFormInputs);
+        app.accordionHeadingClass();
     },
     checkboxed: function(el){
         $(el).parent().removeClass('checked');
@@ -39,6 +40,13 @@ $(function(){
         }else{
           $('.auth-btn', '.modal-auth').addClass('btn-disabled').attr('disabled','disabled');
         }
+      });
+    },
+    accordionHeadingClass: function(){
+      $('#acc-func').on('hide.bs.collapse', function (e) {
+          $(e.target).prev().removeClass('active');
+      }).on('show.bs.collapse', function (e) {
+          $(e.target).prev().addClass('active');
       });
     }
   }

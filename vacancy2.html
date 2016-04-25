@@ -30,7 +30,7 @@
                     <li><a href="#">Возможности</a></li>
                     <li><a href="#">Специалисты</a></li>
                     <li><a href="#">О проекте</a></li>
-                    <li><a href="#">Разместить вакансию</a></li>
+                    <li><a href="#" data-toggle="modal" data-target=".create-modal">Разместить вакансию</a></li>
                     <li><a href="#">Создать профиль</a></li>
                     <li><a href="#">Войти</a></li>
                 </ul>
@@ -275,6 +275,185 @@
                                 <div class="col-xs-12">
                                     <div class="form-label">название:</div>
                                     <div class="input-box"><input type="text" class="form-control"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade create-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button> <h4 class="modal-title">Разместите вакансию</h4> </div>
+                <div class="modal-body">
+                    <div class="pre-modal-text">Сначала создайте общее описание вакансии, а потом перейдем к конкретным параметрам</div>
+
+                    <div class="modal-content-middle">
+                        <form class="profile-form">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>В какой сфере работает ваша компания?</h3>
+                                </div>
+                                <div class="col-xs-6">
+                                    <select class="selectized">
+                                        <option value="">Сфера</option>
+                                        <option value="0">Сфера1</option>
+                                        <option value="1">Сфера2</option>
+                                        <option value="2">Сфера3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Описание вакансии</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-label">название:</div>
+                                    <div class="input-box"><input type="text" class="form-control" placeholder="Дизайнер-консультант для исследования пользователей"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-label">описание вакансии:</div>
+                                    <div class="input-box"><textarea class="form-control" rows="7"></textarea></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Какие функции должен выполнятть соискатель?</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="panel-group" id="acc-func" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading active" role="tab">
+                                            <a class="btn btn-lg acc-btn" role="button" data-toggle="collapse" href="#acc-func1" aria-expanded="true" aria-controls="acc-func1">
+                                              Дизайн и проектирование
+                                            </a>
+                                        </div>
+                                        <div id="acc-func1" class="panel-collapse collapse in" role="tabpanel">
+                                          <div class="panel-body">
+                                            <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab">
+                                            <a class="btn btn-lg acc-btn" role="button" data-toggle="collapse" href="#acc-func2" aria-expanded="false" aria-controls="acc-func2">
+                                              Графика и иллюстрация
+                                            </a>
+                                        </div>
+                                        <div id="acc-func2" class="panel-collapse collapse" role="tabpanel">
+                                          <div class="panel-body">
+                                            <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab">
+                                            <a class="btn btn-lg acc-btn" role="button" data-toggle="collapse" href="#acc-func3" aria-expanded="false" aria-controls="acc-func3">
+                                              Культура и искусство
+                                            </a>
+                                        </div>
+                                        <div id="acc-func3" class="panel-collapse collapse" role="tabpanel">
+                                          <div class="panel-body">
+                                            <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab">
+                                            <a class="btn btn-lg acc-btn" role="button" data-toggle="collapse" href="#acc-func4" aria-expanded="false" aria-controls="acc-func4">
+                                              Менеджмент, координирование, работа с людьми
+                                            </a>
+                                        </div>
+                                        <div id="acc-func4" class="panel-collapse collapse" role="tabpanel">
+                                          <div class="panel-body">
+                                            <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Уровень соискателя</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> стажер</label>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> начинающий</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Предпочтительный график</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> стажер</label>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> начинающий</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-label">где находится ваш офис:</div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <select class="selectized">
+                                        <option value="">Сфера</option>
+                                        <option value="0">Сфера1</option>
+                                        <option value="1">Сфера2</option>
+                                        <option value="2">Сфера3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Оплата</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> сдельная</label>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> ежемесячная</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-label">вознаграждение в рублях:</div>
+                                </div>
+                                <div class="col-xs-5">
+                                    <div class="input-box">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <select class="selectized">
+                                        <option value="">Сфера</option>
+                                        <option value="0">Сфера1</option>
+                                        <option value="1">Сфера2</option>
+                                        <option value="2">Сфера3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <button type="submit" class="form-btn cancel-btn" data-dismiss="modal">Отмена</button>
+                                </div>
+                                <div class="col-xs-8">
+                                    <button type="submit" class="form-btn auth-btn">Сохранить</button>
                                 </div>
                             </div>
                         </form>

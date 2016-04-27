@@ -27,6 +27,11 @@ $(function(){
       $('input[name='+ name +']').parent().removeClass('checked');
       if($(el).is(':checked')){
         $(el).parent().addClass('checked');
+        if($('.profile-form').length > 0 && $('.subscr-price').length > 0){
+          console.log($(el).parent().siblings('.subscr-price'));
+          $('.subscr-price').removeClass('black');
+          $(el).parent().siblings('.subscr-price').addClass('black')
+        }
       }
     },
     checkAuthFormInputs: function(){

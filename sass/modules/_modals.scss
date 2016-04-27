@@ -3,6 +3,9 @@
 }
 .modal-header {
     border-bottom: 1px solid #191919;padding: 0 0 4px;
+    .form-step {
+        position: absolute;@include label;top: 36px;right: 32px;
+    }
 }
 .modal-content {border-radius: 0;padding: 24px 32px;}
 .modal-body {padding: 16px 0;}
@@ -36,8 +39,12 @@ button.close {
     .input-box {margin-bottom: 8px;}
 
     .checkboxed {
+        color: #d7d7d7;
         &:after {background: #e1dcdc;}
-        &.checked:after {background: #4b4b4b;}
+        &.checked {
+            color: #919191;
+            &:after {background: #4b4b4b;}
+        }
         &:before {background-image: url("../images/svg/checkbox_on_white.svg");}
     }
 }
@@ -62,7 +69,11 @@ button.close {
     @include label;margin-bottom: 8px;color: #919191;
 }
 .profile-form {
-    .row {margin-bottom: 64px;}
+    .row, .form-horizontal {margin-bottom: 64px;}
+    .form-horizontal {
+        h3 {margin-bottom: 32px;}
+    }
+    .control-label {text-align: left;padding-top: 15px;}
 }
 
 .panel-group {
@@ -82,5 +93,8 @@ button.close {
 #acc-func {
     .panel {border-bottom: 1px solid #e1dcdc;margin-bottom: 16px;}
     .panel-body {padding-bottom: 16px;}
+}
 
+.links-list {
+    .form-label {line-height: 40px;}
 }

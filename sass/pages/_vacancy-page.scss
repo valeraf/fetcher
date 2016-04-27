@@ -5,8 +5,9 @@
 .vp-item-title {
     @include h1;margin-bottom: 16px;
 }
-.vp-money {
+.vp-details {
     @include h3;
+    margin-bottom: 40px;
     &-label {
         @include label;
     }
@@ -24,4 +25,34 @@
 }
 .vp-userpic {
     position: absolute;left: 32px;top: 16px;
+}
+
+.bg-page {
+    padding-top: 208px;background: url(../images/profile_cover.png) center 0 no-repeat;background-attachment: fixed;margin-top: 0;
+    .jl-item-info {padding-top: 0;}
+}
+.details-top {
+    padding-bottom: 72px;
+    &:after {
+        @include clearfix;
+    }
+}
+.details-top-avatar {
+    float: left;width: 160px;margin-right: 32px;margin-top: -32px;padding: 8px;background: #fff;
+    img {width: 100%;}
+}
+.details-top-name {
+    overflow: hidden;padding-top: 1.5*$x;
+    h1 {color: #191919;@include h2;border-bottom: 1px solid #191919;margin-bottom: $x;padding-bottom: 0.5 * $x;}
+}
+.details-top-info {
+    @include small;
+    span {@include label;color: #919191;}
+}
+.jl-item-contacts {
+    @include label;color: #919191;margin-bottom: 2*$x;
+}
+.jl-item-contacts-list {
+    display: inline-block;vertical-align: top;
+    a {display: block;line-height: 1.8;}
 }

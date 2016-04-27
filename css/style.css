@@ -235,19 +235,31 @@ $mq-fixed-value: 1024;
   border-bottom: 1px solid #191919;
   padding: 0 0 4px;
 }
+/* line 6, ../sass/modules/_modals.scss */
+.modal-header .form-step {
+  position: absolute;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #919191;
+  top: 36px;
+  right: 32px;
+}
 
-/* line 7, ../sass/modules/_modals.scss */
+/* line 10, ../sass/modules/_modals.scss */
 .modal-content {
   border-radius: 0;
   padding: 24px 32px;
 }
 
-/* line 8, ../sass/modules/_modals.scss */
+/* line 11, ../sass/modules/_modals.scss */
 .modal-body {
   padding: 16px 0;
 }
 
-/* line 9, ../sass/modules/_modals.scss */
+/* line 12, ../sass/modules/_modals.scss */
 button.close {
   width: 32px;
   height: 32px;
@@ -260,19 +272,19 @@ button.close {
   top: -16px;
   opacity: 1;
 }
-/* line 11, ../sass/modules/_modals.scss */
+/* line 14, ../sass/modules/_modals.scss */
 button.close:hover {
   opacity: 1;
 }
 
-/* line 13, ../sass/modules/_modals.scss */
+/* line 16, ../sass/modules/_modals.scss */
 .pre-modal-text {
   font-family: "effra", sans-serif;
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 80px;
 }
-/* line 15, ../sass/modules/_modals.scss */
+/* line 18, ../sass/modules/_modals.scss */
 .pre-modal-text a {
   font-family: "PT Mono";
   font-weight: 400;
@@ -283,13 +295,13 @@ button.close:hover {
   color: #ff5014;
 }
 
-/* line 17, ../sass/modules/_modals.scss */
+/* line 20, ../sass/modules/_modals.scss */
 .modal-lg {
   max-width: 928px;
   width: 100%;
 }
 @media only screen and (max-width: 1000px) {
-  /* line 17, ../sass/modules/_modals.scss */
+  /* line 20, ../sass/modules/_modals.scss */
   .modal-lg {
     margin-left: 32px;
     margin-right: 32px;
@@ -297,19 +309,19 @@ button.close:hover {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 17, ../sass/modules/_modals.scss */
+  /* line 20, ../sass/modules/_modals.scss */
   .modal-lg {
     margin-left: 16px;
     margin-right: 16px;
   }
 }
 
-/* line 26, ../sass/modules/_modals.scss */
+/* line 29, ../sass/modules/_modals.scss */
 .modal-content-middle {
   max-width: 640px;
   margin: 0 auto;
 }
-/* line 28, ../sass/modules/_modals.scss */
+/* line 31, ../sass/modules/_modals.scss */
 .modal-content-middle p {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -320,7 +332,7 @@ button.close:hover {
   margin-top: 16px;
 }
 
-/* line 33, ../sass/modules/_modals.scss */
+/* line 36, ../sass/modules/_modals.scss */
 .modal-content h3 {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -330,24 +342,32 @@ button.close:hover {
   margin-bottom: 16px;
   padding-bottom: 4px;
 }
-/* line 36, ../sass/modules/_modals.scss */
+/* line 39, ../sass/modules/_modals.scss */
 .modal-content .input-box {
   margin-bottom: 8px;
 }
-/* line 39, ../sass/modules/_modals.scss */
+/* line 41, ../sass/modules/_modals.scss */
+.modal-content .checkboxed {
+  color: #d7d7d7;
+}
+/* line 43, ../sass/modules/_modals.scss */
 .modal-content .checkboxed:after {
   background: #e1dcdc;
 }
-/* line 40, ../sass/modules/_modals.scss */
+/* line 44, ../sass/modules/_modals.scss */
+.modal-content .checkboxed.checked {
+  color: #919191;
+}
+/* line 46, ../sass/modules/_modals.scss */
 .modal-content .checkboxed.checked:after {
   background: #4b4b4b;
 }
-/* line 41, ../sass/modules/_modals.scss */
+/* line 48, ../sass/modules/_modals.scss */
 .modal-content .checkboxed:before {
   background-image: url("../images/svg/checkbox_on_white.svg");
 }
 
-/* line 44, ../sass/modules/_modals.scss */
+/* line 51, ../sass/modules/_modals.scss */
 .form-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -358,13 +378,13 @@ button.close:hover {
   margin-bottom: 8px;
 }
 
-/* line 47, ../sass/modules/_modals.scss */
+/* line 54, ../sass/modules/_modals.scss */
 .modal-auth {
   padding-top: 24px;
   margin-bottom: 88px;
 }
 
-/* line 50, ../sass/modules/_modals.scss */
+/* line 57, ../sass/modules/_modals.scss */
 .form-btn {
   border-radius: 2px;
   height: 40px;
@@ -381,7 +401,7 @@ button.close:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 53, ../sass/modules/_modals.scss */
+/* line 60, ../sass/modules/_modals.scss */
 .cancel-btn {
   background: #919191;
   color: #fff;
@@ -391,17 +411,17 @@ button.close:hover {
   line-height: 24px;
 }
 
-/* line 54, ../sass/modules/_modals.scss */
+/* line 61, ../sass/modules/_modals.scss */
 .auth-vk {
   background: #53729c;
 }
 
-/* line 55, ../sass/modules/_modals.scss */
+/* line 62, ../sass/modules/_modals.scss */
 .auth-fb {
   background: #455ca1;
 }
 
-/* line 56, ../sass/modules/_modals.scss */
+/* line 63, ../sass/modules/_modals.scss */
 .already-registered {
   line-height: 32px;
   text-align: center;
@@ -413,12 +433,12 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 57, ../sass/modules/_modals.scss */
+/* line 64, ../sass/modules/_modals.scss */
 .btn-disabled {
   opacity: 0;
 }
 
-/* line 58, ../sass/modules/_modals.scss */
+/* line 65, ../sass/modules/_modals.scss */
 .subscr-price {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -427,7 +447,7 @@ button.close:hover {
   color: #d7d7d7;
 }
 
-/* line 61, ../sass/modules/_modals.scss */
+/* line 68, ../sass/modules/_modals.scss */
 .price-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -439,25 +459,34 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 65, ../sass/modules/_modals.scss */
-.profile-form .row {
+/* line 72, ../sass/modules/_modals.scss */
+.profile-form .row, .profile-form .form-horizontal {
   margin-bottom: 64px;
 }
+/* line 74, ../sass/modules/_modals.scss */
+.profile-form .form-horizontal h3 {
+  margin-bottom: 32px;
+}
+/* line 76, ../sass/modules/_modals.scss */
+.profile-form .control-label {
+  text-align: left;
+  padding-top: 15px;
+}
 
-/* line 69, ../sass/modules/_modals.scss */
+/* line 80, ../sass/modules/_modals.scss */
 .panel-group .panel-heading {
   padding: 0 0 16px;
   background: none;
 }
-/* line 72, ../sass/modules/_modals.scss */
+/* line 83, ../sass/modules/_modals.scss */
 .panel-group .panel-heading.active .acc-btn {
   color: #919191;
 }
-/* line 75, ../sass/modules/_modals.scss */
+/* line 86, ../sass/modules/_modals.scss */
 .panel-group .panel-body {
   border: none !important;
 }
-/* line 76, ../sass/modules/_modals.scss */
+/* line 87, ../sass/modules/_modals.scss */
 .panel-group .acc-btn {
   background: none;
   padding: 0;
@@ -465,25 +494,30 @@ button.close:hover {
   border: none;
   color: #d7d7d7;
 }
-/* line 77, ../sass/modules/_modals.scss */
+/* line 88, ../sass/modules/_modals.scss */
 .panel-group .panel-body {
   padding: 0;
 }
 
-/* line 79, ../sass/modules/_modals.scss */
+/* line 90, ../sass/modules/_modals.scss */
 .panel-default {
   border: none;
   box-shadow: none;
 }
 
-/* line 83, ../sass/modules/_modals.scss */
+/* line 94, ../sass/modules/_modals.scss */
 #acc-func .panel {
   border-bottom: 1px solid #e1dcdc;
   margin-bottom: 16px;
 }
-/* line 84, ../sass/modules/_modals.scss */
+/* line 95, ../sass/modules/_modals.scss */
 #acc-func .panel-body {
   padding-bottom: 16px;
+}
+
+/* line 99, ../sass/modules/_modals.scss */
+.links-list .form-label {
+  line-height: 40px;
 }
 
 /* line 1, ../sass/pages/_vacancy-page.scss */
@@ -511,14 +545,15 @@ button.close:hover {
 }
 
 /* line 8, ../sass/pages/_vacancy-page.scss */
-.vp-money {
+.vp-details {
   font-family: "effra", sans-serif;
   font-weight: 500;
   font-size: 19px;
   line-height: 24px;
+  margin-bottom: 40px;
 }
-/* line 10, ../sass/pages/_vacancy-page.scss */
-.vp-money-label {
+/* line 11, ../sass/pages/_vacancy-page.scss */
+.vp-details-label {
   font-family: "PT Mono";
   font-weight: 400;
   font-size: 11px;
@@ -527,11 +562,11 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 14, ../sass/pages/_vacancy-page.scss */
+/* line 15, ../sass/pages/_vacancy-page.scss */
 .vp-apply {
   padding-top: 48px;
 }
-/* line 16, ../sass/pages/_vacancy-page.scss */
+/* line 17, ../sass/pages/_vacancy-page.scss */
 .vp-apply small {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -544,7 +579,7 @@ button.close:hover {
   line-height: 1.2;
 }
 
-/* line 18, ../sass/pages/_vacancy-page.scss */
+/* line 19, ../sass/pages/_vacancy-page.scss */
 .vp-apply-btn {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -558,31 +593,125 @@ button.close:hover {
   display: block;
   margin-bottom: 16px;
 }
-/* line 9, ../sass/_var.scss */
+/* line 10, ../sass/_var.scss */
 .vp-apply-btn:hover {
   background: #191919;
   color: #fff;
 }
-/* line 12, ../sass/_var.scss */
+/* line 13, ../sass/_var.scss */
 .vp-apply-btn:active, .vp-apply-btn:focus {
   background: #64463c;
   color: #fff;
 }
 
-/* line 21, ../sass/pages/_vacancy-page.scss */
+/* line 22, ../sass/pages/_vacancy-page.scss */
 .vp-top {
   position: relative;
 }
-/* line 23, ../sass/pages/_vacancy-page.scss */
+/* line 24, ../sass/pages/_vacancy-page.scss */
 .vp-top img {
   vertical-align: top;
 }
 
-/* line 25, ../sass/pages/_vacancy-page.scss */
+/* line 26, ../sass/pages/_vacancy-page.scss */
 .vp-userpic {
   position: absolute;
   left: 32px;
   top: 16px;
+}
+
+/* line 30, ../sass/pages/_vacancy-page.scss */
+.bg-page {
+  padding-top: 208px;
+  background: url(../images/profile_cover.png) center 0 no-repeat;
+  background-attachment: fixed;
+  margin-top: 0;
+}
+/* line 32, ../sass/pages/_vacancy-page.scss */
+.bg-page .jl-item-info {
+  padding-top: 0;
+}
+
+/* line 34, ../sass/pages/_vacancy-page.scss */
+.details-top {
+  padding-bottom: 72px;
+}
+/* line 36, ../sass/pages/_vacancy-page.scss */
+.details-top:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* line 40, ../sass/pages/_vacancy-page.scss */
+.details-top-avatar {
+  float: left;
+  width: 160px;
+  margin-right: 32px;
+  margin-top: -32px;
+  padding: 8px;
+  background: #fff;
+}
+/* line 42, ../sass/pages/_vacancy-page.scss */
+.details-top-avatar img {
+  width: 100%;
+}
+
+/* line 44, ../sass/pages/_vacancy-page.scss */
+.details-top-name {
+  overflow: hidden;
+  padding-top: 24px;
+}
+/* line 46, ../sass/pages/_vacancy-page.scss */
+.details-top-name h1 {
+  color: #191919;
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  border-bottom: 1px solid #191919;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+
+/* line 48, ../sass/pages/_vacancy-page.scss */
+.details-top-info {
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+/* line 50, ../sass/pages/_vacancy-page.scss */
+.details-top-info span {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #919191;
+  color: #919191;
+}
+
+/* line 52, ../sass/pages/_vacancy-page.scss */
+.jl-item-contacts {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #919191;
+  color: #919191;
+  margin-bottom: 32px;
+}
+
+/* line 55, ../sass/pages/_vacancy-page.scss */
+.jl-item-contacts-list {
+  display: inline-block;
+  vertical-align: top;
+}
+/* line 57, ../sass/pages/_vacancy-page.scss */
+.jl-item-contacts-list a {
+  display: block;
+  line-height: 1.8;
 }
 
 /* line 1, ../sass/_main.scss */
@@ -639,24 +768,35 @@ header .logo a {
   line-height: 50px;
   font-weight: bold;
 }
+/* line 18, ../sass/_main.scss */
+header.logged-in {
+  padding-right: 48px;
+}
 
-/* line 19, ../sass/_main.scss */
+/* line 22, ../sass/_main.scss */
+.header-avatar {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* line 23, ../sass/_main.scss */
 .white-bg {
   background: #fff;
 }
 
-/* line 20, ../sass/_main.scss */
+/* line 24, ../sass/_main.scss */
 a {
   color: #ff5014;
   text-decoration: underline;
   transition: color 0.2s ease-in-out;
 }
-/* line 22, ../sass/_main.scss */
+/* line 26, ../sass/_main.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 25, ../sass/_main.scss */
+/* line 29, ../sass/_main.scss */
 .form-control {
   height: 40px;
   border-radius: 2px;
@@ -664,30 +804,30 @@ a:hover {
   box-shadow: inset 0 3px 4px #ddd;
 }
 
-/* line 27, ../sass/_main.scss */
+/* line 31, ../sass/_main.scss */
 .container {
   width: 100%;
   max-width: 1376px;
   padding: 0 32px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 27, ../sass/_main.scss */
+  /* line 31, ../sass/_main.scss */
   .container {
     padding: 0 16px;
   }
 }
 
-/* line 36, ../sass/_main.scss */
+/* line 40, ../sass/_main.scss */
 .bs-docs-nav .navbar-toggle .icon-bar {
   background-color: #fff;
 }
 
-/* line 37, ../sass/_main.scss */
+/* line 41, ../sass/_main.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 40, ../sass/_main.scss */
+/* line 44, ../sass/_main.scss */
 .checkboxed {
   position: relative;
   color: #d7d7d7;
@@ -702,7 +842,7 @@ a:hover {
   color: #919191;
   line-height: 16px;
 }
-/* line 42, ../sass/_main.scss */
+/* line 46, ../sass/_main.scss */
 .checkboxed:after {
   content: '';
   position: absolute;
@@ -713,7 +853,7 @@ a:hover {
   border-radius: 4px;
   background: #e1dcdc;
 }
-/* line 43, ../sass/_main.scss */
+/* line 47, ../sass/_main.scss */
 .checkboxed:before {
   content: "";
   position: absolute;
@@ -725,23 +865,23 @@ a:hover {
   z-index: 2;
   background: url(../images/svg/checkbox_on.svg) center no-repeat;
 }
-/* line 44, ../sass/_main.scss */
+/* line 48, ../sass/_main.scss */
 .checkboxed input {
   position: absolute;
   left: 0;
   right: 0;
   opacity: 0;
 }
-/* line 45, ../sass/_main.scss */
+/* line 49, ../sass/_main.scss */
 .checkboxed.checked {
   color: #919191;
 }
-/* line 47, ../sass/_main.scss */
+/* line 51, ../sass/_main.scss */
 .checkboxed.checked:before {
   display: block;
 }
 
-/* line 51, ../sass/_main.scss */
+/* line 55, ../sass/_main.scss */
 .selectized {
   font-family: "PT Mono";
   font-weight: 400;
@@ -751,7 +891,7 @@ a:hover {
   color: #919191;
 }
 
-/* line 56, ../sass/_main.scss */
+/* line 60, ../sass/_main.scss */
 .selectize-control.single .selectize-input {
   padding: 0 12px;
   background: #000;
@@ -761,7 +901,7 @@ a:hover {
   border-color: #000;
   box-shadow: none;
 }
-/* line 58, ../sass/_main.scss */
+/* line 62, ../sass/_main.scss */
 .selectize-control.single .selectize-input input {
   text-transform: uppercase;
   color: #fff;
@@ -787,7 +927,7 @@ a:hover {
   color: #fff;
   opacity: 1;
 }
-/* line 65, ../sass/_main.scss */
+/* line 69, ../sass/_main.scss */
 .selectize-control.single .selectize-input:after {
   border: none;
   background: url(../images/svg/dropdown.svg) 0 0 no-repeat;
@@ -795,35 +935,35 @@ a:hover {
   height: 8px;
   margin-top: -4px;
 }
-/* line 68, ../sass/_main.scss */
+/* line 72, ../sass/_main.scss */
 .selectize-control.single .selectize-input:hover:after {
   background: url(../images/svg/dropdown-white.svg) 0 0 no-repeat;
 }
-/* line 71, ../sass/_main.scss */
+/* line 75, ../sass/_main.scss */
 .selectize-control.single .selectize-input.focus:hover:after {
   background: url(../images/svg/dropdown.svg) 0 0 no-repeat;
 }
-/* line 74, ../sass/_main.scss */
+/* line 78, ../sass/_main.scss */
 .selectize-control.single .selectize-input.input-active {
   background: #000;
   color: #a5a5a5;
 }
-/* line 78, ../sass/_main.scss */
+/* line 82, ../sass/_main.scss */
 .selectize-control.single .selectize-input.dropdown-active:before {
   display: none;
 }
-/* line 80, ../sass/_main.scss */
+/* line 84, ../sass/_main.scss */
 .selectize-control.single .selectize-input .item {
   color: #fff;
 }
-/* line 82, ../sass/_main.scss */
+/* line 86, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown {
   margin-top: 4px;
   border-radius: 4px;
   background: #000;
   border-color: #000;
 }
-/* line 84, ../sass/_main.scss */
+/* line 88, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown .option {
   height: 40px;
   line-height: 40px;
@@ -832,17 +972,17 @@ a:hover {
   letter-spacing: 1px;
   color: #4b4b4b;
 }
-/* line 86, ../sass/_main.scss */
+/* line 90, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown .option:last-child {
   border-bottom: none;
 }
-/* line 87, ../sass/_main.scss */
+/* line 91, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown .option.active, .selectize-control.single .selectize-dropdown .option.selected {
   background: #191919;
   color: #fff;
 }
 
-/* line 92, ../sass/_main.scss */
+/* line 96, ../sass/_main.scss */
 .label-tag {
   font-family: "PT Mono";
   font-weight: 400;
@@ -866,7 +1006,7 @@ a:hover {
   color: #fff;
 }
 
-/* line 96, ../sass/_main.scss */
+/* line 100, ../sass/_main.scss */
 .labeled {
   position: relative;
   overflow: hidden;
@@ -874,29 +1014,43 @@ a:hover {
   color: #919191;
   cursor: pointer;
 }
-/* line 98, ../sass/_main.scss */
+/* line 102, ../sass/_main.scss */
 .labeled.checked {
   color: #fff;
   background: #ffa000;
 }
-/* line 101, ../sass/_main.scss */
+/* line 105, ../sass/_main.scss */
 .labeled input {
   opacity: 0;
   position: absolute;
 }
-/* line 102, ../sass/_main.scss */
+/* line 106, ../sass/_main.scss */
 .labeled:after, .labeled:before {
   display: none;
   opacity: 0;
 }
 
-/* line 105, ../sass/_main.scss */
+/* line 109, ../sass/_main.scss */
 .jobs-list-item {
   padding-bottom: 40px;
   margin: 0 0 8px;
 }
 
-/* line 107, ../sass/_main.scss */
+/* line 111, ../sass/_main.scss */
+.disabled-jobs .jl-item-title, .disabled-jobs .jl-item-text {
+  color: #919191;
+}
+/* line 112, ../sass/_main.scss */
+.disabled-jobs .label-tag {
+  background: #919191;
+}
+
+/* line 114, ../sass/_main.scss */
+.jobs-list {
+  margin-bottom: 48px;
+}
+
+/* line 116, ../sass/_main.scss */
 .jl-item-employer {
   font-family: "effra", sans-serif;
   margin-bottom: 24px;
@@ -905,7 +1059,7 @@ a:hover {
   margin-bottom: 32px;
   padding-top: 32px;
 }
-/* line 109, ../sass/_main.scss */
+/* line 118, ../sass/_main.scss */
 .jl-item-employer span {
   font-family: "PT Mono";
   font-weight: 400;
@@ -916,7 +1070,7 @@ a:hover {
   margin-right: 4px;
 }
 
-/* line 113, ../sass/_main.scss */
+/* line 122, ../sass/_main.scss */
 .jl-item-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -926,7 +1080,7 @@ a:hover {
   margin-bottom: 16px;
 }
 
-/* line 116, ../sass/_main.scss */
+/* line 125, ../sass/_main.scss */
 .jl-item-text {
   font-family: "PT Serif", serif;
   font-weight: 400;
@@ -934,7 +1088,7 @@ a:hover {
   line-height: 24px;
   color: #191919;
 }
-/* line 118, ../sass/_main.scss */
+/* line 127, ../sass/_main.scss */
 .jl-item-text a {
   font-family: "PT Mono";
   font-weight: 400;
@@ -947,17 +1101,17 @@ a:hover {
   color: #ff5014;
 }
 
-/* line 120, ../sass/_main.scss */
+/* line 129, ../sass/_main.scss */
 .jl-item-avatar {
   padding-top: 16px;
 }
 
-/* line 123, ../sass/_main.scss */
+/* line 132, ../sass/_main.scss */
 .jl-item-info {
   padding-top: 32px;
   margin-bottom: 32px;
 }
-/* line 125, ../sass/_main.scss */
+/* line 134, ../sass/_main.scss */
 .jl-item-info span {
   display: inline-block;
   margin-right: 4px;
@@ -970,7 +1124,7 @@ a:hover {
   letter-spacing: 2px;
   color: #919191;
 }
-/* line 126, ../sass/_main.scss */
+/* line 135, ../sass/_main.scss */
 .jl-item-info div {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -979,7 +1133,7 @@ a:hover {
   color: #4b4b4b;
 }
 
-/* line 128, ../sass/_main.scss */
+/* line 137, ../sass/_main.scss */
 .jl-item-tags-title {
   font-family: "PT Mono";
   text-transform: uppercase;
@@ -990,7 +1144,7 @@ a:hover {
   margin-bottom: 8px;
 }
 
-/* line 132, ../sass/_main.scss */
+/* line 141, ../sass/_main.scss */
 .related-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1000,12 +1154,12 @@ a:hover {
   margin-bottom: 4px;
 }
 
-/* line 136, ../sass/_main.scss */
+/* line 145, ../sass/_main.scss */
 .big-btns-row {
   margin-bottom: 8px;
 }
 
-/* line 137, ../sass/_main.scss */
+/* line 146, ../sass/_main.scss */
 .big-btns {
   padding: 24px 24px 64px;
   float: left;
@@ -1016,31 +1170,31 @@ a:hover {
   font-weight: 500;
   color: #fff;
 }
-/* line 139, ../sass/_main.scss */
+/* line 148, ../sass/_main.scss */
 .big-btns:hover {
   color: #fff;
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 137, ../sass/_main.scss */
+  /* line 146, ../sass/_main.scss */
   .big-btns {
     width: 100%;
     margin-bottom: 8px;
   }
 }
 
-/* line 144, ../sass/_main.scss */
+/* line 153, ../sass/_main.scss */
 .vacancy-new {
   background: #3c50b4;
 }
 
-/* line 147, ../sass/_main.scss */
+/* line 156, ../sass/_main.scss */
 .new-profile {
   background: #ffa000;
   float: right;
 }
 
-/* line 150, ../sass/_main.scss */
+/* line 159, ../sass/_main.scss */
 .big-btns-title {
   font-size: 56px;
   line-height: 52px;
@@ -1048,7 +1202,7 @@ a:hover {
   margin-bottom: 88px;
 }
 
-/* line 151, ../sass/_main.scss */
+/* line 160, ../sass/_main.scss */
 .big-btns-text {
   text-align: center;
   display: block;
@@ -1056,12 +1210,73 @@ a:hover {
   line-height: 24px;
 }
 
-/* line 153, ../sass/_main.scss */
+/* line 162, ../sass/_main.scss */
 .blue {
   background: #3D50B6;
 }
 
-/* line 156, ../sass/_main.scss */
+/* line 165, ../sass/_main.scss */
 .orange {
   background: #ff5014;
+}
+
+/* line 168, ../sass/_main.scss */
+.black {
+  color: #000;
+}
+
+/* line 172, ../sass/_main.scss */
+.upload-thumb {
+  overflow: hidden;
+}
+
+/* line 175, ../sass/_main.scss */
+.uploaded-thumb {
+  float: left;
+  margin-right: 16px;
+}
+
+/* line 178, ../sass/_main.scss */
+.uploader-wrapper {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  padding-top: 12px;
+}
+/* line 180, ../sass/_main.scss */
+.uploader-wrapper div {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+/* line 181, ../sass/_main.scss */
+.uploader-wrapper input {
+  font-size: 200px;
+  cursor: pointer;
+}
+
+/* line 183, ../sass/_main.scss */
+.fake-uploader {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #919191;
+  text-decoration: underline;
+  color: #919191;
+}
+
+/* line 186, ../sass/_main.scss */
+.remove-uploaded {
+  display: block;
+  text-decoration: underline;
+  color: #919191;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #919191;
+  margin-top: 8px;
 }

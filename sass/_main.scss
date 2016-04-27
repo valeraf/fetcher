@@ -15,7 +15,11 @@ header {
         padding: 0 32px;
         a {@include h2;text-decoration: none;color: #fff;line-height: 50px;font-weight: bold;}
     }
+    &.logged-in {
+        padding-right: 48px;
+    }
 }
+.header-avatar {position: absolute;right: 0;top: 0;}
 .white-bg {background: #fff;}
 a {
     color: #ff5014;text-decoration: underline;transition: color 0.2s ease-in-out;
@@ -103,6 +107,11 @@ a {
 }
 
 .jobs-list-item {padding-bottom: 40px;margin: 0 0 8px;}
+.disabled-jobs {
+    .jl-item-title, .jl-item-text {color: #919191;}
+    .label-tag {background: #919191;}
+}
+.jobs-list {margin-bottom: 3*$x;}
 
 .jl-item-employer {
     font-family: $effra;margin-bottom: 24px;font-size: 14px;color: #919191;margin-bottom: 32px;padding-top: 32px;
@@ -155,4 +164,25 @@ a {
 }
 .orange {
     background: #ff5014;
+}
+.black {
+    color: #000;
+}
+
+.upload-thumb {
+    overflow: hidden;
+}
+.uploaded-thumb {
+    float: left;margin-right: 16px;
+}
+.uploader-wrapper {
+    float: left;position: relative;overflow: hidden;padding-top: 12px;
+    div {opacity: 0;position: absolute;cursor: pointer;}
+    input {font-size: 200px;cursor: pointer;}
+}
+.fake-uploader {
+    @include label;text-decoration: underline;color: #919191;
+}
+.remove-uploaded {
+    display: block;text-decoration: underline;color: #919191;@include label;margin-top: 8px;
 }

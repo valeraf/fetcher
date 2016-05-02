@@ -520,6 +520,31 @@ button.close:hover {
   line-height: 40px;
 }
 
+/* line 102, ../sass/modules/_modals.scss */
+.empl-thumb {
+  float: left;
+  width: 64px;
+  margin-right: 8px;
+}
+/* line 104, ../sass/modules/_modals.scss */
+.empl-thumb img {
+  width: 100%;
+}
+
+/* line 106, ../sass/modules/_modals.scss */
+.empl-descr {
+  overflow: hidden;
+}
+
+/* line 107, ../sass/modules/_modals.scss */
+.empl-name {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
 /* line 1, ../sass/pages/_vacancy-page.scss */
 .vacancy-page {
   margin-bottom: 56px;

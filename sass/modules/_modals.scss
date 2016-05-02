@@ -98,3 +98,10 @@ button.close {
 .links-list {
     .form-label {line-height: 40px;}
 }
+
+.empl-thumb {
+    float: left;width: 64px;margin-right: 8px;
+    img {width: 100%;}
+}
+.empl-descr {overflow: hidden;}
+.empl-name {@include h3;margin-bottom: 8px;}

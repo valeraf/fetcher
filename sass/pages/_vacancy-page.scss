@@ -3,7 +3,7 @@
     p {@include p-text;color: #191919;margin-bottom: 24px;}
 }
 .vp-item-title {
-    @include h1;margin-bottom: 16px;
+    @include h1;margin-bottom: 16px;color: #191919;overflow: hidden;text-overflow: ellipsis;
 }
 .vp-details {
     @include h3;
@@ -21,7 +21,7 @@
 }
 .vp-top {
     position: relative;
-    img {vertical-align: top;}
+    img {vertical-align: top;width: 100%}
 }
 .vp-userpic {
     position: absolute;left: 32px;top: 16px;
@@ -55,4 +55,9 @@
 .jl-item-contacts-list {
     display: inline-block;vertical-align: top;
     a {display: block;line-height: 1.8;}
+}
+
+.vacancy-meta-wrapper {
+    &.affix {top: -10px}
+    &.affix-bottom {position: absolute;}
 }

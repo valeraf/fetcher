@@ -7,11 +7,11 @@
         position: absolute;@include label;top: 36px;right: 32px;
     }
 }
-.modal-content {border-radius: 0;padding: 24px 32px;}
+.modal-content {border-radius: 0;padding: 24px 32px;min-height: 592px;}
 .modal-body {padding: 16px 0;}
 button.close {
-    width: 32px;height: 32px;background: url(../images/svg/close.svg) center no-repeat #919191;border-radius: 50%;text-indent: -9999px;overflow: hidden;position: absolute;right: -16px;top: -16px;opacity: 1;
-    &:hover {opacity: 1;}
+    width: 32px;height: 32px;background: url(../images/svg/close.svg) center no-repeat #919191;border-radius: 50%;text-indent: -9999px;overflow: hidden;position: absolute;right: -16px;top: -16px;opacity: 1;transition: all 0.3s ease-in-out;
+    &:hover {background-color: #191919;opacity: 1;}
 }
 .pre-modal-text {
     @include small;margin-bottom: 80px;
@@ -39,7 +39,8 @@ button.close {
     .input-box {margin-bottom: 8px;}
 
     .checkboxed {
-        color: #d7d7d7;
+        color: #d7d7d7;transition: all 0.2s ease-in-out;
+        &:hover {color: #919191;}
         &:after {background: #e1dcdc;}
         &.checked {
             color: #919191;
@@ -63,7 +64,7 @@ button.close {
 .already-registered {line-height: 32px;text-align: center;@include label;}
 .btn-disabled {opacity: 0;}
 .subscr-price {
-    @include h4;color: #d7d7d7;
+    @include h4;color: #d7d7d7;transition: all 0.2s ease-in-out;
 }
 .price-label {
     @include label;margin-bottom: 8px;color: #919191;

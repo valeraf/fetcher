@@ -105,22 +105,27 @@ $mq-fixed-value: 1024;
 /* line 3, ../sass/modules/_top-filter.scss */
 .top-filter .checkboxed {
   color: #281414;
+  transition: all 0.2s ease-in-out;
 }
 /* line 5, ../sass/modules/_top-filter.scss */
+.top-filter .checkboxed:hover {
+  color: #fff;
+}
+/* line 6, ../sass/modules/_top-filter.scss */
 .top-filter .checkboxed:after {
   background: #281414;
 }
-/* line 6, ../sass/modules/_top-filter.scss */
+/* line 7, ../sass/modules/_top-filter.scss */
 .top-filter .checkboxed:before {
   background-color: #000;
   border-radius: 4px;
 }
-/* line 7, ../sass/modules/_top-filter.scss */
+/* line 8, ../sass/modules/_top-filter.scss */
 .top-filter .checkboxed.checked {
   color: #fff;
 }
 
-/* line 10, ../sass/modules/_top-filter.scss */
+/* line 11, ../sass/modules/_top-filter.scss */
 .tf-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -131,15 +136,29 @@ $mq-fixed-value: 1024;
   margin-bottom: 16px;
   padding-bottom: 8px;
 }
+@media only screen and (max-width: 768px) {
+  /* line 11, ../sass/modules/_top-filter.scss */
+  .tf-title {
+    margin-top: 16px;
+  }
+}
 
-/* line 14, ../sass/modules/_top-filter.scss */
+/* line 18, ../sass/modules/_top-filter.scss */
 .tf-checkbox-list li {
   margin-bottom: 8px;
 }
 
-/* line 17, ../sass/modules/_top-filter.scss */
+/* line 21, ../sass/modules/_top-filter.scss */
 .tf-functions-select {
   margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 22, ../sass/modules/_top-filter.scss */
+  .tf-checkboxes {
+    top: -16px;
+    position: relative;
+  }
 }
 
 /* line 1, ../sass/modules/_top-employer.scss */
@@ -211,6 +230,7 @@ $mq-fixed-value: 1024;
   letter-spacing: 2px;
   color: #919191;
   margin-right: 4px;
+  color: #fff;
 }
 
 /* line 31, ../sass/modules/_top-employer.scss */
@@ -252,6 +272,7 @@ $mq-fixed-value: 1024;
 .modal-content {
   border-radius: 0;
   padding: 24px 32px;
+  min-height: 592px;
 }
 
 /* line 11, ../sass/modules/_modals.scss */
@@ -271,9 +292,11 @@ button.close {
   right: -16px;
   top: -16px;
   opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 /* line 14, ../sass/modules/_modals.scss */
 button.close:hover {
+  background-color: #191919;
   opacity: 1;
 }
 
@@ -349,25 +372,30 @@ button.close:hover {
 /* line 41, ../sass/modules/_modals.scss */
 .modal-content .checkboxed {
   color: #d7d7d7;
+  transition: all 0.2s ease-in-out;
 }
 /* line 43, ../sass/modules/_modals.scss */
+.modal-content .checkboxed:hover {
+  color: #919191;
+}
+/* line 44, ../sass/modules/_modals.scss */
 .modal-content .checkboxed:after {
   background: #e1dcdc;
 }
-/* line 44, ../sass/modules/_modals.scss */
+/* line 45, ../sass/modules/_modals.scss */
 .modal-content .checkboxed.checked {
   color: #919191;
 }
-/* line 46, ../sass/modules/_modals.scss */
+/* line 47, ../sass/modules/_modals.scss */
 .modal-content .checkboxed.checked:after {
   background: #4b4b4b;
 }
-/* line 48, ../sass/modules/_modals.scss */
+/* line 49, ../sass/modules/_modals.scss */
 .modal-content .checkboxed:before {
   background-image: url("../images/svg/checkbox_on_white.svg");
 }
 
-/* line 51, ../sass/modules/_modals.scss */
+/* line 52, ../sass/modules/_modals.scss */
 .form-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -378,13 +406,13 @@ button.close:hover {
   margin-bottom: 8px;
 }
 
-/* line 54, ../sass/modules/_modals.scss */
+/* line 55, ../sass/modules/_modals.scss */
 .modal-auth {
   padding-top: 24px;
   margin-bottom: 88px;
 }
 
-/* line 57, ../sass/modules/_modals.scss */
+/* line 58, ../sass/modules/_modals.scss */
 .form-btn {
   border-radius: 2px;
   height: 40px;
@@ -401,7 +429,7 @@ button.close:hover {
   transition: all 0.2s ease-in-out;
 }
 
-/* line 60, ../sass/modules/_modals.scss */
+/* line 61, ../sass/modules/_modals.scss */
 .cancel-btn {
   background: #919191;
   color: #fff;
@@ -411,17 +439,17 @@ button.close:hover {
   line-height: 24px;
 }
 
-/* line 61, ../sass/modules/_modals.scss */
+/* line 62, ../sass/modules/_modals.scss */
 .auth-vk {
   background: #53729c;
 }
 
-/* line 62, ../sass/modules/_modals.scss */
+/* line 63, ../sass/modules/_modals.scss */
 .auth-fb {
   background: #455ca1;
 }
 
-/* line 63, ../sass/modules/_modals.scss */
+/* line 64, ../sass/modules/_modals.scss */
 .already-registered {
   line-height: 32px;
   text-align: center;
@@ -433,21 +461,22 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 64, ../sass/modules/_modals.scss */
+/* line 65, ../sass/modules/_modals.scss */
 .btn-disabled {
   opacity: 0;
 }
 
-/* line 65, ../sass/modules/_modals.scss */
+/* line 66, ../sass/modules/_modals.scss */
 .subscr-price {
   font-family: "effra", sans-serif;
   font-weight: 400;
   font-size: 19px;
   line-height: 24px;
   color: #d7d7d7;
+  transition: all 0.2s ease-in-out;
 }
 
-/* line 68, ../sass/modules/_modals.scss */
+/* line 69, ../sass/modules/_modals.scss */
 .price-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -459,34 +488,34 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 72, ../sass/modules/_modals.scss */
+/* line 73, ../sass/modules/_modals.scss */
 .profile-form .row, .profile-form .form-horizontal {
   margin-bottom: 64px;
 }
-/* line 74, ../sass/modules/_modals.scss */
+/* line 75, ../sass/modules/_modals.scss */
 .profile-form .form-horizontal h3 {
   margin-bottom: 32px;
 }
-/* line 76, ../sass/modules/_modals.scss */
+/* line 77, ../sass/modules/_modals.scss */
 .profile-form .control-label {
   text-align: left;
   padding-top: 15px;
 }
 
-/* line 80, ../sass/modules/_modals.scss */
+/* line 81, ../sass/modules/_modals.scss */
 .panel-group .panel-heading {
   padding: 0 0 16px;
   background: none;
 }
-/* line 83, ../sass/modules/_modals.scss */
+/* line 84, ../sass/modules/_modals.scss */
 .panel-group .panel-heading.active .acc-btn {
   color: #919191;
 }
-/* line 86, ../sass/modules/_modals.scss */
+/* line 87, ../sass/modules/_modals.scss */
 .panel-group .panel-body {
   border: none !important;
 }
-/* line 87, ../sass/modules/_modals.scss */
+/* line 88, ../sass/modules/_modals.scss */
 .panel-group .acc-btn {
   background: none;
   padding: 0;
@@ -494,49 +523,49 @@ button.close:hover {
   border: none;
   color: #d7d7d7;
 }
-/* line 88, ../sass/modules/_modals.scss */
+/* line 89, ../sass/modules/_modals.scss */
 .panel-group .panel-body {
   padding: 0;
 }
 
-/* line 90, ../sass/modules/_modals.scss */
+/* line 91, ../sass/modules/_modals.scss */
 .panel-default {
   border: none;
   box-shadow: none;
 }
 
-/* line 94, ../sass/modules/_modals.scss */
+/* line 95, ../sass/modules/_modals.scss */
 #acc-func .panel {
   border-bottom: 1px solid #e1dcdc;
   margin-bottom: 16px;
 }
-/* line 95, ../sass/modules/_modals.scss */
+/* line 96, ../sass/modules/_modals.scss */
 #acc-func .panel-body {
   padding-bottom: 16px;
 }
 
-/* line 99, ../sass/modules/_modals.scss */
+/* line 100, ../sass/modules/_modals.scss */
 .links-list .form-label {
   line-height: 40px;
 }
 
-/* line 102, ../sass/modules/_modals.scss */
+/* line 103, ../sass/modules/_modals.scss */
 .empl-thumb {
   float: left;
   width: 64px;
   margin-right: 8px;
 }
-/* line 104, ../sass/modules/_modals.scss */
+/* line 105, ../sass/modules/_modals.scss */
 .empl-thumb img {
   width: 100%;
 }
 
-/* line 106, ../sass/modules/_modals.scss */
+/* line 107, ../sass/modules/_modals.scss */
 .empl-descr {
   overflow: hidden;
 }
 
-/* line 107, ../sass/modules/_modals.scss */
+/* line 108, ../sass/modules/_modals.scss */
 .empl-name {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -567,6 +596,9 @@ button.close:hover {
   font-size: 56px;
   line-height: 52px;
   margin-bottom: 16px;
+  color: #191919;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* line 8, ../sass/pages/_vacancy-page.scss */
@@ -636,6 +668,7 @@ button.close:hover {
 /* line 24, ../sass/pages/_vacancy-page.scss */
 .vp-top img {
   vertical-align: top;
+  width: 100%;
 }
 
 /* line 26, ../sass/pages/_vacancy-page.scss */
@@ -739,11 +772,21 @@ button.close:hover {
   line-height: 1.8;
 }
 
+/* line 61, ../sass/pages/_vacancy-page.scss */
+.vacancy-meta-wrapper.affix {
+  top: -10px;
+}
+/* line 62, ../sass/pages/_vacancy-page.scss */
+.vacancy-meta-wrapper.affix-bottom {
+  position: absolute;
+}
+
 /* line 1, ../sass/_main.scss */
 body {
   background: #281414;
   font-family: "PT Serif", serif;
   padding-bottom: 50px;
+  color: #191919;
 }
 
 /* line 2, ../sass/_main.scss */
@@ -761,6 +804,7 @@ header nav.navbar-collapse {
   header nav.navbar-collapse {
     float: none;
     clear: both;
+    padding: 0 16px;
   }
 }
 /* line 10, ../sass/_main.scss */
@@ -772,6 +816,7 @@ header .navbar-nav > li > a {
   color: #4b4b4b;
   transition: color 0.3s ease-in-out;
   text-decoration: none;
+  font-weight: 300;
 }
 /* line 12, ../sass/_main.scss */
 header .navbar-nav > li > a:hover, header .navbar-nav > li > a:focus {
@@ -782,7 +827,13 @@ header .navbar-nav > li > a:hover, header .navbar-nav > li > a:focus {
 header .logo {
   padding: 0 32px;
 }
-/* line 16, ../sass/_main.scss */
+@media only screen and (max-width: 768px) {
+  /* line 14, ../sass/_main.scss */
+  header .logo {
+    padding: 0 16px;
+  }
+}
+/* line 19, ../sass/_main.scss */
 header .logo a {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -793,66 +844,86 @@ header .logo a {
   line-height: 50px;
   font-weight: bold;
 }
-/* line 18, ../sass/_main.scss */
+/* line 21, ../sass/_main.scss */
 header.logged-in {
   padding-right: 48px;
 }
+@media only screen and (max-width: 480px) {
+  /* line 24, ../sass/_main.scss */
+  header .navbar-toggle {
+    padding: 9px 0;
+  }
+}
+/* line 29, ../sass/_main.scss */
+header.affix {
+  top: 0;
+  z-index: 5;
+  width: 100%;
+}
 
-/* line 22, ../sass/_main.scss */
+/* line 31, ../sass/_main.scss */
 .header-avatar {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-/* line 23, ../sass/_main.scss */
+/* line 32, ../sass/_main.scss */
 .white-bg {
   background: #fff;
 }
 
-/* line 24, ../sass/_main.scss */
+/* line 33, ../sass/_main.scss */
 a {
   color: #ff5014;
   text-decoration: underline;
   transition: color 0.2s ease-in-out;
 }
-/* line 26, ../sass/_main.scss */
+/* line 35, ../sass/_main.scss */
 a:hover {
   text-decoration: none;
 }
+/* line 36, ../sass/_main.scss */
+a:focus {
+  outline: none;
+}
 
-/* line 29, ../sass/_main.scss */
+/* line 39, ../sass/_main.scss */
 .form-control {
   height: 40px;
   border-radius: 2px;
   background: #f0f0f0;
   box-shadow: inset 0 3px 4px #ddd;
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
 }
 
-/* line 31, ../sass/_main.scss */
+/* line 41, ../sass/_main.scss */
 .container {
   width: 100%;
   max-width: 1376px;
   padding: 0 32px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 31, ../sass/_main.scss */
+  /* line 41, ../sass/_main.scss */
   .container {
     padding: 0 16px;
   }
 }
 
-/* line 40, ../sass/_main.scss */
+/* line 50, ../sass/_main.scss */
 .bs-docs-nav .navbar-toggle .icon-bar {
   background-color: #fff;
 }
 
-/* line 41, ../sass/_main.scss */
+/* line 51, ../sass/_main.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 44, ../sass/_main.scss */
+/* line 54, ../sass/_main.scss */
 .checkboxed {
   position: relative;
   color: #d7d7d7;
@@ -867,7 +938,7 @@ a:hover {
   color: #919191;
   line-height: 16px;
 }
-/* line 46, ../sass/_main.scss */
+/* line 56, ../sass/_main.scss */
 .checkboxed:after {
   content: '';
   position: absolute;
@@ -878,7 +949,7 @@ a:hover {
   border-radius: 4px;
   background: #e1dcdc;
 }
-/* line 47, ../sass/_main.scss */
+/* line 57, ../sass/_main.scss */
 .checkboxed:before {
   content: "";
   position: absolute;
@@ -890,23 +961,23 @@ a:hover {
   z-index: 2;
   background: url(../images/svg/checkbox_on.svg) center no-repeat;
 }
-/* line 48, ../sass/_main.scss */
+/* line 58, ../sass/_main.scss */
 .checkboxed input {
   position: absolute;
   left: 0;
   right: 0;
   opacity: 0;
 }
-/* line 49, ../sass/_main.scss */
+/* line 59, ../sass/_main.scss */
 .checkboxed.checked {
   color: #919191;
 }
-/* line 51, ../sass/_main.scss */
+/* line 61, ../sass/_main.scss */
 .checkboxed.checked:before {
   display: block;
 }
 
-/* line 55, ../sass/_main.scss */
+/* line 65, ../sass/_main.scss */
 .selectized {
   font-family: "PT Mono";
   font-weight: 400;
@@ -916,7 +987,7 @@ a:hover {
   color: #919191;
 }
 
-/* line 60, ../sass/_main.scss */
+/* line 70, ../sass/_main.scss */
 .selectize-control.single .selectize-input {
   padding: 0 12px;
   background: #000;
@@ -926,11 +997,15 @@ a:hover {
   border-color: #000;
   box-shadow: none;
 }
-/* line 62, ../sass/_main.scss */
+/* line 72, ../sass/_main.scss */
 .selectize-control.single .selectize-input input {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 11px;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #919191;
   color: #fff;
-  letter-spacing: 1px;
 }
 /* line 61, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .selectize-control.single .selectize-input input:-moz-placeholder {
@@ -952,7 +1027,7 @@ a:hover {
   color: #fff;
   opacity: 1;
 }
-/* line 69, ../sass/_main.scss */
+/* line 79, ../sass/_main.scss */
 .selectize-control.single .selectize-input:after {
   border: none;
   background: url(../images/svg/dropdown.svg) 0 0 no-repeat;
@@ -960,35 +1035,41 @@ a:hover {
   height: 8px;
   margin-top: -4px;
 }
-/* line 72, ../sass/_main.scss */
+/* line 82, ../sass/_main.scss */
 .selectize-control.single .selectize-input:hover:after {
   background: url(../images/svg/dropdown-white.svg) 0 0 no-repeat;
 }
-/* line 75, ../sass/_main.scss */
+/* line 85, ../sass/_main.scss */
 .selectize-control.single .selectize-input.focus:hover:after {
   background: url(../images/svg/dropdown.svg) 0 0 no-repeat;
 }
-/* line 78, ../sass/_main.scss */
+/* line 88, ../sass/_main.scss */
 .selectize-control.single .selectize-input.input-active {
   background: #000;
   color: #a5a5a5;
 }
-/* line 82, ../sass/_main.scss */
+/* line 92, ../sass/_main.scss */
 .selectize-control.single .selectize-input.dropdown-active:before {
   display: none;
 }
-/* line 84, ../sass/_main.scss */
+/* line 94, ../sass/_main.scss */
 .selectize-control.single .selectize-input .item {
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #919191;
   color: #fff;
 }
-/* line 86, ../sass/_main.scss */
+/* line 96, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown {
   margin-top: 4px;
   border-radius: 4px;
   background: #000;
   border-color: #000;
 }
-/* line 88, ../sass/_main.scss */
+/* line 98, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown .option {
   height: 40px;
   line-height: 40px;
@@ -997,17 +1078,17 @@ a:hover {
   letter-spacing: 1px;
   color: #4b4b4b;
 }
-/* line 90, ../sass/_main.scss */
+/* line 100, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown .option:last-child {
   border-bottom: none;
 }
-/* line 91, ../sass/_main.scss */
+/* line 101, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown .option.active, .selectize-control.single .selectize-dropdown .option.selected {
   background: #191919;
   color: #fff;
 }
 
-/* line 96, ../sass/_main.scss */
+/* line 106, ../sass/_main.scss */
 .label-tag {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1031,7 +1112,7 @@ a:hover {
   color: #fff;
 }
 
-/* line 100, ../sass/_main.scss */
+/* line 110, ../sass/_main.scss */
 .labeled {
   position: relative;
   overflow: hidden;
@@ -1039,43 +1120,43 @@ a:hover {
   color: #919191;
   cursor: pointer;
 }
-/* line 102, ../sass/_main.scss */
+/* line 112, ../sass/_main.scss */
 .labeled.checked {
   color: #fff;
   background: #ffa000;
 }
-/* line 105, ../sass/_main.scss */
+/* line 115, ../sass/_main.scss */
 .labeled input {
   opacity: 0;
   position: absolute;
 }
-/* line 106, ../sass/_main.scss */
+/* line 116, ../sass/_main.scss */
 .labeled:after, .labeled:before {
   display: none;
   opacity: 0;
 }
 
-/* line 109, ../sass/_main.scss */
+/* line 119, ../sass/_main.scss */
 .jobs-list-item {
   padding-bottom: 40px;
   margin: 0 0 8px;
 }
 
-/* line 111, ../sass/_main.scss */
+/* line 121, ../sass/_main.scss */
 .disabled-jobs .jl-item-title, .disabled-jobs .jl-item-text {
   color: #919191;
 }
-/* line 112, ../sass/_main.scss */
+/* line 122, ../sass/_main.scss */
 .disabled-jobs .label-tag {
   background: #919191;
 }
 
-/* line 114, ../sass/_main.scss */
+/* line 124, ../sass/_main.scss */
 .jobs-list {
   margin-bottom: 48px;
 }
 
-/* line 116, ../sass/_main.scss */
+/* line 126, ../sass/_main.scss */
 .jl-item-employer {
   font-family: "effra", sans-serif;
   margin-bottom: 24px;
@@ -1084,7 +1165,7 @@ a:hover {
   margin-bottom: 32px;
   padding-top: 32px;
 }
-/* line 118, ../sass/_main.scss */
+/* line 128, ../sass/_main.scss */
 .jl-item-employer span {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1095,7 +1176,7 @@ a:hover {
   margin-right: 4px;
 }
 
-/* line 122, ../sass/_main.scss */
+/* line 132, ../sass/_main.scss */
 .jl-item-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1105,7 +1186,7 @@ a:hover {
   margin-bottom: 16px;
 }
 
-/* line 125, ../sass/_main.scss */
+/* line 135, ../sass/_main.scss */
 .jl-item-text {
   font-family: "PT Serif", serif;
   font-weight: 400;
@@ -1113,7 +1194,7 @@ a:hover {
   line-height: 24px;
   color: #191919;
 }
-/* line 127, ../sass/_main.scss */
+/* line 137, ../sass/_main.scss */
 .jl-item-text a {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1126,17 +1207,17 @@ a:hover {
   color: #ff5014;
 }
 
-/* line 129, ../sass/_main.scss */
+/* line 139, ../sass/_main.scss */
 .jl-item-avatar {
   padding-top: 16px;
 }
 
-/* line 132, ../sass/_main.scss */
+/* line 142, ../sass/_main.scss */
 .jl-item-info {
-  padding-top: 32px;
+  padding-top: 83px;
   margin-bottom: 32px;
 }
-/* line 134, ../sass/_main.scss */
+/* line 144, ../sass/_main.scss */
 .jl-item-info span {
   display: inline-block;
   margin-right: 4px;
@@ -1149,7 +1230,15 @@ a:hover {
   letter-spacing: 2px;
   color: #919191;
 }
-/* line 135, ../sass/_main.scss */
+@media only screen and (max-width: 768px) and (min-width: 641px) {
+  /* line 144, ../sass/_main.scss */
+  .jl-item-info span {
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+/* line 152, ../sass/_main.scss */
 .jl-item-info div {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -1157,8 +1246,14 @@ a:hover {
   margin-bottom: 6px;
   color: #4b4b4b;
 }
+@media only screen and (max-width: 768px) and (min-width: 641px) {
+  /* line 152, ../sass/_main.scss */
+  .jl-item-info div {
+    margin-bottom: 12px;
+  }
+}
 
-/* line 137, ../sass/_main.scss */
+/* line 161, ../sass/_main.scss */
 .jl-item-tags-title {
   font-family: "PT Mono";
   text-transform: uppercase;
@@ -1169,7 +1264,7 @@ a:hover {
   margin-bottom: 8px;
 }
 
-/* line 141, ../sass/_main.scss */
+/* line 165, ../sass/_main.scss */
 .related-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1179,12 +1274,13 @@ a:hover {
   margin-bottom: 4px;
 }
 
-/* line 145, ../sass/_main.scss */
+/* line 169, ../sass/_main.scss */
 .big-btns-row {
-  margin-bottom: 8px;
+  margin-bottom: 32px;
+  padding-top: 24px;
 }
 
-/* line 146, ../sass/_main.scss */
+/* line 170, ../sass/_main.scss */
 .big-btns {
   padding: 24px 24px 64px;
   float: left;
@@ -1195,31 +1291,31 @@ a:hover {
   font-weight: 500;
   color: #fff;
 }
-/* line 148, ../sass/_main.scss */
+/* line 172, ../sass/_main.scss */
 .big-btns:hover {
   color: #fff;
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 146, ../sass/_main.scss */
+  /* line 170, ../sass/_main.scss */
   .big-btns {
     width: 100%;
     margin-bottom: 8px;
   }
 }
 
-/* line 153, ../sass/_main.scss */
+/* line 177, ../sass/_main.scss */
 .vacancy-new {
   background: #3c50b4;
 }
 
-/* line 156, ../sass/_main.scss */
+/* line 180, ../sass/_main.scss */
 .new-profile {
   background: #ffa000;
   float: right;
 }
 
-/* line 159, ../sass/_main.scss */
+/* line 183, ../sass/_main.scss */
 .big-btns-title {
   font-size: 56px;
   line-height: 52px;
@@ -1227,7 +1323,7 @@ a:hover {
   margin-bottom: 88px;
 }
 
-/* line 160, ../sass/_main.scss */
+/* line 184, ../sass/_main.scss */
 .big-btns-text {
   text-align: center;
   display: block;
@@ -1235,52 +1331,52 @@ a:hover {
   line-height: 24px;
 }
 
-/* line 162, ../sass/_main.scss */
+/* line 186, ../sass/_main.scss */
 .blue {
   background: #3D50B6;
 }
 
-/* line 165, ../sass/_main.scss */
+/* line 189, ../sass/_main.scss */
 .orange {
   background: #ff5014;
 }
 
-/* line 168, ../sass/_main.scss */
+/* line 192, ../sass/_main.scss */
 .black {
   color: #000;
 }
 
-/* line 172, ../sass/_main.scss */
+/* line 196, ../sass/_main.scss */
 .upload-thumb {
   overflow: hidden;
 }
 
-/* line 175, ../sass/_main.scss */
+/* line 199, ../sass/_main.scss */
 .uploaded-thumb {
   float: left;
   margin-right: 16px;
 }
 
-/* line 178, ../sass/_main.scss */
+/* line 202, ../sass/_main.scss */
 .uploader-wrapper {
   float: left;
   position: relative;
   overflow: hidden;
   padding-top: 12px;
 }
-/* line 180, ../sass/_main.scss */
+/* line 204, ../sass/_main.scss */
 .uploader-wrapper div {
   opacity: 0;
   position: absolute;
   cursor: pointer;
 }
-/* line 181, ../sass/_main.scss */
+/* line 205, ../sass/_main.scss */
 .uploader-wrapper input {
   font-size: 200px;
   cursor: pointer;
 }
 
-/* line 183, ../sass/_main.scss */
+/* line 207, ../sass/_main.scss */
 .fake-uploader {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1292,7 +1388,7 @@ a:hover {
   color: #919191;
 }
 
-/* line 186, ../sass/_main.scss */
+/* line 210, ../sass/_main.scss */
 .remove-uploaded {
   display: block;
   text-decoration: underline;

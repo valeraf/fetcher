@@ -25,7 +25,7 @@
 .te-item-name {
     @include small;margin-bottom: 24px;color: #fff;
     span {
-        @include label;margin-right: 4px;
+        @include label;margin-right: 4px;color: #fff;
     }
 }
 .te-item-vacancy {

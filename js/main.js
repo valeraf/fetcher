@@ -8,15 +8,11 @@ $(function(){
             else
               app.radioed(this);
         });
-        $('select.selectized').selectize({
-            valueField: 'name',
-            labelField: 'name',
-            searchField: ['name']
-        });
+        $('select.selectized').selectize();
         $('.modal-auth input').on('blur', app.checkAuthFormInputs);
         app.accordionHeadingClass();
 
-        if($(document).width() > 640){
+        if($(document).width() > 640 && $('.vacancy-meta-wrapper').length > 0 ){
           $('.vacancy-meta-wrapper').affix({
             offset: {
               top: $('.vacancy-meta-wrapper').offset().top + 67 - $('header').height(),

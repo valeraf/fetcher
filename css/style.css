@@ -1304,7 +1304,7 @@ a:focus {
   margin-bottom: 32px;
 }
 /* line 160, ../sass/_main.scss */
-.jl-item-info span {
+.jl-item-info span:first-child {
   display: inline-block;
   margin-right: 4px;
   width: 80px;
@@ -1318,7 +1318,7 @@ a:focus {
 }
 @media only screen and (max-width: 768px) and (min-width: 641px) {
   /* line 160, ../sass/_main.scss */
-  .jl-item-info span {
+  .jl-item-info span:first-child {
     display: block;
     margin-bottom: 4px;
   }
@@ -1339,7 +1339,19 @@ a:focus {
   }
 }
 
-/* line 177, ../sass/_main.scss */
+/* line 176, ../sass/_main.scss */
+.jl-item-info .jl-item-info-details {
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #4b4b4b;
+  text-transform: none;
+}
+
+/* line 178, ../sass/_main.scss */
 .jl-item-tags-title {
   font-family: "PT Mono";
   text-transform: uppercase;
@@ -1350,7 +1362,7 @@ a:focus {
   margin-bottom: 8px;
 }
 
-/* line 181, ../sass/_main.scss */
+/* line 182, ../sass/_main.scss */
 .related-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1360,13 +1372,13 @@ a:focus {
   margin-bottom: 4px;
 }
 
-/* line 185, ../sass/_main.scss */
+/* line 186, ../sass/_main.scss */
 .big-btns-row {
   margin-bottom: 32px;
   padding-top: 24px;
 }
 
-/* line 186, ../sass/_main.scss */
+/* line 187, ../sass/_main.scss */
 .big-btns {
   padding: 24px 24px 64px;
   float: left;
@@ -1377,31 +1389,31 @@ a:focus {
   font-weight: 500;
   color: #fff;
 }
-/* line 188, ../sass/_main.scss */
+/* line 189, ../sass/_main.scss */
 .big-btns:hover {
   color: #fff;
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 186, ../sass/_main.scss */
+  /* line 187, ../sass/_main.scss */
   .big-btns {
     width: 100%;
     margin-bottom: 8px;
   }
 }
 
-/* line 193, ../sass/_main.scss */
+/* line 194, ../sass/_main.scss */
 .vacancy-new {
   background: #3c50b4;
 }
 
-/* line 196, ../sass/_main.scss */
+/* line 197, ../sass/_main.scss */
 .new-profile {
   background: #ffa000;
   float: right;
 }
 
-/* line 199, ../sass/_main.scss */
+/* line 200, ../sass/_main.scss */
 .big-btns-title {
   font-size: 56px;
   line-height: 52px;
@@ -1409,7 +1421,7 @@ a:focus {
   margin-bottom: 88px;
 }
 
-/* line 200, ../sass/_main.scss */
+/* line 201, ../sass/_main.scss */
 .big-btns-text {
   text-align: center;
   display: block;
@@ -1417,52 +1429,52 @@ a:focus {
   line-height: 24px;
 }
 
-/* line 204, ../sass/_main.scss */
+/* line 205, ../sass/_main.scss */
 .blue {
   background: #3D50B6;
 }
 
-/* line 207, ../sass/_main.scss */
+/* line 208, ../sass/_main.scss */
 .orange {
   background: #ff5014;
 }
 
-/* line 210, ../sass/_main.scss */
+/* line 211, ../sass/_main.scss */
 .black {
   color: #000;
 }
 
-/* line 214, ../sass/_main.scss */
+/* line 215, ../sass/_main.scss */
 .upload-thumb {
   overflow: hidden;
 }
 
-/* line 217, ../sass/_main.scss */
+/* line 218, ../sass/_main.scss */
 .uploaded-thumb {
   float: left;
   margin-right: 16px;
 }
 
-/* line 220, ../sass/_main.scss */
+/* line 221, ../sass/_main.scss */
 .uploader-wrapper {
   float: left;
   position: relative;
   overflow: hidden;
   padding-top: 12px;
 }
-/* line 222, ../sass/_main.scss */
+/* line 223, ../sass/_main.scss */
 .uploader-wrapper div {
   opacity: 0;
   position: absolute;
   cursor: pointer;
 }
-/* line 223, ../sass/_main.scss */
+/* line 224, ../sass/_main.scss */
 .uploader-wrapper input {
   font-size: 200px;
   cursor: pointer;
 }
 
-/* line 225, ../sass/_main.scss */
+/* line 226, ../sass/_main.scss */
 .fake-uploader {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1474,7 +1486,7 @@ a:focus {
   color: #919191;
 }
 
-/* line 228, ../sass/_main.scss */
+/* line 229, ../sass/_main.scss */
 .remove-uploaded {
   display: block;
   text-decoration: underline;

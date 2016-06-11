@@ -157,7 +157,7 @@ a {
 }
 .jl-item-info {
     padding-top: 83px;margin-bottom: 32px;
-    span {
+    span:first-child {
         display: inline-block;margin-right: 4px;width: 80px;color: #919191;@include label;
         @include bp(max-width, 768px){
             @include bp(min-width, 641px){
@@ -173,6 +173,7 @@ a {
             }
         }
     }
+    .jl-item-info-details {width: auto;display: inline-block;vertical-align: top;@include small;color: #4b4b4b;text-transform: none}
 }
 .jl-item-tags-title {
     font-family: $mono;text-transform: uppercase;font-size: 11px;margin-right: 4px;letter-spacing: 2px;color: #919191;margin-bottom: 8px;

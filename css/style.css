@@ -628,8 +628,6 @@ button.close:hover {
   line-height: 52px;
   margin-bottom: 16px;
   color: #191919;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 /* line 8, ../sass/pages/_vacancy-page.scss */

@@ -3,7 +3,7 @@
     p {@include p-text;color: #191919;margin-bottom: 24px;}
 }
 .vp-item-title {
-    @include h1;margin-bottom: 16px;color: #191919;overflow: hidden;text-overflow: ellipsis;
+    @include h1;margin-bottom: 16px;color: #191919;
 }
 .vp-details {
     @include h3;

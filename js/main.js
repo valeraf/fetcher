@@ -9,6 +9,9 @@ $(function(){
               app.radioed(this);
         });
         $('select.selectized').selectize();
+        $('select.selectized-multi').selectize({
+          maxItems: null
+        });
         $('.modal-auth input').on('blur', app.checkAuthFormInputs);
         app.accordionHeadingClass();
 
@@ -30,6 +33,10 @@ $(function(){
         }).on('affix-top.bs.affix', function(){
           $('body').css('padding-top', 0);
         });
+
+        $('body').on('click', '.disabled-jobs .label', function(){
+          return false;
+        });
     },
     checkboxed: function(el){
         $(el).parent().removeClass('checked');
@@ -42,10 +49,9 @@ $(function(){
       $('input[name='+ name +']').parent().removeClass('checked');
       if($(el).is(':checked')){
         $(el).parent().addClass('checked');
-        if($('.profile-form').length > 0 && $('.subscr-price').length > 0){
-          console.log($(el).parent().siblings('.subscr-price'));
-          $('.subscr-price').removeClass('black');
-          $(el).parent().siblings('.subscr-price').addClass('black')
+        if($('.profile-form').length > 0 && $('.who-wrapper').length > 0){
+          $('.who-wrapper').removeClass('checked-box');
+          $(el).parents('.who-wrapper').addClass('checked-box');
         }
       }
     },

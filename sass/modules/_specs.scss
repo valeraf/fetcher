@@ -1,0 +1,12 @@
+.sp-item-avatar {
+    img {position: relative;top: -($x);}
+}
+.sp-item-title {
+    @extend .jl-item-title;padding-top: $x;
+}
+
+.sp-item-info-links {
+    a + a {margin-left: 6px}
+}
+
+.specs-list-item {margin-bottom: 3*$x;}

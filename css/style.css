@@ -435,9 +435,16 @@ button.close:hover {
   background: #191919;
   width: 100%;
   transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  line-height: 36px;
+}
+/* line 64, ../sass/modules/_modals.scss */
+.form-btn:hover {
+  color: #fff;
+  background: #53729c;
 }
 
-/* line 65, ../sass/modules/_modals.scss */
+/* line 66, ../sass/modules/_modals.scss */
 .cancel-btn {
   background: #919191;
   color: #fff;
@@ -447,17 +454,17 @@ button.close:hover {
   line-height: 24px;
 }
 
-/* line 66, ../sass/modules/_modals.scss */
+/* line 67, ../sass/modules/_modals.scss */
 .auth-vk {
   background: #53729c;
 }
 
-/* line 67, ../sass/modules/_modals.scss */
+/* line 68, ../sass/modules/_modals.scss */
 .auth-fb {
   background: #455ca1;
 }
 
-/* line 68, ../sass/modules/_modals.scss */
+/* line 69, ../sass/modules/_modals.scss */
 .already-registered {
   line-height: 32px;
   text-align: center;
@@ -469,22 +476,22 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 69, ../sass/modules/_modals.scss */
+/* line 70, ../sass/modules/_modals.scss */
 .btn-disabled {
   opacity: 0;
 }
 
-/* line 71, ../sass/modules/_modals.scss */
+/* line 72, ../sass/modules/_modals.scss */
 .who-wrapper p {
   color: #d7d7d7;
   transition: all 0.2s ease-in-out 0s;
 }
-/* line 72, ../sass/modules/_modals.scss */
+/* line 73, ../sass/modules/_modals.scss */
 .who-wrapper.checked-box p {
   color: #919191;
 }
 
-/* line 74, ../sass/modules/_modals.scss */
+/* line 75, ../sass/modules/_modals.scss */
 .subscr-price {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -493,12 +500,12 @@ button.close:hover {
   color: #d7d7d7;
   transition: all 0.2s ease-in-out;
 }
-/* line 76, ../sass/modules/_modals.scss */
+/* line 77, ../sass/modules/_modals.scss */
 .checked-box .subscr-price {
   color: #000;
 }
 
-/* line 78, ../sass/modules/_modals.scss */
+/* line 79, ../sass/modules/_modals.scss */
 .price-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -510,34 +517,34 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 82, ../sass/modules/_modals.scss */
+/* line 83, ../sass/modules/_modals.scss */
 .profile-form .row, .profile-form .form-horizontal {
   margin-bottom: 64px;
 }
-/* line 84, ../sass/modules/_modals.scss */
+/* line 85, ../sass/modules/_modals.scss */
 .profile-form .form-horizontal h3 {
   margin-bottom: 32px;
 }
-/* line 86, ../sass/modules/_modals.scss */
+/* line 87, ../sass/modules/_modals.scss */
 .profile-form .control-label {
   text-align: left;
   padding-top: 15px;
 }
 
-/* line 90, ../sass/modules/_modals.scss */
+/* line 91, ../sass/modules/_modals.scss */
 .panel-group .panel-heading {
   padding: 0 0 16px;
   background: none;
 }
-/* line 93, ../sass/modules/_modals.scss */
+/* line 94, ../sass/modules/_modals.scss */
 .panel-group .panel-heading.active .acc-btn {
   color: #919191;
 }
-/* line 96, ../sass/modules/_modals.scss */
+/* line 97, ../sass/modules/_modals.scss */
 .panel-group .panel-body {
   border: none !important;
 }
-/* line 97, ../sass/modules/_modals.scss */
+/* line 98, ../sass/modules/_modals.scss */
 .panel-group .acc-btn {
   background: none;
   padding: 0;
@@ -545,49 +552,49 @@ button.close:hover {
   border: none;
   color: #d7d7d7;
 }
-/* line 98, ../sass/modules/_modals.scss */
+/* line 99, ../sass/modules/_modals.scss */
 .panel-group .panel-body {
   padding: 0;
 }
 
-/* line 100, ../sass/modules/_modals.scss */
+/* line 101, ../sass/modules/_modals.scss */
 .panel-default {
   border: none;
   box-shadow: none;
 }
 
-/* line 104, ../sass/modules/_modals.scss */
+/* line 105, ../sass/modules/_modals.scss */
 #acc-func .panel {
   border-bottom: 1px solid #e1dcdc;
   margin-bottom: 16px;
 }
-/* line 105, ../sass/modules/_modals.scss */
+/* line 106, ../sass/modules/_modals.scss */
 #acc-func .panel-body {
   padding-bottom: 16px;
 }
 
-/* line 109, ../sass/modules/_modals.scss */
+/* line 110, ../sass/modules/_modals.scss */
 .links-list .form-label {
   line-height: 40px;
 }
 
-/* line 112, ../sass/modules/_modals.scss */
+/* line 113, ../sass/modules/_modals.scss */
 .empl-thumb {
   float: left;
   width: 64px;
   margin-right: 8px;
 }
-/* line 114, ../sass/modules/_modals.scss */
+/* line 115, ../sass/modules/_modals.scss */
 .empl-thumb img {
   width: 100%;
 }
 
-/* line 116, ../sass/modules/_modals.scss */
+/* line 117, ../sass/modules/_modals.scss */
 .empl-descr {
   overflow: hidden;
 }
 
-/* line 117, ../sass/modules/_modals.scss */
+/* line 118, ../sass/modules/_modals.scss */
 .empl-name {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -596,13 +603,34 @@ button.close:hover {
   margin-bottom: 8px;
 }
 
-/* line 121, ../sass/modules/_modals.scss */
+/* line 122, ../sass/modules/_modals.scss */
 .checked-box p {
   color: #919191;
 }
-/* line 122, ../sass/modules/_modals.scss */
+/* line 123, ../sass/modules/_modals.scss */
 .checked-box .subscr-price {
   color: #000;
+}
+
+/* line 2, ../sass/modules/_specs.scss */
+.sp-item-avatar img {
+  position: relative;
+  top: -16px;
+}
+
+/* line 4, ../sass/modules/_specs.scss */
+.sp-item-title {
+  padding-top: 16px;
+}
+
+/* line 9, ../sass/modules/_specs.scss */
+.sp-item-info-links a + a {
+  margin-left: 6px;
+}
+
+/* line 12, ../sass/modules/_specs.scss */
+.specs-list-item {
+  margin-bottom: 48px;
 }
 
 /* line 1, ../sass/pages/_vacancy-page.scss */
@@ -1210,7 +1238,7 @@ a:focus {
 }
 
 /* line 132, ../sass/_main.scss */
-.disabled-jobs .jl-item-title, .disabled-jobs .jl-item-text {
+.disabled-jobs .jl-item-title, .disabled-jobs .sp-item-title, .disabled-jobs .jl-item-text {
   color: #919191;
 }
 /* line 133, ../sass/_main.scss */
@@ -1244,7 +1272,7 @@ a:focus {
 }
 
 /* line 143, ../sass/_main.scss */
-.jl-item-title {
+.jl-item-title, .sp-item-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
   font-size: 32px;
@@ -1254,7 +1282,7 @@ a:focus {
   display: block;
 }
 /* line 145, ../sass/_main.scss */
-.jl-item-title a {
+.jl-item-title a, .sp-item-title a {
   text-decoration: none;
   color: #191919;
 }
@@ -1361,6 +1389,16 @@ a:focus {
 }
 
 /* line 182, ../sass/_main.scss */
+.jl-items-contact {
+  margin-bottom: 48px;
+  padding-top: 40px;
+}
+/* line 184, ../sass/_main.scss */
+.jl-items-contact + .jl-item-info {
+  padding-top: 0;
+}
+
+/* line 187, ../sass/_main.scss */
 .related-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1370,13 +1408,13 @@ a:focus {
   margin-bottom: 4px;
 }
 
-/* line 186, ../sass/_main.scss */
+/* line 191, ../sass/_main.scss */
 .big-btns-row {
   margin-bottom: 32px;
   padding-top: 24px;
 }
 
-/* line 187, ../sass/_main.scss */
+/* line 192, ../sass/_main.scss */
 .big-btns {
   padding: 24px 24px 64px;
   float: left;
@@ -1387,31 +1425,31 @@ a:focus {
   font-weight: 500;
   color: #fff;
 }
-/* line 189, ../sass/_main.scss */
+/* line 194, ../sass/_main.scss */
 .big-btns:hover {
   color: #fff;
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 187, ../sass/_main.scss */
+  /* line 192, ../sass/_main.scss */
   .big-btns {
     width: 100%;
     margin-bottom: 8px;
   }
 }
 
-/* line 194, ../sass/_main.scss */
+/* line 199, ../sass/_main.scss */
 .vacancy-new {
   background: #3c50b4;
 }
 
-/* line 197, ../sass/_main.scss */
+/* line 202, ../sass/_main.scss */
 .new-profile {
   background: #ffa000;
   float: right;
 }
 
-/* line 200, ../sass/_main.scss */
+/* line 205, ../sass/_main.scss */
 .big-btns-title {
   font-size: 56px;
   line-height: 52px;
@@ -1419,7 +1457,7 @@ a:focus {
   margin-bottom: 88px;
 }
 
-/* line 201, ../sass/_main.scss */
+/* line 206, ../sass/_main.scss */
 .big-btns-text {
   text-align: center;
   display: block;
@@ -1427,52 +1465,52 @@ a:focus {
   line-height: 24px;
 }
 
-/* line 205, ../sass/_main.scss */
+/* line 210, ../sass/_main.scss */
 .blue {
   background: #3D50B6;
 }
 
-/* line 208, ../sass/_main.scss */
+/* line 213, ../sass/_main.scss */
 .orange {
   background: #ff5014;
 }
 
-/* line 211, ../sass/_main.scss */
+/* line 216, ../sass/_main.scss */
 .black {
   color: #000;
 }
 
-/* line 215, ../sass/_main.scss */
+/* line 220, ../sass/_main.scss */
 .upload-thumb {
   overflow: hidden;
 }
 
-/* line 218, ../sass/_main.scss */
+/* line 223, ../sass/_main.scss */
 .uploaded-thumb {
   float: left;
   margin-right: 16px;
 }
 
-/* line 221, ../sass/_main.scss */
+/* line 226, ../sass/_main.scss */
 .uploader-wrapper {
   float: left;
   position: relative;
   overflow: hidden;
   padding-top: 12px;
 }
-/* line 223, ../sass/_main.scss */
+/* line 228, ../sass/_main.scss */
 .uploader-wrapper div {
   opacity: 0;
   position: absolute;
   cursor: pointer;
 }
-/* line 224, ../sass/_main.scss */
+/* line 229, ../sass/_main.scss */
 .uploader-wrapper input {
   font-size: 200px;
   cursor: pointer;
 }
 
-/* line 226, ../sass/_main.scss */
+/* line 231, ../sass/_main.scss */
 .fake-uploader {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1484,7 +1522,7 @@ a:focus {
   color: #919191;
 }
 
-/* line 229, ../sass/_main.scss */
+/* line 234, ../sass/_main.scss */
 .remove-uploaded {
   display: block;
   text-decoration: underline;
@@ -1496,4 +1534,9 @@ a:focus {
   letter-spacing: 2px;
   color: #919191;
   margin-top: 8px;
+}
+
+/* line 238, ../sass/_main.scss */
+.nopadding {
+  padding: 0 !important;
 }

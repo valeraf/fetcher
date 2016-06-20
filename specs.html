@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <script src="https://use.typekit.net/qzc2xlv.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/selectize.default.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="navbar bs-docs-nav">
+            <div class="logo navbar-brand"><a href="/">Fetcher</a></div>
+            <button class="navbar-toggle collapsed" type=button data-toggle=collapse data-target=#bs-navbar aria-controls=bs-navbar aria-expanded=false> <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span> </button>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Возможности</a></li>
+                    <li><a href="#">Специалисты</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Разместить вакансию</a></li>
+                    <li><a href="#">Создать профиль</a></li>
+                    <li><a href="#">Войти</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="top-filter">
+            <div class="container">
+                <form>
+                    <div class="row">
+                        <div class="col-md-12 col-xs-12 col-lg-6">
+                            <div class="row">
+                                <div class="tf-functions-select col-xs-12">
+                                    <select name="" id="" class="selectized-multi">
+                                        <option value="">Все функции</option>
+                                        <option value="1">Полный день в офисе</option>
+                                        <option value="2">Неполный день в офисе</option>
+                                        <option value="3">Полный день удаленно</option>
+                                        <option value="4">Фриланс</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-lg-3">
+                            <div class="row">
+                                <div class="tf-functions-select col-xs-12">
+                                    <select name="" id="" class="selectized-multi">
+                                        <option value="">любой город</option>
+                                        <option value="5">Москва</option>
+                                        <option value="6">Питер</option>
+                                        <option value="7">Киев</option>
+                                        <option value="8">Екатеринбург</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 col-lg-3">
+                            <div class="row">
+                                <div class="tf-functions-select col-xs-12">
+                                    <select name="" id="" class="selectized-multi">
+                                        <option value="">все сферы</option>
+                                        <option value="22">IT</option>
+                                        <option value="33">Sales</option>
+                                        <option value="44">Marketing</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row tf-checkboxes">
+                        <div class="col-md-6 col-lg-3 col-xs-12">
+                            <div class="tf-title">График</div>
+                            <ul class="tf-checkbox-list">
+                                <li><label class="checkboxed"><input type="checkbox"> Полный день в офисе</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> Неполный день в офисе</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> Полный день удаленно</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> Фриланс</label></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-xs-12">
+                            <div class="tf-title">Уровень</div>
+                            <ul class="tf-checkbox-list">
+                                <li><label class="checkboxed"><input type="checkbox"> стажер</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> начинающий</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> опытный</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> ведущий</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> руководитель</label></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-xs-12">
+                            <div class="tf-title">Вознаграждение (тыс. рублей)</div>
+                            <ul class="tf-checkbox-list">
+                                <li><label class="checkboxed"><input type="checkbox"> только опыт</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> менее 20</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> 20—60</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> 60—100</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> 100—200</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> 200+</label></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-lg-3 col-xs-12">
+                            <div class="tf-title">Оплата</div>
+                            <ul class="tf-checkbox-list">
+                                <li><label class="checkboxed"><input type="checkbox"> сдельная</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> ежемесячная</label></li>
+                                <li><label class="checkboxed"><input type="checkbox"> почасовая</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="specs-list">
+            <div class="container">
+                <div class="row specs-list-item white-bg">
+                    <div class="col-md-1 nopadding">
+                        <div class="sp-item-avatar">
+                            <img src="images/userpic_company.png" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="sp-item-title">Креативный и ответственный дизайнер</h2>
+                        <div class="jl-item-info nopadding">
+                            <div class="sp-item-info-links"><span>сферы:</span> <a href="#">Образование</a> <a href="#">Веб и мобильные приложения</a></div>
+                            <div><span>уровень:</span> <span class="jl-item-info-details">Ведущий</span></div>
+                        </div>
+                        <div class="empl-tags sp-item-tags vp-details disabled-jobs">
+                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
+                        </div>
+                        <div class="vp-details">
+                            <div class="vp-details-label">вознаграждение:</div>
+                            100 000 рублей в месяц
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="jl-items-contact">
+                            <a href="#" class="auth-fb form-btn">Связаться</a>
+                        </div>
+                        <div class="jl-item-info">
+                            <div><span>город:</span> Москва</div>
+                            <div><span>cфера:</span> Образование</div>
+                            <div><span>график:</span> Полный день в офисе</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row specs-list-item white-bg">
+                    <div class="col-md-1 nopadding">
+                        <div class="sp-item-avatar">
+                            <img src="images/userpic_company.png" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="sp-item-title">Креативный и ответственный дизайнер</h2>
+                        <div class="jl-item-info nopadding">
+                            <div class="sp-item-info-links"><span>сферы:</span> <a href="#">Образование</a> <a href="#">Веб и мобильные приложения</a></div>
+                            <div><span>уровень:</span> <span class="jl-item-info-details">Ведущий</span></div>
+                        </div>
+                        <div class="empl-tags sp-item-tags vp-details disabled-jobs">
+                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
+                        </div>
+                        <div class="vp-details">
+                            <div class="vp-details-label">вознаграждение:</div>
+                            100 000 рублей в месяц
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="jl-items-contact">
+                            <a href="#" class="auth-fb form-btn">Связаться</a>
+                        </div>
+                        <div class="jl-item-info">
+                            <div><span>город:</span> Москва</div>
+                            <div><span>cфера:</span> Образование</div>
+                            <div><span>график:</span> Полный день в офисе</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row specs-list-item white-bg">
+                    <div class="col-md-1 nopadding">
+                        <div class="sp-item-avatar">
+                            <img src="images/userpic_company.png" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="sp-item-title">Креативный и ответственный дизайнер</h2>
+                        <div class="jl-item-info nopadding">
+                            <div class="sp-item-info-links"><span>сферы:</span> <a href="#">Образование</a> <a href="#">Веб и мобильные приложения</a></div>
+                            <div><span>уровень:</span> <span class="jl-item-info-details">Ведущий</span></div>
+                        </div>
+                        <div class="empl-tags sp-item-tags vp-details disabled-jobs">
+                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
+                        </div>
+                        <div class="vp-details">
+                            <div class="vp-details-label">вознаграждение:</div>
+                            100 000 рублей в месяц
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="jl-items-contact">
+                            <a href="#" class="auth-fb form-btn">Связаться</a>
+                        </div>
+                        <div class="jl-item-info">
+                            <div><span>город:</span> Москва</div>
+                            <div><span>cфера:</span> Образование</div>
+                            <div><span>график:</span> Полный день в офисе</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/selectize.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

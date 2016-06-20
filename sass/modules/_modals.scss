@@ -60,7 +60,8 @@ button.close {
     padding-top: 24px;margin-bottom: 88px;
 }
 .form-btn {
-    border-radius: 2px;height: 40px;display: block;text-align: center;@include h3;color: #fff;border: none;background: #191919;width: 100%;transition: all 0.2s ease-in-out;
+    border-radius: 2px;height: 40px;display: block;text-align: center;@include h3;color: #fff;border: none;background: #191919;width: 100%;transition: all 0.2s ease-in-out;text-decoration: none;line-height: 36px;
+    &:hover {color: #fff;background: #53729c;}
 }
 .cancel-btn {background: #919191;color: #fff;@include h3;}
 .auth-vk {background: #53729c;}

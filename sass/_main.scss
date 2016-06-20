@@ -179,6 +179,11 @@ a {
     font-family: $mono;text-transform: uppercase;font-size: 11px;margin-right: 4px;letter-spacing: 2px;color: #919191;margin-bottom: 8px;
 }
 
+.jl-items-contact {
+    margin-bottom: 3*$x;padding-top: 2.5*$x;
+    & + .jl-item-info {padding-top: 0}
+}
+
 .related-title {
     @include h3;color: #fff;margin-bottom: 4px;
 }
@@ -228,4 +233,8 @@ a {
 }
 .remove-uploaded {
     display: block;text-decoration: underline;color: #919191;@include label;margin-top: 8px;
+}
+
+.nopadding {
+   padding: 0 !important;
 }

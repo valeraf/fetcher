@@ -1,0 +1,40 @@
+.profile-page {margin-top: 2*$x;}
+.profile-menu {
+    padding-top: 1.5*$x;border-bottom: 1px solid #191919;
+    .nav {
+        & > li {
+            padding-right: 1.5*$x;
+            a {
+                @include h2;color: #d7d7d7;text-decoration: none;padding-left: 0;padding-right: 0;
+                &:hover {background: none;}
+            }
+            &.active {
+                a {color: #191919;background: none;}
+            }
+        }
+    }
+}
+
+
+.profile-submenu-text {padding-top: $x;}
+
+.form-info-text {
+    margin-top: -4px;
+    p {@include h4;color: #919191;margin-bottom: $x;margin-top: 0;}
+}
+
+.profile-subscribtion-btn {
+    max-width: 26*$x;margin: 0 auto 8*$x;
+}
+
+.profile-payment-history-list {
+    @include small;color: #919191;
+    li {
+        &:after {
+            @include clearfix;
+        }
+        border-bottom: 1px solid #e1dcdc;margin-bottom: $x;padding-bottom: $x;line-height: 24px;
+    }
+    .payment-date {margin-right: $x;}
+    .payment-total {float: right;@include h4;}
+}

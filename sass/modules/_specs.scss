@@ -10,3 +10,19 @@
 }
 
 .specs-list-item {margin-bottom: 3*$x;}
+
+.specialist-page {
+    margin-top: 32px;
+    .white-bg {padding-bottom: 9*$x;}
+}
+.spec-top-left {padding: 32px;max-width: 50%;margin-bottom: 72px;}
+.spec-top-total {@include h1;}
+.spec-top-text {@include h2;}
+
+.spec-promo-btns {text-align: center;max-width: 70%;margin: 0 auto;}
+.spec-btns-block {display: inline-block;padding: 0 12px;width: 49%;box-sizing: border-box;}
+.spec-price-block {
+    padding-top: 32px;@include label;color: #191919;margin-bottom: 40px;text-align: center;
+    strong {@include h1;color: #191919;display: block;text-transform: none;}
+}
+.spec-promo-text {@include small;}

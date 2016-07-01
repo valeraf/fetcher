@@ -33,7 +33,10 @@ header {
 a {
     color: #ff5014;text-decoration: underline;transition: color 0.2s ease-in-out;
     &:hover {text-decoration: none;}
-    &:focus {outline: none;}
+    &:focus {outline: none;color: inherit;}
+}
+.btn {
+    &:focus, &:hover, &:active {outline: none;}
 }
 
 .form-control {height: 40px;border-radius: 2px;background: #f0f0f0;box-shadow: inset 0 3px 4px #ddd;@include h4;}
@@ -237,4 +240,18 @@ a {
 
 .nopadding {
    padding: 0 !important;
+}
+
+.orange-btn {
+    @include btn(#ffa000, #fff);
+}
+.blue-btn {
+    @include btn(#3c50b4, #fff);
+}
+
+.user-menu {
+    margin-right: 4px;
+    a {@include h3;text-decoration: none;transition: color 0.3s ease-in-out;}
+    & > li > a {color: #919191;}
+    & > li > a:hover {background: none;color: #4b4b4b;}
 }

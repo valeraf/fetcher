@@ -1,0 +1,564 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <script src="https://use.typekit.net/qzc2xlv.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/selectize.default.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="navbar bs-docs-nav logged-in" data-spy="affix" data-offset-top="0">
+            <div class="logo navbar-brand"><a href="/">Fetcher</a></div>
+            <button class="navbar-toggle collapsed" type=button data-toggle=collapse data-target=#bs-navbar aria-controls=bs-navbar aria-expanded=false> <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span> </button>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Специалисты</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#" data-toggle="modal" data-target=".create-modal">Разместить вакансию</a></li>
+                </ul>
+            </nav>
+            <div class="header-avatar">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/strelka.png" width="48" alt=""></a>
+                <ul class="dropdown-menu user-menu dropdown-menu-right">
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="#">Настройки профиля</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Функционал</a></li>
+                    <li><a href="#">Предпочтения</a></li>
+                    <li><a href="#">Выйти</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="profile-page">
+            <div class="container">
+                <div class="row white-bg">
+                    <div class="col-xs-12">
+                        <div class="profile-menu">
+                            <ul class="nav nav-pills">
+                                <li role="presentation" class="active"><a href="#">Профиль</a></li>
+                                <li role="presentation"><a href="#">Оплата</a></li>
+                            </ul>
+                        </div>
+                        <div class="profile-submenu-text pre-modal-text">Вы можете пользоваться сервисом как частное лицо или представлять свою компанию</div>
+                        <div class="modal-content-middle profile-form-wrapper">
+                            <form class="profile-form">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>Вам нужен профиль человека или компании?</h3>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <select class="selectized">
+                                            <option value="">Выберите профиль</option>
+                                            <option value="0">Профиль компании</option>
+                                            <option value="1">Профиль человека</option>
+                                            <option value="2">Профиль номер 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>Информация о вашей компании</h3>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="upload-thumb">
+                                            <div class="uploaded-thumb"><img src="images/userpic_company.png" alt=""></div>
+                                            <div class="uploader-wrapper">
+                                                <div><input type="file"></div>
+                                                <span class="fake-uploader">загрузить</span>
+                                                <a href="#" class="remove-uploaded">удалить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label class="form-label">ваше имя:</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div class="form-group">
+                                            <label class="form-label">ваша фамилия:</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-label">название:</div>
+                                        <div class="input-box"><input type="text" class="form-control"></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div class="form-label">где вы находитесь:</div>
+                                        <select class="selectized">
+                                            <option value="">Выберите профиль</option>
+                                            <option value="0">Профиль компании</option>
+                                            <option value="1">Профиль человека</option>
+                                            <option value="2">Профиль номер 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="form-label">название:</div>
+                                        <div class="input-box"><textarea class="form-control" rows="7"></textarea></div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <div class="empl-thumb">
+                                            <img src="images/strelka.png" alt="">
+                                        </div>
+                                        <div class="empl-descr">
+                                            <h2 class="empl-name">Елизавета Орешкина</h2>
+                                            <div class="empl-tags disabled-jobs">
+                                                <a class="label label-tag" href="#">верстальщик</a> <a class="label label-tag" href="#">графический дизайнер</a> <a class="label label-tag" href="#">информационный дизайнер</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-horizontal">
+                                    <h3>Ссылки</h3>
+                                    <div class="form-group">
+                                        <div class="form-label control-label col-xs-4">сайт:</div>
+                                        <div class="col-xs-8">
+                                            <div class="input-box"><input type="text" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-label control-label col-xs-4">портфолио:</div>
+                                        <div class="col-xs-8">
+                                            <div class="input-box"><input type="text" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-label control-label col-xs-4">вконтакте:</div>
+                                        <div class="col-xs-8">
+                                            <div class="input-box"><input type="text" class="form-control"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>Ваш уровень</h3>
+                                        <ul class="tf-checkbox-list">
+                                            <li>
+                                                <label class="checkboxed"><input type="checkbox"> стажер</label>
+                                            </li>
+                                            <li>
+                                                <label class="checkboxed"><input type="checkbox"> начинающий</label>
+                                            </li>
+                                            <li>
+                                                <label class="checkboxed"><input type="checkbox"> опытный</label>
+                                            </li>
+                                            <li>
+                                                <label class="checkboxed"><input type="checkbox"> ведущий</label>
+                                            </li>
+                                            <li>
+                                                <label class="checkboxed"><input type="checkbox"> руководитель</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <button type="submit" class="form-btn cancel-btn" data-dismiss="modal">Отмена</button>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <button type="submit" class="form-btn auth-btn">Сохранить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade apply-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header"> 
+                    <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button> 
+                    <h4 class="modal-title">Здравствуйте</h4>
+                    <div class="form-step">ШАГ 1/3</div>
+                </div>
+                <div class="modal-body">
+                    <div class="pre-modal-text">Участие в сообществе Fetcher недорогое, но платное — как для работодателей, так и для соискателей. <a href="#">почему?</a></div>
+                    <div class="modal-content-middle">
+                        
+                        <form class="modal-auth">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-label">через почту и пароль:</div>
+                                    <div class="input-box"><input type="email" class="form-control" placeholder="E-mail"></div>
+                                    <div class="input-box"><input type="password" class="form-control" placeholder="Пароль"></div>
+                                    <div class="input-box"><input type="password" class="form-control" placeholder="Пароль еще раз"></div>
+                                    <div class="input-box"><button type="submit" class="form-btn auth-btn btn-disabled" disabled="disabled">Зарегистрироваться</button></div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-label">через социальную сеть:</div>
+                                    <div class="input-box">
+                                        <button class="auth-fb form-btn">Facebook</button>
+                                    </div>
+                                    <div class="input-box">
+                                        <button class="auth-vk form-btn">ВКонтакте</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="already-registered">
+                            зарегистрированы? <a href="#">входите!</a>
+                        </div>
+                    </div>
+                    <div class="modal-content-middle">
+                        <form class="profile-form">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Регистрация частного лица или компании</h3>
+                                </div>
+                                <div class="col-xs-6">
+                                    <select class="selectized">
+                                        <option value="">Выберите профиль</option>
+                                        <option value="0">Профиль компании</option>
+                                        <option value="1">Профиль человека</option>
+                                        <option value="2">Профиль номер 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Вы соискатель или работодатель?</h3>
+                                </div>
+                                <div class="col-xs-6 who-wrapper">
+                                    <label class="checkboxed"><input type="radio" name="who"> Соискатель</label>
+                                    <p class="grey">Вы ищете работу или проекты. Соискатели с оплаченной подпиской доступны для поиска и просмотра работодателями и могут откликаться на любые вакансии.</p>
+                                    <div class="subscr-price">
+                                        <div class="price-label">стоимость подписки:</div>
+                                        75 рублей в месяц
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 who-wrapper">
+                                    <label class="checkboxed"><input type="radio" name="who"> Работодатель</label>
+                                    <p class="grey">Вы ищете сотрудников или фрилансеров. Работодатели оплачивают публикацию каждой вакансии на 30 дней, получая доступ к базе соискателей на этот же период.</p>
+                                    <div class="subscr-price">
+                                        <div class="price-label">стоимость вакансии:</div>
+                                        1500 рублей
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Информация о вашей компании</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="upload-thumb">
+                                        <div class="uploaded-thumb"><img src="images/userpic_company.png" alt=""></div>
+                                        <div class="uploader-wrapper">
+                                            <div><input type="file"></div>
+                                            <span class="fake-uploader">загрузить</span>
+                                            <a href="#" class="remove-uploaded">удалить</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="form-label">ваше имя:</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="form-group">
+                                        <label class="form-label">ваша фамилия:</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-label">название:</div>
+                                    <div class="input-box"><input type="text" class="form-control"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="form-label">где вы находитесь:</div>
+                                    <select class="selectized">
+                                        <option value="">Выберите профиль</option>
+                                        <option value="0">Профиль компании</option>
+                                        <option value="1">Профиль человека</option>
+                                        <option value="2">Профиль номер 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-label">название:</div>
+                                    <div class="input-box"><textarea class="form-control" rows="7"></textarea></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="empl-thumb">
+                                        <img src="images/strelka.png" alt="">
+                                    </div>
+                                    <div class="empl-descr">
+                                        <h2 class="empl-name">Елизавета Орешкина</h2>
+                                        <div class="empl-tags disabled-jobs">
+                                            <a class="label label-tag" href="#">верстальщик</a> <a class="label label-tag" href="#">графический дизайнер</a> <a class="label label-tag" href="#">информационный дизайнер</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-horizontal">
+                                <h3>Ссылки</h3>
+                                <div class="form-group">
+                                    <div class="form-label control-label col-xs-4">сайт:</div>
+                                    <div class="col-xs-8">
+                                        <div class="input-box"><input type="text" class="form-control"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h3>Ваш уровень</h3>
+                                <ul class="tf-checkbox-list">
+                                    <li>
+                                        <label class="checkboxed"><input type="checkbox"> стажер</label>
+                                    </li>
+                                    <li>
+                                        <label class="checkboxed"><input type="checkbox"> начинающий</label>
+                                    </li>
+                                    <li>
+                                        <label class="checkboxed"><input type="checkbox"> опытный</label>
+                                    </li>
+                                    <li>
+                                        <label class="checkboxed"><input type="checkbox"> ведущий</label>
+                                    </li>
+                                    <li>
+                                        <label class="checkboxed"><input type="checkbox"> руководитель</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <button type="submit" class="form-btn cancel-btn" data-dismiss="modal">Отмена</button>
+                                </div>
+                                <div class="col-xs-8">
+                                    <button type="submit" class="form-btn auth-btn">Сохранить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade create-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header"> <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button> <h4 class="modal-title">Разместите вакансию</h4> </div>
+                <div class="modal-body">
+                    <div class="pre-modal-text">Сначала создайте общее описание вакансии, а потом перейдем к конкретным параметрам</div>
+
+                    <div class="modal-content-middle">
+                        <form class="profile-form">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>В какой сфере работает ваша компания?</h3>
+                                </div>
+                                <div class="col-xs-6">
+                                    <select class="selectized">
+                                        <option value="">Сфера</option>
+                                        <option value="0">Сфера1</option>
+                                        <option value="1">Сфера2</option>
+                                        <option value="2">Сфера3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Описание вакансии</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="form-label">название:</div>
+                                    <div class="input-box"><input type="text" class="form-control" placeholder="Дизайнер-консультант для исследования пользователей"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-label">описание вакансии:</div>
+                                    <div class="input-box"><textarea class="form-control" rows="7"></textarea></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Какие функции должен выполнятть соискатель?</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="panel-group" id="acc-func" role="tablist" aria-multiselectable="true">
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading active" role="tab">
+                                            <a class="btn btn-lg acc-btn" role="button" data-toggle="collapse" href="#acc-func1" aria-expanded="true" aria-controls="acc-func1">
+                                              Дизайн и проектирование
+                                            </a>
+                                        </div>
+                                        <div id="acc-func1" class="panel-collapse collapse in" role="tabpanel">
+                                          <div class="panel-body">
+                                            <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab">
+                                            <a class="btn btn-lg acc-btn" role="button" data-toggle="collapse" href="#acc-func2" aria-expanded="false" aria-controls="acc-func2">
+                                              Графика и иллюстрация
+                                            </a>
+                                        </div>
+                                        <div id="acc-func2" class="panel-collapse collapse" role="tabpanel">
+                                          <div class="panel-body">
+                                            <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab">
+                                            <a class="btn btn-lg acc-btn" role="button" data-toggle="collapse" href="#acc-func3" aria-expanded="false" aria-controls="acc-func3">
+                                              Культура и искусство
+                                            </a>
+                                        </div>
+                                        <div id="acc-func3" class="panel-collapse collapse" role="tabpanel">
+                                          <div class="panel-body">
+                                            <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab">
+                                            <a class="btn btn-lg acc-btn" role="button" data-toggle="collapse" href="#acc-func4" aria-expanded="false" aria-controls="acc-func4">
+                                              Менеджмент, координирование, работа с людьми
+                                            </a>
+                                        </div>
+                                        <div id="acc-func4" class="panel-collapse collapse" role="tabpanel">
+                                          <div class="panel-body">
+                                            <label class="checkboxed labeled label-tag label"><input type="checkbox">Администратор</label> <label class="checkboxed labeled label-tag label"><input type="checkbox">ассистент</label>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Уровень соискателя</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> стажер</label>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> начинающий</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Предпочтительный график</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> стажер</label>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> начинающий</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-label">где находится ваш офис:</div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <select class="selectized">
+                                        <option value="">Сфера</option>
+                                        <option value="0">Сфера1</option>
+                                        <option value="1">Сфера2</option>
+                                        <option value="2">Сфера3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <h3>Оплата</h3>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> сдельная</label>
+                                    </div>
+                                    <div class="input-box">
+                                        <label class="checkboxed"><input type="checkbox"> ежемесячная</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-label">вознаграждение в рублях:</div>
+                                </div>
+                                <div class="col-xs-5">
+                                    <div class="input-box">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <select class="selectized">
+                                        <option value="">Сфера</option>
+                                        <option value="0">Сфера1</option>
+                                        <option value="1">Сфера2</option>
+                                        <option value="2">Сфера3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <button type="submit" class="form-btn cancel-btn" data-dismiss="modal">Отмена</button>
+                                </div>
+                                <div class="col-xs-8">
+                                    <button type="submit" class="form-btn auth-btn">Сохранить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/selectize.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

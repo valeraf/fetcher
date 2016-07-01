@@ -14,3 +14,25 @@ $x: 16px;
         background: #64463c;color: #fff;
     }
 }
+
+@mixin btn($bg-color, $color, $h-bg-color : null, $h-color : null, $f-bg-color : null, $f-color : null) {
+    @if ($h-color == null){
+        $h-color : $color;
+    }
+    @if ($f-color == null){
+        $f-color : $color;
+    }
+    @if ($h-bg-color == null){
+        $h-bg-color : $bg-color;
+    }
+    @if ($f-bg-color == null){
+        $f-bg-color : $bg-color;
+    }
+    @include h3;color: $color;background: $bg-color;border: none;border-radius: 4px;transition: all 0.2s ease-in-out;text-decoration: none;
+    &:hover {
+        background: $h-bg-color;color: $h-color;
+    }
+    &:active, &:focus {
+        background: $f-bg-color;color: $f-color;
+    }
+}

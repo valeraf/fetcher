@@ -1,4 +1,4 @@
-/* line 5, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -354,8 +354,18 @@ button.close:hover {
   margin-bottom: 32px;
   margin-top: 16px;
 }
+/* line 34, ../sass/modules/_modals.scss */
+.modal-content-middle h3 {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  border-bottom: 1px solid #e1dcdc;
+  margin-bottom: 16px;
+  padding-bottom: 4px;
+}
 
-/* line 36, ../sass/modules/_modals.scss */
+/* line 39, ../sass/modules/_modals.scss */
 .modal-content h3 {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -365,45 +375,45 @@ button.close:hover {
   margin-bottom: 16px;
   padding-bottom: 4px;
 }
-/* line 39, ../sass/modules/_modals.scss */
+/* line 42, ../sass/modules/_modals.scss */
 .modal-content .input-box {
   margin-bottom: 8px;
 }
-/* line 41, ../sass/modules/_modals.scss */
+/* line 44, ../sass/modules/_modals.scss */
 .modal-content .checkboxed {
   color: #d7d7d7;
   transition: all 0.2s ease-in-out;
 }
-/* line 43, ../sass/modules/_modals.scss */
+/* line 46, ../sass/modules/_modals.scss */
 .modal-content .checkboxed:hover {
   color: #919191;
 }
-/* line 44, ../sass/modules/_modals.scss */
+/* line 47, ../sass/modules/_modals.scss */
 .modal-content .checkboxed:after {
   background: #e1dcdc;
 }
-/* line 45, ../sass/modules/_modals.scss */
+/* line 48, ../sass/modules/_modals.scss */
 .modal-content .checkboxed.checked {
   color: #919191;
 }
-/* line 47, ../sass/modules/_modals.scss */
+/* line 50, ../sass/modules/_modals.scss */
 .modal-content .checkboxed.checked:after {
   background: #4b4b4b;
 }
-/* line 49, ../sass/modules/_modals.scss */
+/* line 52, ../sass/modules/_modals.scss */
 .modal-content .checkboxed:before {
   background-image: url("../images/svg/checkbox_on_white.svg");
 }
-/* line 51, ../sass/modules/_modals.scss */
+/* line 54, ../sass/modules/_modals.scss */
 .modal-content .labeled {
   color: #919191;
 }
-/* line 53, ../sass/modules/_modals.scss */
+/* line 56, ../sass/modules/_modals.scss */
 .modal-content .labeled.checked {
   color: #fff;
 }
 
-/* line 56, ../sass/modules/_modals.scss */
+/* line 59, ../sass/modules/_modals.scss */
 .form-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -414,13 +424,13 @@ button.close:hover {
   margin-bottom: 8px;
 }
 
-/* line 59, ../sass/modules/_modals.scss */
+/* line 62, ../sass/modules/_modals.scss */
 .modal-auth {
   padding-top: 24px;
   margin-bottom: 88px;
 }
 
-/* line 62, ../sass/modules/_modals.scss */
+/* line 65, ../sass/modules/_modals.scss */
 .form-btn {
   border-radius: 2px;
   height: 40px;
@@ -438,13 +448,13 @@ button.close:hover {
   text-decoration: none;
   line-height: 36px;
 }
-/* line 64, ../sass/modules/_modals.scss */
+/* line 67, ../sass/modules/_modals.scss */
 .form-btn:hover {
   color: #fff;
   background: #53729c;
 }
 
-/* line 66, ../sass/modules/_modals.scss */
+/* line 69, ../sass/modules/_modals.scss */
 .cancel-btn {
   background: #919191;
   color: #fff;
@@ -454,17 +464,17 @@ button.close:hover {
   line-height: 24px;
 }
 
-/* line 67, ../sass/modules/_modals.scss */
+/* line 70, ../sass/modules/_modals.scss */
 .auth-vk {
   background: #53729c;
 }
 
-/* line 68, ../sass/modules/_modals.scss */
+/* line 71, ../sass/modules/_modals.scss */
 .auth-fb {
   background: #455ca1;
 }
 
-/* line 69, ../sass/modules/_modals.scss */
+/* line 72, ../sass/modules/_modals.scss */
 .already-registered {
   line-height: 32px;
   text-align: center;
@@ -476,22 +486,22 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 70, ../sass/modules/_modals.scss */
+/* line 73, ../sass/modules/_modals.scss */
 .btn-disabled {
   opacity: 0;
 }
 
-/* line 72, ../sass/modules/_modals.scss */
+/* line 75, ../sass/modules/_modals.scss */
 .who-wrapper p {
   color: #d7d7d7;
   transition: all 0.2s ease-in-out 0s;
 }
-/* line 73, ../sass/modules/_modals.scss */
+/* line 76, ../sass/modules/_modals.scss */
 .who-wrapper.checked-box p {
   color: #919191;
 }
 
-/* line 75, ../sass/modules/_modals.scss */
+/* line 78, ../sass/modules/_modals.scss */
 .subscr-price {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -500,12 +510,12 @@ button.close:hover {
   color: #d7d7d7;
   transition: all 0.2s ease-in-out;
 }
-/* line 77, ../sass/modules/_modals.scss */
+/* line 80, ../sass/modules/_modals.scss */
 .checked-box .subscr-price {
   color: #000;
 }
 
-/* line 79, ../sass/modules/_modals.scss */
+/* line 82, ../sass/modules/_modals.scss */
 .price-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -517,34 +527,34 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 83, ../sass/modules/_modals.scss */
+/* line 86, ../sass/modules/_modals.scss */
 .profile-form .row, .profile-form .form-horizontal {
   margin-bottom: 64px;
 }
-/* line 85, ../sass/modules/_modals.scss */
+/* line 88, ../sass/modules/_modals.scss */
 .profile-form .form-horizontal h3 {
   margin-bottom: 32px;
 }
-/* line 87, ../sass/modules/_modals.scss */
+/* line 90, ../sass/modules/_modals.scss */
 .profile-form .control-label {
   text-align: left;
   padding-top: 15px;
 }
 
-/* line 91, ../sass/modules/_modals.scss */
+/* line 94, ../sass/modules/_modals.scss */
 .panel-group .panel-heading {
   padding: 0 0 16px;
   background: none;
 }
-/* line 94, ../sass/modules/_modals.scss */
+/* line 97, ../sass/modules/_modals.scss */
 .panel-group .panel-heading.active .acc-btn {
   color: #919191;
 }
-/* line 97, ../sass/modules/_modals.scss */
+/* line 100, ../sass/modules/_modals.scss */
 .panel-group .panel-body {
   border: none !important;
 }
-/* line 98, ../sass/modules/_modals.scss */
+/* line 101, ../sass/modules/_modals.scss */
 .panel-group .acc-btn {
   background: none;
   padding: 0;
@@ -552,49 +562,49 @@ button.close:hover {
   border: none;
   color: #d7d7d7;
 }
-/* line 99, ../sass/modules/_modals.scss */
+/* line 102, ../sass/modules/_modals.scss */
 .panel-group .panel-body {
   padding: 0;
 }
 
-/* line 101, ../sass/modules/_modals.scss */
+/* line 104, ../sass/modules/_modals.scss */
 .panel-default {
   border: none;
   box-shadow: none;
 }
 
-/* line 105, ../sass/modules/_modals.scss */
+/* line 108, ../sass/modules/_modals.scss */
 #acc-func .panel {
   border-bottom: 1px solid #e1dcdc;
   margin-bottom: 16px;
 }
-/* line 106, ../sass/modules/_modals.scss */
+/* line 109, ../sass/modules/_modals.scss */
 #acc-func .panel-body {
   padding-bottom: 16px;
 }
 
-/* line 110, ../sass/modules/_modals.scss */
+/* line 113, ../sass/modules/_modals.scss */
 .links-list .form-label {
   line-height: 40px;
 }
 
-/* line 113, ../sass/modules/_modals.scss */
+/* line 116, ../sass/modules/_modals.scss */
 .empl-thumb {
   float: left;
   width: 64px;
   margin-right: 8px;
 }
-/* line 115, ../sass/modules/_modals.scss */
+/* line 118, ../sass/modules/_modals.scss */
 .empl-thumb img {
   width: 100%;
 }
 
-/* line 117, ../sass/modules/_modals.scss */
+/* line 120, ../sass/modules/_modals.scss */
 .empl-descr {
   overflow: hidden;
 }
 
-/* line 118, ../sass/modules/_modals.scss */
+/* line 121, ../sass/modules/_modals.scss */
 .empl-name {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -603,11 +613,11 @@ button.close:hover {
   margin-bottom: 8px;
 }
 
-/* line 122, ../sass/modules/_modals.scss */
+/* line 125, ../sass/modules/_modals.scss */
 .checked-box p {
   color: #919191;
 }
-/* line 123, ../sass/modules/_modals.scss */
+/* line 126, ../sass/modules/_modals.scss */
 .checked-box .subscr-price {
   color: #000;
 }
@@ -631,6 +641,178 @@ button.close:hover {
 /* line 12, ../sass/modules/_specs.scss */
 .specs-list-item {
   margin-bottom: 48px;
+}
+
+/* line 14, ../sass/modules/_specs.scss */
+.specialist-page {
+  margin-top: 32px;
+}
+/* line 16, ../sass/modules/_specs.scss */
+.specialist-page .white-bg {
+  padding-bottom: 144px;
+}
+
+/* line 18, ../sass/modules/_specs.scss */
+.spec-top-left {
+  padding: 32px;
+  max-width: 50%;
+  margin-bottom: 72px;
+}
+
+/* line 19, ../sass/modules/_specs.scss */
+.spec-top-total {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 52px;
+}
+
+/* line 20, ../sass/modules/_specs.scss */
+.spec-top-text {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+}
+
+/* line 22, ../sass/modules/_specs.scss */
+.spec-promo-btns {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* line 23, ../sass/modules/_specs.scss */
+.spec-btns-block {
+  display: inline-block;
+  padding: 0 12px;
+  width: 49%;
+  box-sizing: border-box;
+}
+
+/* line 24, ../sass/modules/_specs.scss */
+.spec-price-block {
+  padding-top: 32px;
+  font-family: "PT Mono";
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #919191;
+  color: #191919;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* line 26, ../sass/modules/_specs.scss */
+.spec-price-block strong {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 52px;
+  color: #191919;
+  display: block;
+  text-transform: none;
+}
+
+/* line 28, ../sass/modules/_specs.scss */
+.spec-promo-text {
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* line 1, ../sass/modules/_profile.scss */
+.profile-page {
+  margin-top: 32px;
+}
+
+/* line 2, ../sass/modules/_profile.scss */
+.profile-menu {
+  padding-top: 24px;
+  border-bottom: 1px solid #191919;
+}
+/* line 5, ../sass/modules/_profile.scss */
+.profile-menu .nav > li {
+  padding-right: 24px;
+}
+/* line 7, ../sass/modules/_profile.scss */
+.profile-menu .nav > li a {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+  color: #d7d7d7;
+  text-decoration: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 9, ../sass/modules/_profile.scss */
+.profile-menu .nav > li a:hover {
+  background: none;
+}
+/* line 12, ../sass/modules/_profile.scss */
+.profile-menu .nav > li.active a {
+  color: #191919;
+  background: none;
+}
+
+/* line 19, ../sass/modules/_profile.scss */
+.profile-submenu-text {
+  padding-top: 16px;
+}
+
+/* line 21, ../sass/modules/_profile.scss */
+.form-info-text {
+  margin-top: -4px;
+}
+/* line 23, ../sass/modules/_profile.scss */
+.form-info-text p {
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: #919191;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+/* line 26, ../sass/modules/_profile.scss */
+.profile-subscribtion-btn {
+  max-width: 416px;
+  margin: 0 auto 128px;
+}
+
+/* line 30, ../sass/modules/_profile.scss */
+.profile-payment-history-list {
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #919191;
+}
+/* line 32, ../sass/modules/_profile.scss */
+.profile-payment-history-list li {
+  border-bottom: 1px solid #e1dcdc;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  line-height: 24px;
+}
+/* line 33, ../sass/modules/_profile.scss */
+.profile-payment-history-list li:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* line 38, ../sass/modules/_profile.scss */
+.profile-payment-history-list .payment-date {
+  margin-right: 16px;
+}
+/* line 39, ../sass/modules/_profile.scss */
+.profile-payment-history-list .payment-total {
+  float: right;
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
 }
 
 /* line 1, ../sass/pages/_vacancy-page.scss */
@@ -943,9 +1125,15 @@ a:hover {
 /* line 36, ../sass/_main.scss */
 a:focus {
   outline: none;
+  color: inherit;
 }
 
 /* line 39, ../sass/_main.scss */
+.btn:focus, .btn:hover, .btn:active {
+  outline: none;
+}
+
+/* line 42, ../sass/_main.scss */
 .form-control {
   height: 40px;
   border-radius: 2px;
@@ -957,30 +1145,30 @@ a:focus {
   line-height: 24px;
 }
 
-/* line 41, ../sass/_main.scss */
+/* line 44, ../sass/_main.scss */
 .container {
   width: 100%;
   max-width: 1376px;
   padding: 0 32px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 41, ../sass/_main.scss */
+  /* line 44, ../sass/_main.scss */
   .container {
     padding: 0 16px;
   }
 }
 
-/* line 50, ../sass/_main.scss */
+/* line 53, ../sass/_main.scss */
 .bs-docs-nav .navbar-toggle .icon-bar {
   background-color: #fff;
 }
 
-/* line 51, ../sass/_main.scss */
+/* line 54, ../sass/_main.scss */
 .navbar {
   margin-bottom: 0;
 }
 
-/* line 54, ../sass/_main.scss */
+/* line 57, ../sass/_main.scss */
 .checkboxed {
   position: relative;
   color: #d7d7d7;
@@ -995,7 +1183,7 @@ a:focus {
   color: #919191;
   line-height: 16px;
 }
-/* line 56, ../sass/_main.scss */
+/* line 59, ../sass/_main.scss */
 .checkboxed:after {
   content: '';
   position: absolute;
@@ -1007,7 +1195,7 @@ a:focus {
   background: #e1dcdc;
   transition: all 0.2s ease-in-out;
 }
-/* line 57, ../sass/_main.scss */
+/* line 60, ../sass/_main.scss */
 .checkboxed:before {
   content: "";
   position: absolute;
@@ -1019,23 +1207,23 @@ a:focus {
   z-index: 2;
   background: url(../images/svg/checkbox_on.svg) center no-repeat;
 }
-/* line 58, ../sass/_main.scss */
+/* line 61, ../sass/_main.scss */
 .checkboxed input {
   position: absolute;
   left: 0;
   right: 0;
   opacity: 0;
 }
-/* line 59, ../sass/_main.scss */
+/* line 62, ../sass/_main.scss */
 .checkboxed.checked {
   color: #919191;
 }
-/* line 61, ../sass/_main.scss */
+/* line 64, ../sass/_main.scss */
 .checkboxed.checked:before {
   display: block;
 }
 
-/* line 65, ../sass/_main.scss */
+/* line 68, ../sass/_main.scss */
 .selectized {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1045,7 +1233,7 @@ a:focus {
   color: #919191;
 }
 
-/* line 70, ../sass/_main.scss */
+/* line 73, ../sass/_main.scss */
 .selectize-control.single .selectize-input, .selectize-control.multi .selectize-input {
   padding: 0 12px;
   background: #000;
@@ -1055,7 +1243,7 @@ a:focus {
   border-color: #000;
   box-shadow: none;
 }
-/* line 72, ../sass/_main.scss */
+/* line 75, ../sass/_main.scss */
 .selectize-control.single .selectize-input input, .selectize-control.multi .selectize-input input {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1065,27 +1253,27 @@ a:focus {
   color: #919191;
   color: #fff;
 }
-/* line 61, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .selectize-control.single .selectize-input input:-moz-placeholder, .selectize-control.multi .selectize-input input:-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
-/* line 64, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .selectize-control.single .selectize-input input::-moz-placeholder, .selectize-control.multi .selectize-input input::-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
-/* line 67, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .selectize-control.single .selectize-input input:-ms-input-placeholder, .selectize-control.multi .selectize-input input:-ms-input-placeholder {
   color: #fff;
   opacity: 1;
 }
-/* line 56, ../../../../wamp/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../../server/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 .selectize-control.single .selectize-input input::-webkit-input-placeholder, .selectize-control.multi .selectize-input input::-webkit-input-placeholder {
   color: #fff;
   opacity: 1;
 }
-/* line 79, ../sass/_main.scss */
+/* line 82, ../sass/_main.scss */
 .selectize-control.single .selectize-input:after, .selectize-control.multi .selectize-input:after {
   border: none;
   background: url(../images/svg/dropdown.svg) 0 0 no-repeat;
@@ -1096,24 +1284,24 @@ a:focus {
   right: 15px;
   top: 50%;
 }
-/* line 82, ../sass/_main.scss */
+/* line 85, ../sass/_main.scss */
 .selectize-control.single .selectize-input:hover:after, .selectize-control.multi .selectize-input:hover:after {
   background: url(../images/svg/dropdown-white.svg) 0 0 no-repeat;
 }
-/* line 85, ../sass/_main.scss */
+/* line 88, ../sass/_main.scss */
 .selectize-control.single .selectize-input.focus:hover:after, .selectize-control.multi .selectize-input.focus:hover:after {
   background: url(../images/svg/dropdown.svg) 0 0 no-repeat;
 }
-/* line 88, ../sass/_main.scss */
+/* line 91, ../sass/_main.scss */
 .selectize-control.single .selectize-input.input-active, .selectize-control.multi .selectize-input.input-active {
   background: #000;
   color: #a5a5a5;
 }
-/* line 92, ../sass/_main.scss */
+/* line 95, ../sass/_main.scss */
 .selectize-control.single .selectize-input.dropdown-active:before, .selectize-control.multi .selectize-input.dropdown-active:before {
   display: none;
 }
-/* line 94, ../sass/_main.scss */
+/* line 97, ../sass/_main.scss */
 .selectize-control.single .selectize-input [data-value], .selectize-control.single .selectize-input > div, .selectize-control.multi .selectize-input [data-value], .selectize-control.multi .selectize-input > div {
   background: none;
   border-radius: 0;
@@ -1121,16 +1309,16 @@ a:focus {
   border: none;
   padding: 0;
 }
-/* line 95, ../sass/_main.scss */
+/* line 98, ../sass/_main.scss */
 .selectize-control.single .selectize-input .active[data-value], .selectize-control.multi .selectize-input .active[data-value] {
   background: none;
   border: none;
 }
-/* line 96, ../sass/_main.scss */
+/* line 99, ../sass/_main.scss */
 .selectize-control.single .selectize-input.has-items, .selectize-control.multi .selectize-input.has-items {
   padding: 0 12px;
 }
-/* line 97, ../sass/_main.scss */
+/* line 100, ../sass/_main.scss */
 .selectize-control.single .selectize-input .item, .selectize-control.multi .selectize-input .item {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1141,12 +1329,12 @@ a:focus {
   color: #fff;
   margin: 0;
 }
-/* line 99, ../sass/_main.scss */
+/* line 102, ../sass/_main.scss */
 .selectize-control.single .selectize-input .item + .item, .selectize-control.multi .selectize-input .item + .item {
   margin-left: 8px;
   position: relative;
 }
-/* line 101, ../sass/_main.scss */
+/* line 104, ../sass/_main.scss */
 .selectize-control.single .selectize-input .item + .item:before, .selectize-control.multi .selectize-input .item + .item:before {
   content: "";
   position: absolute;
@@ -1157,14 +1345,14 @@ a:focus {
   height: 20px;
   margin-top: -12px;
 }
-/* line 107, ../sass/_main.scss */
+/* line 110, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown, .selectize-control.multi .selectize-dropdown {
   margin-top: 4px;
   border-radius: 4px;
   background: #000;
   border-color: #000;
 }
-/* line 109, ../sass/_main.scss */
+/* line 112, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown .option, .selectize-control.multi .selectize-dropdown .option {
   height: 40px;
   line-height: 40px;
@@ -1173,17 +1361,17 @@ a:focus {
   letter-spacing: 1px;
   color: #4b4b4b;
 }
-/* line 111, ../sass/_main.scss */
+/* line 114, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown .option:last-child, .selectize-control.multi .selectize-dropdown .option:last-child {
   border-bottom: none;
 }
-/* line 112, ../sass/_main.scss */
+/* line 115, ../sass/_main.scss */
 .selectize-control.single .selectize-dropdown .option.active, .selectize-control.single .selectize-dropdown .option.selected, .selectize-control.multi .selectize-dropdown .option.active, .selectize-control.multi .selectize-dropdown .option.selected {
   background: #191919;
   color: #fff;
 }
 
-/* line 117, ../sass/_main.scss */
+/* line 120, ../sass/_main.scss */
 .label-tag {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1207,7 +1395,7 @@ a:focus {
   color: #fff;
 }
 
-/* line 121, ../sass/_main.scss */
+/* line 124, ../sass/_main.scss */
 .labeled {
   position: relative;
   overflow: hidden;
@@ -1215,43 +1403,43 @@ a:focus {
   color: #919191;
   cursor: pointer;
 }
-/* line 123, ../sass/_main.scss */
+/* line 126, ../sass/_main.scss */
 .labeled.checked {
   color: #fff;
   background: #ffa000;
 }
-/* line 126, ../sass/_main.scss */
+/* line 129, ../sass/_main.scss */
 .labeled input {
   opacity: 0;
   position: absolute;
 }
-/* line 127, ../sass/_main.scss */
+/* line 130, ../sass/_main.scss */
 .labeled:after, .labeled:before {
   display: none;
   opacity: 0;
 }
 
-/* line 130, ../sass/_main.scss */
+/* line 133, ../sass/_main.scss */
 .jobs-list-item {
   padding-bottom: 40px;
   margin: 0 0 8px;
 }
 
-/* line 132, ../sass/_main.scss */
+/* line 135, ../sass/_main.scss */
 .disabled-jobs .jl-item-title, .disabled-jobs .sp-item-title, .disabled-jobs .jl-item-text {
   color: #919191;
 }
-/* line 133, ../sass/_main.scss */
+/* line 136, ../sass/_main.scss */
 .disabled-jobs .label-tag {
   background: #919191;
 }
 
-/* line 135, ../sass/_main.scss */
+/* line 138, ../sass/_main.scss */
 .jobs-list {
   margin-bottom: 48px;
 }
 
-/* line 137, ../sass/_main.scss */
+/* line 140, ../sass/_main.scss */
 .jl-item-employer {
   font-family: "effra", sans-serif;
   margin-bottom: 24px;
@@ -1260,7 +1448,7 @@ a:focus {
   margin-bottom: 32px;
   padding-top: 32px;
 }
-/* line 139, ../sass/_main.scss */
+/* line 142, ../sass/_main.scss */
 .jl-item-employer span {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1271,7 +1459,7 @@ a:focus {
   margin-right: 4px;
 }
 
-/* line 143, ../sass/_main.scss */
+/* line 146, ../sass/_main.scss */
 .jl-item-title, .sp-item-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1281,13 +1469,13 @@ a:focus {
   margin-bottom: 16px;
   display: block;
 }
-/* line 145, ../sass/_main.scss */
+/* line 148, ../sass/_main.scss */
 .jl-item-title a, .sp-item-title a {
   text-decoration: none;
   color: #191919;
 }
 
-/* line 147, ../sass/_main.scss */
+/* line 150, ../sass/_main.scss */
 .jl-item-text {
   font-family: "PT Serif", serif;
   font-weight: 400;
@@ -1295,7 +1483,7 @@ a:focus {
   line-height: 24px;
   color: #191919;
 }
-/* line 149, ../sass/_main.scss */
+/* line 152, ../sass/_main.scss */
 .jl-item-text a, .jl-item-text .span-link {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1309,27 +1497,27 @@ a:focus {
   text-decoration: underline;
 }
 
-/* line 151, ../sass/_main.scss */
+/* line 154, ../sass/_main.scss */
 .jl-item-link {
   text-decoration: none;
   display: block;
 }
-/* line 153, ../sass/_main.scss */
+/* line 156, ../sass/_main.scss */
 .jl-item-link:hover .span-link {
   text-decoration: none;
 }
 
-/* line 155, ../sass/_main.scss */
+/* line 158, ../sass/_main.scss */
 .jl-item-avatar {
   padding-top: 16px;
 }
 
-/* line 158, ../sass/_main.scss */
+/* line 161, ../sass/_main.scss */
 .jl-item-info {
   padding-top: 83px;
   margin-bottom: 32px;
 }
-/* line 160, ../sass/_main.scss */
+/* line 163, ../sass/_main.scss */
 .jl-item-info span:first-child {
   display: inline-block;
   margin-right: 4px;
@@ -1343,14 +1531,14 @@ a:focus {
   color: #919191;
 }
 @media only screen and (max-width: 768px) and (min-width: 641px) {
-  /* line 160, ../sass/_main.scss */
+  /* line 163, ../sass/_main.scss */
   .jl-item-info span:first-child {
     display: block;
     margin-bottom: 4px;
   }
 }
 
-/* line 168, ../sass/_main.scss */
+/* line 171, ../sass/_main.scss */
 .jl-item-info div {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -1359,13 +1547,13 @@ a:focus {
   color: #4b4b4b;
 }
 @media only screen and (max-width: 768px) and (min-width: 641px) {
-  /* line 168, ../sass/_main.scss */
+  /* line 171, ../sass/_main.scss */
   .jl-item-info div {
     margin-bottom: 12px;
   }
 }
 
-/* line 176, ../sass/_main.scss */
+/* line 179, ../sass/_main.scss */
 .jl-item-info .jl-item-info-details {
   width: auto;
   display: inline-block;
@@ -1377,7 +1565,7 @@ a:focus {
   text-transform: none;
 }
 
-/* line 178, ../sass/_main.scss */
+/* line 181, ../sass/_main.scss */
 .jl-item-tags-title {
   font-family: "PT Mono";
   text-transform: uppercase;
@@ -1388,17 +1576,17 @@ a:focus {
   margin-bottom: 8px;
 }
 
-/* line 182, ../sass/_main.scss */
+/* line 185, ../sass/_main.scss */
 .jl-items-contact {
   margin-bottom: 48px;
   padding-top: 40px;
 }
-/* line 184, ../sass/_main.scss */
+/* line 187, ../sass/_main.scss */
 .jl-items-contact + .jl-item-info {
   padding-top: 0;
 }
 
-/* line 187, ../sass/_main.scss */
+/* line 190, ../sass/_main.scss */
 .related-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1408,13 +1596,13 @@ a:focus {
   margin-bottom: 4px;
 }
 
-/* line 191, ../sass/_main.scss */
+/* line 194, ../sass/_main.scss */
 .big-btns-row {
   margin-bottom: 32px;
   padding-top: 24px;
 }
 
-/* line 192, ../sass/_main.scss */
+/* line 195, ../sass/_main.scss */
 .big-btns {
   padding: 24px 24px 64px;
   float: left;
@@ -1425,31 +1613,31 @@ a:focus {
   font-weight: 500;
   color: #fff;
 }
-/* line 194, ../sass/_main.scss */
+/* line 197, ../sass/_main.scss */
 .big-btns:hover {
   color: #fff;
   text-decoration: none;
 }
 @media only screen and (max-width: 1024px) {
-  /* line 192, ../sass/_main.scss */
+  /* line 195, ../sass/_main.scss */
   .big-btns {
     width: 100%;
     margin-bottom: 8px;
   }
 }
 
-/* line 199, ../sass/_main.scss */
+/* line 202, ../sass/_main.scss */
 .vacancy-new {
   background: #3c50b4;
 }
 
-/* line 202, ../sass/_main.scss */
+/* line 205, ../sass/_main.scss */
 .new-profile {
   background: #ffa000;
   float: right;
 }
 
-/* line 205, ../sass/_main.scss */
+/* line 208, ../sass/_main.scss */
 .big-btns-title {
   font-size: 56px;
   line-height: 52px;
@@ -1457,7 +1645,7 @@ a:focus {
   margin-bottom: 88px;
 }
 
-/* line 206, ../sass/_main.scss */
+/* line 209, ../sass/_main.scss */
 .big-btns-text {
   text-align: center;
   display: block;
@@ -1465,52 +1653,52 @@ a:focus {
   line-height: 24px;
 }
 
-/* line 210, ../sass/_main.scss */
+/* line 213, ../sass/_main.scss */
 .blue {
   background: #3D50B6;
 }
 
-/* line 213, ../sass/_main.scss */
+/* line 216, ../sass/_main.scss */
 .orange {
   background: #ff5014;
 }
 
-/* line 216, ../sass/_main.scss */
+/* line 219, ../sass/_main.scss */
 .black {
   color: #000;
 }
 
-/* line 220, ../sass/_main.scss */
+/* line 223, ../sass/_main.scss */
 .upload-thumb {
   overflow: hidden;
 }
 
-/* line 223, ../sass/_main.scss */
+/* line 226, ../sass/_main.scss */
 .uploaded-thumb {
   float: left;
   margin-right: 16px;
 }
 
-/* line 226, ../sass/_main.scss */
+/* line 229, ../sass/_main.scss */
 .uploader-wrapper {
   float: left;
   position: relative;
   overflow: hidden;
   padding-top: 12px;
 }
-/* line 228, ../sass/_main.scss */
+/* line 231, ../sass/_main.scss */
 .uploader-wrapper div {
   opacity: 0;
   position: absolute;
   cursor: pointer;
 }
-/* line 229, ../sass/_main.scss */
+/* line 232, ../sass/_main.scss */
 .uploader-wrapper input {
   font-size: 200px;
   cursor: pointer;
 }
 
-/* line 231, ../sass/_main.scss */
+/* line 234, ../sass/_main.scss */
 .fake-uploader {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1522,7 +1710,7 @@ a:focus {
   color: #919191;
 }
 
-/* line 234, ../sass/_main.scss */
+/* line 237, ../sass/_main.scss */
 .remove-uploaded {
   display: block;
   text-decoration: underline;
@@ -1536,7 +1724,78 @@ a:focus {
   margin-top: 8px;
 }
 
-/* line 238, ../sass/_main.scss */
+/* line 241, ../sass/_main.scss */
 .nopadding {
   padding: 0 !important;
+}
+
+/* line 245, ../sass/_main.scss */
+.orange-btn {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  color: #fff;
+  background: #ffa000;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+/* line 32, ../sass/_var.scss */
+.orange-btn:hover {
+  background: #ffa000;
+  color: #fff;
+}
+/* line 35, ../sass/_var.scss */
+.orange-btn:active, .orange-btn:focus {
+  background: #ffa000;
+  color: #fff;
+}
+
+/* line 248, ../sass/_main.scss */
+.blue-btn {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  color: #fff;
+  background: #3c50b4;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+/* line 32, ../sass/_var.scss */
+.blue-btn:hover {
+  background: #3c50b4;
+  color: #fff;
+}
+/* line 35, ../sass/_var.scss */
+.blue-btn:active, .blue-btn:focus {
+  background: #3c50b4;
+  color: #fff;
+}
+
+/* line 252, ../sass/_main.scss */
+.user-menu {
+  margin-right: 4px;
+}
+/* line 254, ../sass/_main.scss */
+.user-menu a {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+/* line 255, ../sass/_main.scss */
+.user-menu > li > a {
+  color: #919191;
+}
+/* line 256, ../sass/_main.scss */
+.user-menu > li > a:hover {
+  background: none;
+  color: #4b4b4b;
 }

@@ -1,0 +1,41 @@
+.main-btn, .form-btn {
+    border-radius: 2px;height: 40px;display: block;text-align: center;border: none;background: #191919;width: 100%;transition: all 0.2s ease-in-out;text-decoration: none;
+    @include btn(#191919, #fff, $h-bg-color : #53729c, $h-color : #fff, $f-bg-color : #64463c);
+}
+
+.black-btn {
+    @include btn(#000, #fff, $h-bg-color : #191919, $h-color : #fff, $f-bg-color : #64463c);
+}
+
+.grey-btn {
+    @include btn(#919191, #fff, #a5a5a5, #fff, #64463c);
+}
+
+.orange-btn {
+    @include btn(#ffa000, #fff, $h-bg-color : #e18200, $h-color : #fff, $f-bg-color : #3c50b4);
+}
+
+.blue-btn {
+    @include btn(#3c50b4, #fff, $h-bg-color : #14288c, $h-color : #fff, $f-bg-color : #3c50b4);
+}
+
+.fb-blue-btn {
+    @include btn(#445d9c, #fff, $h-bg-color : #14288c, $h-color : #fff, $f-bg-color : #3c50b4);
+}
+
+.vk-blue-btn {
+    @include btn(#517298, #fff, $h-bg-color : #14288c, $h-color : #fff, $f-bg-color : #3c50b4);
+}
+
+.tw-blue-btn {
+    @include btn(#1da1f2, #fff, $h-bg-color : #14288c, $h-color : #fff, $f-bg-color : #3c50b4);
+}
+
+.xxsmall-btn {width: 3*$x;height: 48px;line-height: 48px;display: inline-block;vertical-align: top;}
+.xsmall-btn {width: 12*$x;height: 48px;line-height: 48px;display: inline-block;vertical-align: top;}
+.small-btn {width: 19*$x;}
+.medium-btn {width: 26*$x;height: 48px;line-height: 48px;}
+.big-btn {width: 100%;height: 48px;line-height: 48px;}
+.disabled-btn {
+    @include btn(#e1dcdc, #fff);box-shadow: none;cursor: default;
+}

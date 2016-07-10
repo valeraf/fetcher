@@ -28,11 +28,11 @@ $x: 16px;
     @if ($f-bg-color == null){
         $f-bg-color : $bg-color;
     }
-    @include h3;color: $color;background: $bg-color;border: none;border-radius: 4px;transition: all 0.2s ease-in-out;text-decoration: none;
+    @include h3;line-height: 40px;color: $color;background: $bg-color;border: none;border-radius: 4px;transition: all 0.2s ease-in-out;text-decoration: none;@include box-shadow(0 2px 4px rgba(#000,0.15));
     &:hover {
-        background: $h-bg-color;color: $h-color;
+        background: $h-bg-color;color: $h-color;text-decoration: none;
     }
     &:active, &:focus {
-        background: $f-bg-color;color: $f-color;
+        background: $f-bg-color;color: $f-color;text-decoration: none;
     }
 }

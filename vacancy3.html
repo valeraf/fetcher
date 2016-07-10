@@ -40,7 +40,7 @@
             </div>
         </header>
         <div class="vacancy-page bg-page">
-            <div class="container">
+            <div class="list-container">
                 <div class="white-bg details-top">
                     <div class="details-top-avatar">
                         <img src="images/userpic_company.png" width="140" alt="">
@@ -52,8 +52,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-7 col-md-offset-1">
+                <div class="list-row jobs-list-item job-details white-bg">
+                    <div class="list-jobs-avatar">
+                        <div class="jl-item-avatar">
+                        </div>
+                    </div>
+                    <div class="list-jobs-content">
                         <p class="">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка.</p>
                         <p class="">Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai и ответить на все возможные вопросы.</p>
                         <p class="">Потенциальный Герой должен иметь возможность пару раз в неделю приезжать к нам в офис у м. Бауманская и освещать лучом своих познаний одного (пока одного) бойца медиа-фронта.</p>
@@ -66,10 +70,10 @@
                             100 000 рублей в месяц
                         </div>
                         <div class="vp-apply">
-                            <button class="vp-apply-btn btn btn-lg btn-block" data-toggle="modal" data-target=".apply-modal">Связаться с соискателем</button>
+                            <button class="main-btn disabled-btn big-btn vp-apply-btn" data-toggle="modal" data-target=".apply-modal">Связаться с соискателем</button>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="list-right-block">
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>
                             <div><span>cфера:</span> Образование</div>
@@ -95,24 +99,26 @@
             </div>
         </div>
         <div class="jobs-list">
-            <div class="container">
+            <div class="list-container">
                 <h3 class="related-title">Открытые вакансии</h3>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
-                        <div class="jl-item-avatar">
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
+                         <div class="jl-item-avatar">
                             <img src="images/strelka.png" width="48" alt="">
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="list-jobs-content">
                         <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
-                        <h2 class="jl-item-title">Креативный и ответственный дизайнер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
+                        </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="list-right-block">
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>
                             <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
                         </div>
                         <div class="jl-item-tags">
                             <div class="jl-item-tags-title">функции:</div>
@@ -120,22 +126,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
-                        <div class="jl-item-avatar">
-                            <img src="images/garage.png" width="48" alt="">
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
+                         <div class="jl-item-avatar">
+                            <img src="images/strelka.png" width="48" alt="">
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Название</a></div>
-                        <h2 class="jl-item-title">Идейный и опытный PR-менеджер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
+                    <div class="list-jobs-content">
+                        <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
+                        </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="list-right-block">
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>
                             <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
                         </div>
                         <div class="jl-item-tags">
                             <div class="jl-item-tags-title">функции:</div>
@@ -146,24 +154,51 @@
             </div>
         </div>
         <div class="jobs-list disabled-jobs">
-            <div class="container">
+            <div class="list-container">
                 <h3 class="related-title">Закрытые вакансии</h3>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
-                        <div class="jl-item-avatar">
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
+                         <div class="jl-item-avatar">
                             <img src="images/strelka.png" width="48" alt="">
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="list-jobs-content">
                         <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
-                        <h2 class="jl-item-title">Креативный и ответственный дизайнер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
+                        </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="list-right-block">
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>
                             <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
+                        </div>
+                        <div class="jl-item-tags">
+                            <div class="jl-item-tags-title">функции:</div>
+                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
+                         <div class="jl-item-avatar">
+                            <img src="images/strelka.png" width="48" alt="">
+                        </div>
+                    </div>
+                    <div class="list-jobs-content">
+                        <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
+                        </a>
+                    </div>
+                    <div class="list-right-block">
+                        <div class="jl-item-info">
+                            <div><span>город:</span> Москва</div>
+                            <div><span>cфера:</span> Образование</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
                         </div>
                         <div class="jl-item-tags">
                             <div class="jl-item-tags-title">функции:</div>

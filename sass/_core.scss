@@ -10,12 +10,15 @@
 
 // Modules
 
+@import "modules/btns";
+@import "modules/grid";
 @import "modules/top-filter";
 @import "modules/top-employer";
 @import "modules/modals";
-@import "modules/specs";
-@import "modules/profile";
 
 // pages
 
 @import "pages/vacancy-page";
+@import "pages/specs";
+@import "pages/profile";
+@import "pages/about";

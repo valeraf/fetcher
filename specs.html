@@ -37,101 +37,91 @@
             </nav>
         </header>
         <div class="top-filter">
-            <div class="container">
-                <form>
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12 col-lg-6">
-                            <div class="row">
-                                <div class="tf-functions-select col-xs-12">
-                                    <select name="" id="" class="selectized-multi">
-                                        <option value="">Все функции</option>
-                                        <option value="1">Полный день в офисе</option>
-                                        <option value="2">Неполный день в офисе</option>
-                                        <option value="3">Полный день удаленно</option>
-                                        <option value="4">Фриланс</option>
-                                    </select>
-                                </div>
+            <div class="top-filter-container">
+                <div class="tf-row">
+                    <div class="tf-col-big">
+                        <select name="" id="" class="selectized-multi selectize-black">
+                            <option value="">Все функции</option>
+                            <option value="1">Полный день в офисе</option>
+                            <option value="2">Неполный день в офисе</option>
+                            <option value="3">Полный день удаленно</option>
+                            <option value="4">Фриланс</option>
+                        </select>
+                    </div>
+                    <div class="tf-col-small">
+                        <select name="" id="" class="selectized-multi selectize-black">
+                            <option value="">любой город</option>
+                            <option value="5">Москва</option>
+                            <option value="6">Питер</option>
+                            <option value="7">Киев</option>
+                            <option value="8">Екатеринбург</option>
+                        </select>
+                    </div>
+                    <div class="tf-col-small">
+                        <select name="" id="" class="selectized-multi selectize-black">
+                            <option value="">все сферы</option>
+                            <option value="22">IT</option>
+                            <option value="33">Sales</option>
+                            <option value="44">Marketing</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tf-row">
+                    <div class="tf-col-big">
+                        <div class="tf-row">
+                            <div class="tf-col-small">
+                                <div class="tf-title">График</div>
+                                <ul class="tf-checkbox-list">
+                                    <li><label class="checkboxed"><input type="checkbox"> Полный день в офисе</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> Неполный день в офисе</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> Полный день удаленно</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> Фриланс</label></li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12 col-lg-3">
-                            <div class="row">
-                                <div class="tf-functions-select col-xs-12">
-                                    <select name="" id="" class="selectized-multi">
-                                        <option value="">любой город</option>
-                                        <option value="5">Москва</option>
-                                        <option value="6">Питер</option>
-                                        <option value="7">Киев</option>
-                                        <option value="8">Екатеринбург</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12 col-lg-3">
-                            <div class="row">
-                                <div class="tf-functions-select col-xs-12">
-                                    <select name="" id="" class="selectized-multi">
-                                        <option value="">все сферы</option>
-                                        <option value="22">IT</option>
-                                        <option value="33">Sales</option>
-                                        <option value="44">Marketing</option>
-                                    </select>
-                                </div>
+                            <div class="tf-col-small">
+                                <div class="tf-title">Уровень</div>
+                                <ul class="tf-checkbox-list">
+                                    <li><label class="checkboxed"><input type="checkbox"> стажер</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> начинающий</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> опытный</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> ведущий</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> руководитель</label></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="row tf-checkboxes">
-                        <div class="col-md-6 col-lg-3 col-xs-12">
-                            <div class="tf-title">График</div>
-                            <ul class="tf-checkbox-list">
-                                <li><label class="checkboxed"><input type="checkbox"> Полный день в офисе</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> Неполный день в офисе</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> Полный день удаленно</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> Фриланс</label></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-xs-12">
-                            <div class="tf-title">Уровень</div>
-                            <ul class="tf-checkbox-list">
-                                <li><label class="checkboxed"><input type="checkbox"> стажер</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> начинающий</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> опытный</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> ведущий</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> руководитель</label></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-xs-12">
-                            <div class="tf-title">Вознаграждение (тыс. рублей)</div>
-                            <ul class="tf-checkbox-list">
-                                <li><label class="checkboxed"><input type="checkbox"> только опыт</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> менее 20</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> 20—60</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> 60—100</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> 100—200</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> 200+</label></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-xs-12">
-                            <div class="tf-title">Оплата</div>
-                            <ul class="tf-checkbox-list">
-                                <li><label class="checkboxed"><input type="checkbox"> сдельная</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> ежемесячная</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> почасовая</label></li>
-                            </ul>
-                        </div>
+                    <div class="tf-col-small">
+                        <div class="tf-title">Вознаграждение (тыс. рублей)</div>
+                        <ul class="tf-checkbox-list">
+                            <li><label class="checkboxed"><input type="checkbox"> только опыт</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> менее 20</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> 20—60</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> 60—100</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> 100—200</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> 200+</label></li>
+                        </ul>
                     </div>
-                </form>
+                    <div class="tf-col-small">
+                        <div class="tf-title">Оплата</div>
+                        <ul class="tf-checkbox-list">
+                            <li><label class="checkboxed"><input type="checkbox"> сдельная</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> ежемесячная</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> почасовая</label></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="specs-list">
-            <div class="container">
-                <div class="row specs-list-item white-bg">
-                    <div class="col-md-1 nopadding">
+            <div class="list-container">
+                <div class="list-row white-bg specs-list-item">
+                    <div class="list-spec-avatar">
                         <div class="sp-item-avatar">
                             <img src="images/userpic_company.png" width="100%" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h2 class="sp-item-title">Креативный и ответственный дизайнер</h2>
+                    <div class="list-spec-content">
+                        <a href="#" class="jl-item-link"><span class="sp-item-title">Креативный и ответственный дизайнер</span></a>
                         <div class="jl-item-info nopadding">
                             <div class="sp-item-info-links"><span>сферы:</span> <a href="#">Образование</a> <a href="#">Веб и мобильные приложения</a></div>
                             <div><span>уровень:</span> <span class="jl-item-info-details">Ведущий</span></div>
@@ -144,9 +134,9 @@
                             100 000 рублей в месяц
                         </div>
                     </div>
-                    <div class="col-md-3 col-md-offset-1">
+                    <div class="list-right-block">
                         <div class="jl-items-contact">
-                            <a href="#" class="blue-btn form-btn">Связаться</a>
+                            <a href="#" class="blue-btn main-btn small-btn">Связаться</a>
                         </div>
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>
@@ -155,14 +145,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="row specs-list-item white-bg">
-                    <div class="col-md-1 nopadding">
+                <div class="list-row white-bg specs-list-item">
+                    <div class="list-spec-avatar">
                         <div class="sp-item-avatar">
                             <img src="images/userpic_company.png" width="100%" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h2 class="sp-item-title">Креативный и ответственный дизайнер</h2>
+                    <div class="list-spec-content">
+                        <a href="#" class="jl-item-link"><span class="sp-item-title">Креативный и ответственный дизайнер</span></a>
                         <div class="jl-item-info nopadding">
                             <div class="sp-item-info-links"><span>сферы:</span> <a href="#">Образование</a> <a href="#">Веб и мобильные приложения</a></div>
                             <div><span>уровень:</span> <span class="jl-item-info-details">Ведущий</span></div>
@@ -175,9 +165,9 @@
                             100 000 рублей в месяц
                         </div>
                     </div>
-                    <div class="col-md-3 col-md-offset-1">
+                    <div class="list-right-block">
                         <div class="jl-items-contact">
-                            <a href="#" class="btn btn-lg btn-block blue-btn">Связаться</a>
+                            <a href="#" class="blue-btn main-btn small-btn">Связаться</a>
                         </div>
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>
@@ -186,14 +176,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="row specs-list-item white-bg">
-                    <div class="col-md-1 nopadding">
+                <div class="list-row white-bg specs-list-item">
+                    <div class="list-spec-avatar">
                         <div class="sp-item-avatar">
                             <img src="images/userpic_company.png" width="100%" alt="">
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h2 class="sp-item-title">Креативный и ответственный дизайнер</h2>
+                    <div class="list-spec-content">
+                        <a href="#" class="jl-item-link"><span class="sp-item-title">Креативный и ответственный дизайнер</span></a>
                         <div class="jl-item-info nopadding">
                             <div class="sp-item-info-links"><span>сферы:</span> <a href="#">Образование</a> <a href="#">Веб и мобильные приложения</a></div>
                             <div><span>уровень:</span> <span class="jl-item-info-details">Ведущий</span></div>
@@ -206,9 +196,9 @@
                             100 000 рублей в месяц
                         </div>
                     </div>
-                    <div class="col-md-3 col-md-offset-1">
+                    <div class="list-right-block">
                         <div class="jl-items-contact">
-                            <a href="#" class="blue-btn form-btn">Связаться</a>
+                            <a href="#" class="blue-btn main-btn small-btn">Связаться</a>
                         </div>
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>

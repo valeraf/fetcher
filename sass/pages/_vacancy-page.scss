@@ -1,6 +1,7 @@
 .vacancy-page {
-    margin-bottom: 56px;margin-top: 32px;
+    margin-bottom: 3*$x;margin-top: 32px;
     p {@include p-text;color: #191919;margin-bottom: 24px;}
+    .jobs-list-item {margin-bottom: 0;}
 }
 .vp-item-title {
     @include h1;margin-bottom: 16px;color: #191919;
@@ -14,10 +15,11 @@
 }
 .vp-apply {
     padding-top: 48px;
+    &:after {@include clearfix;}
     small {@include small;text-transform: none;text-align: center;letter-spacing: 0;display: block;color: #919191;line-height: 1.2;}
 }
 .vp-apply-btn {
-    @include black-btn;display: block;margin-bottom: 16px;
+    margin-bottom: $x;
 }
 .vp-top {
     position: relative;
@@ -38,7 +40,7 @@
     }
 }
 .details-top-avatar {
-    float: left;width: 160px;margin-right: 32px;margin-top: -32px;padding: 8px;background: #fff;
+    float: left;width: 160px;margin-right: 32px;margin-top: -32px;background: #fff;
     img {width: 100%;}
 }
 .details-top-name {
@@ -60,4 +62,29 @@
 .vacancy-meta-wrapper {
     &.affix {top: -10px}
     &.affix-bottom {position: absolute;}
+}
+
+.close-ico {
+    display: inline-block;background: inline-image('../images/svg/close.svg') center no-repeat;width: 14px;height: 14px;background-size: cover;
+}
+
+.vp-edit-btns {
+    float: left;
+    .main-btn {
+        margin-left: 5px;margin-bottom: $x;
+        &:first-child {margin-left: 0px;}
+    }
+}
+.vp-social-btns {
+    float: right;
+    .main-btn {
+        margin-left: 5px;margin-bottom: $x;position: relative;
+        &:first-child {margin-left: 0px;}
+        span {
+            position: absolute;left: 0;right: 0;top: 100%;text-align: center;display: block;margin-top: $x;@include small;color: #919191;line-height: 1;
+        }
+    }
+    .fb-ico {top: 3px;}
+    .vk-ico {top: 1px;}
+    .tw-ico {top: 1px;}
 }

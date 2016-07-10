@@ -1,0 +1,60 @@
+.list-container {
+    &:after {@include clearfix;}
+    max-width: 1376px;margin: 0 auto;padding: 0 2*$x;
+    @include bp(max-width, 1024px){
+        padding: 0 $x;
+    }
+}
+.list-row {
+    &:after {@include clearfix;}
+}
+
+.list-row-col {
+    float: left;min-height: 1px;
+}
+
+.list-row-col-x2 {
+    width: 2*$x;
+}
+.list-row-col-x6 {
+    width: 6*$x;
+}
+.list-row-col-x10 {
+    width: 10*$x;
+}
+.list-row-col-x19 {
+    width: 19*$x;
+}
+.list-row-col-x24 {
+    width: 24*$x;
+}
+.list-row-col-x39 {
+    width: 39*$x;
+}
+.list-row-col-x43 {
+    width: 43*$x;
+}
+
+.list-spec-avatar {float: left;width: 10*$x;}
+.list-right-block {
+    float: right;width: 24*$x;margin-right: $x;position: relative;
+    @include bp(max-width, 1280px){
+        width: auto;max-width: 19*$x;
+    }
+}
+.list-spec-content {
+    float: left;width: 39*$x;padding-left: 2*$x;
+    @include bp(max-width, 1280px){
+        width: 47%;
+    }
+}
+
+.list-jobs-avatar {
+    float: left;width: 4*$x;padding-left: $x;
+}
+.list-jobs-content {
+    float: left;padding-left: 2*$x;width: 45*$x;
+     @include bp(max-width, 1280px){
+        width: 47%;
+    }
+}

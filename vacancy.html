@@ -21,7 +21,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header class="navbar bs-docs-nav">
+        <header class="navbar bs-docs-nav" data-spy="affix" data-offset-top="0">
             <div class="logo navbar-brand"><a href="/">Fetcher</a></div>
             <button class="navbar-toggle collapsed" type=button data-toggle=collapse data-target=#bs-navbar aria-controls=bs-navbar aria-expanded=false> <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span> </button>
             <nav class="collapse navbar-collapse" id="bs-navbar">
@@ -37,61 +37,80 @@
             </nav>
         </header>
         <div class="vacancy-page">
-            <div class="container">
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
+            <div class="list-container">
+                <div class="list-row white-bg jobs-list-item job-details">
+                    <div class="list-jobs-avatar">
                         <div class="jl-item-avatar">
                             <img src="images/strelka.png" width="48" alt="">
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="list-jobs-content">
                         <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
                         <h2 class="vp-item-title">Креативный и ответственный дизайнер</h2>
                         <p class="">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка.</p>
                         <p class="">Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai и ответить на все возможные вопросы.</p>
                         <p class="">Потенциальный Герой должен иметь возможность пару раз в неделю приезжать к нам в офис у м. Бауманская и освещать лучом своих познаний одного (пока одного) бойца медиа-фронта.</p>
-                        <div class="vp-money">
-                            <div class="vp-money-label">вознаграждение:</div>
+                        <div class="vp-details">
+                            <div class="vp-details-label">вознаграждение:</div>
                             100 000 рублей в месяц
                         </div>
                         <div class="vp-apply">
-                            <button class="vp-apply-btn btn btn-lg btn-block">Откликнуться на эту вакансию</button>
+                            <button class="main-btn black-btn big-btn vp-apply-btn">Откликнуться на эту вакансию</button>
+                            <button class="main-btn big-btn vp-apply-btn disabled-btn">Откликнуться на эту вакансию</button>
                             <small>Чтобы оградить работодателя от некачественных предложений, мы <br>попросим вас создать свой профиль соискателя.</small>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="jl-item-info">
-                            <div><span>город:</span> <span class="jl-item-info-details">Москва</span></div>
-                            <div><span>cфера:</span> <span class="jl-item-info-details">Удаленная постоянная работа, <br>Проектная работа</span></div>
-                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе</span></div>
+                        <div class="vp-apply">
+                            <div class="vp-edit-btns">
+                                <button class="main-btn grey-btn remove-btn xxsmall-btn"><i class="close-ico"></i></button>
+                                <button class="main-btn grey-btn xsmall-btn">Закрыть</button>
+                                <button class="main-btn black-btn xsmall-btn">Редактировать</button>
+                                <small>Чтобы оградить работодателя от некачественных предложений, мы <br>попросим вас создать свой профиль соискателя.</small>
+                            </div>
+
+                            <div class="vp-social-btns">
+                                <a href="#" class="main-btn fb-blue-btn xxsmall-btn"><i class="fb-ico"></i><span>146</span></a>
+                                <a href="#" class="main-btn vk-blue-btn xxsmall-btn"><i class="vk-ico"></i><span>17</span></a>
+                                <a href="#" class="main-btn tw-blue-btn xxsmall-btn"><i class="tw-ico"></i><span>2</span></a>
+                            </div>
                         </div>
-                        <div class="jl-item-tags">
-                            <div class="jl-item-tags-title">функции:</div>
-                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
+                    </div>
+                    <div class="list-right-block">
+                        <div class="vacancy-meta-wrapper">
+                            <div class="jl-item-info">
+                                <div><span>город:</span> <span class="jl-item-info-details">Москва</span></div>
+                                <div><span>cфера:</span> <span class="jl-item-info-details">Удаленная постоянная работа, <br>Проектная работа</span></div>
+                                <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе</span></div>
+                            </div>
+                            <div class="jl-item-tags">
+                                <div class="jl-item-tags-title">функции:</div>
+                                <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="jobs-list">
-            <div class="container">
+            <div class="list-container">
                 <h3 class="related-title">Похожие вакансии</h3>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
-                        <div class="jl-item-avatar">
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
+                         <div class="jl-item-avatar">
                             <img src="images/strelka.png" width="48" alt="">
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="list-jobs-content">
                         <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
-                        <h2 class="jl-item-title">Креативный и ответственный дизайнер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
+                        </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="list-right-block">
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>
                             <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
                         </div>
                         <div class="jl-item-tags">
                             <div class="jl-item-tags-title">функции:</div>
@@ -99,45 +118,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
-                        <div class="jl-item-avatar">
-                            <img src="images/garage.png" width="48" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Название</a></div>
-                        <h2 class="jl-item-title">Идейный и опытный PR-менеджер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="jl-item-info">
-                            <div><span>город:</span> Москва</div>
-                            <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
-                        </div>
-                        <div class="jl-item-tags">
-                            <div class="jl-item-tags-title">функции:</div>
-                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
-                        <div class="jl-item-avatar">
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
+                         <div class="jl-item-avatar">
                             <img src="images/strelka.png" width="48" alt="">
                         </div>
                     </div>
-                    <div class="col-md-7">
+                    <div class="list-jobs-content">
                         <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
-                        <h2 class="jl-item-title">Креативный и ответственный дизайнер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
+                        </a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="list-right-block">
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>
                             <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
                         </div>
                         <div class="jl-item-tags">
                             <div class="jl-item-tags-title">функции:</div>
@@ -145,6 +143,7 @@
                         </div>
                     </div>
                 </div>
+                
                 <div class="row big-btns-row">
                     <div class="col-xs-12">
                         <a class="big-btns vacancy-new" href="#">
@@ -155,6 +154,22 @@
                             <div class="big-btns-title">Создайте свой профиль соискателя</div>
                             <span class="big-btns-text">Да, это платно. Зато эффективно — в нашей базе самые ответственные и талантливые соискатели, именно такие, как вам нужны.</span>
                         </a>
+                    </div>
+                </div>
+                <div class="row big-btns-row">
+                    <div class="col-xs-12">
+                        <a class="big-btns vacancy-new" href="#">
+                            <span class="big-btns-title">Разместите свою вакансию</span>
+                            <span class="big-btns-text">Да, это платно. Зато эффективно — в нашей базе самые ответственные и талантливые соискатели, именно такие, как вам нужны.</span>
+                        </a>
+                        <span class="big-btns friend-invite" href="#">
+                            <div class="big-btns-title">Пригласите в Fetcher своих коллег</div>
+                            <span class="invite-btns">
+                                <a href="#" class="invite-btn-fb fb-blue-btn"><i class="fb-ico"></i></a>
+                                <a href="#" class="invite-btn-vk vk-blue-btn"><i class="vk-ico"></i></a>
+                                <a href="#" class="invite-btn-tw tw-blue-btn"><i class="tw-ico"></i></a>
+                            </span>
+                        </span>
                     </div>
                 </div>
             </div>

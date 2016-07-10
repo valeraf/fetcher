@@ -37,223 +37,199 @@
             </nav>
         </header>
         <div class="top-filter">
-            <div class="container">
-                <form>
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12 col-lg-6">
-                            <div class="row">
-                                <div class="tf-functions-select col-xs-12">
-                                    <select name="" id="" class="selectized-multi">
-                                        <option value="">Все функции</option>
-                                        <option value="1">Полный день в офисе</option>
-                                        <option value="2">Неполный день в офисе</option>
-                                        <option value="3">Полный день удаленно</option>
-                                        <option value="4">Фриланс</option>
-                                    </select>
-                                </div>
+            <div class="top-filter-container">
+                <div class="tf-row">
+                    <div class="tf-col-big">
+                        <select name="" id="" class="selectized-multi selectize-black">
+                            <option value="">Все функции</option>
+                            <option value="1">Полный день в офисе</option>
+                            <option value="2">Неполный день в офисе</option>
+                            <option value="3">Полный день удаленно</option>
+                            <option value="4">Фриланс</option>
+                        </select>
+                    </div>
+                    <div class="tf-col-small">
+                        <select name="" id="" class="selectized-multi selectize-black">
+                            <option value="">любой город</option>
+                            <option value="5">Москва</option>
+                            <option value="6">Питер</option>
+                            <option value="7">Киев</option>
+                            <option value="8">Екатеринбург</option>
+                        </select>
+                    </div>
+                    <div class="tf-col-small">
+                        <select name="" id="" class="selectized-multi selectize-black">
+                            <option value="">все сферы</option>
+                            <option value="22">IT</option>
+                            <option value="33">Sales</option>
+                            <option value="44">Marketing</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="tf-row">
+                    <div class="tf-col-big">
+                        <div class="tf-row">
+                            <div class="tf-col-small">
+                                <div class="tf-title">График</div>
+                                <ul class="tf-checkbox-list">
+                                    <li><label class="checkboxed"><input type="checkbox"> Полный день в офисе</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> Неполный день в офисе</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> Полный день удаленно</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> Фриланс</label></li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12 col-lg-3">
-                            <div class="row">
-                                <div class="tf-functions-select col-xs-12">
-                                    <select name="" id="" class="selectized-multi">
-                                        <option value="">любой город</option>
-                                        <option value="5">Москва</option>
-                                        <option value="6">Питер</option>
-                                        <option value="7">Киев</option>
-                                        <option value="8">Екатеринбург</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xs-12 col-lg-3">
-                            <div class="row">
-                                <div class="tf-functions-select col-xs-12">
-                                    <select name="" id="" class="selectized-multi">
-                                        <option value="">все сферы</option>
-                                        <option value="22">IT</option>
-                                        <option value="33">Sales</option>
-                                        <option value="44">Marketing</option>
-                                    </select>
-                                </div>
+                            <div class="tf-col-small">
+                                <div class="tf-title">Уровень</div>
+                                <ul class="tf-checkbox-list">
+                                    <li><label class="checkboxed"><input type="checkbox"> стажер</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> начинающий</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> опытный</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> ведущий</label></li>
+                                    <li><label class="checkboxed"><input type="checkbox"> руководитель</label></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="row tf-checkboxes">
-                        <div class="col-md-6 col-lg-3 col-xs-12">
-                            <div class="tf-title">График</div>
-                            <ul class="tf-checkbox-list">
-                                <li><label class="checkboxed"><input type="checkbox"> Полный день в офисе</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> Неполный день в офисе</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> Полный день удаленно</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> Фриланс</label></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-xs-12">
-                            <div class="tf-title">Уровень</div>
-                            <ul class="tf-checkbox-list">
-                                <li><label class="checkboxed"><input type="checkbox"> стажер</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> начинающий</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> опытный</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> ведущий</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> руководитель</label></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-xs-12">
-                            <div class="tf-title">Вознаграждение (тыс. рублей)</div>
-                            <ul class="tf-checkbox-list">
-                                <li><label class="checkboxed"><input type="checkbox"> только опыт</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> менее 20</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> 20—60</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> 60—100</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> 100—200</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> 200+</label></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-xs-12">
-                            <div class="tf-title">Оплата</div>
-                            <ul class="tf-checkbox-list">
-                                <li><label class="checkboxed"><input type="checkbox"> сдельная</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> ежемесячная</label></li>
-                                <li><label class="checkboxed"><input type="checkbox"> почасовая</label></li>
-                            </ul>
-                        </div>
+                    <div class="tf-col-small">
+                        <div class="tf-title">Вознаграждение (тыс. рублей)</div>
+                        <ul class="tf-checkbox-list">
+                            <li><label class="checkboxed"><input type="checkbox"> только опыт</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> менее 20</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> 20—60</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> 60—100</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> 100—200</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> 200+</label></li>
+                        </ul>
                     </div>
-                </form>
+                    <div class="tf-col-small">
+                        <div class="tf-title">Оплата</div>
+                        <ul class="tf-checkbox-list">
+                            <li><label class="checkboxed"><input type="checkbox"> сдельная</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> ежемесячная</label></li>
+                            <li><label class="checkboxed"><input type="checkbox"> почасовая</label></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="top-employer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-xs-12 col-lg-4">
-                        <div class="te-item" style="background: url(images/strelka-bg.jpg) 0 0 no-repeat;-webkit-background-size: cover;background-size: cover;">
-                            <div class="te-item-avatar"><img src="images/strelka.png" alt=""></div>
-                            <div class="te-item-text blue">
-                                <div class="te-item-name"><span>работодатель:</span> Strelka Institute</div>
-                                <div class="te-item-vacancy">Креативный и ответственный дизайнер</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12 col-lg-4">
-                        <div class="te-item" style="background: url(images/garage-bg.jpg) 0 0 no-repeat;-webkit-background-size: cover;background-size: cover;">
-                            <div class="te-item-avatar"><img src="images/garage.png" alt=""></div>
-                            <div class="te-item-text orange">
-                                <div class="te-item-name"><span>работодатель:</span> Гараж</div>
-                                <div class="te-item-vacancy">Умный и расторопный управляющий в Powerhouse Moscow</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-xs-12 col-lg-4">
-                        <div class="te-item" style="background: url(images/strelka-bg.jpg) 0 0 no-repeat;-webkit-background-size: cover;background-size: cover;">
-                            <div class="te-item-avatar"><img src="images/strelka.png" alt=""></div>
-                            <div class="te-item-text blue">
-                                <div class="te-item-name"><span>работодатель:</span> Sila Sveta</div>
-                                <div class="te-item-vacancy">Идейный и опытный PR-менеджер</div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="te-item" style="background: url(images/strelka-bg.jpg) 0 0 no-repeat;-webkit-background-size: cover;background-size: cover;">
+                <div class="te-item-avatar"><img src="images/strelka.png" alt=""></div>
+                <div class="te-item-text blue">
+                    <div class="te-item-name"><span>работодатель:</span> Strelka Institute</div>
+                    <div class="te-item-vacancy">Креативный и ответственный дизайнер</div>
+                </div>
+            </div>
+            <div class="te-item" style="background: url(images/garage-bg.jpg) 0 0 no-repeat;-webkit-background-size: cover;background-size: cover;">
+                <div class="te-item-avatar"><img src="images/garage.png" alt=""></div>
+                <div class="te-item-text orange">
+                    <div class="te-item-name"><span>работодатель:</span> Гараж</div>
+                    <div class="te-item-vacancy">Умный и расторопный управляющий в Powerhouse Moscow</div>
+                </div>
+            </div>
+            <div class="te-item" style="background: url(images/strelka-bg.jpg) 0 0 no-repeat;-webkit-background-size: cover;background-size: cover;">
+                <div class="te-item-avatar"><img src="images/strelka.png" alt=""></div>
+                <div class="te-item-text blue">
+                    <div class="te-item-name"><span>работодатель:</span> Sila Sveta</div>
+                    <div class="te-item-vacancy">Идейный и опытный PR-менеджер</div>
                 </div>
             </div>
         </div>
         <div class="jobs-list">
-            <div class="container">
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
+            <div class="list-container">
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
                         <div class="jl-item-avatar">
                             <img src="images/strelka.png" width="48" alt="">
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="list-jobs-content">
                         <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
-                        <h2 class="jl-item-title">Креативный и ответственный дизайнер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jl-item-info">
-                            <div><span>город:</span> Москва</div>
-                            <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
-                        </div>
-                        <div class="jl-item-tags">
-                            <div class="jl-item-tags-title">функции:</div>
-                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
-                        <div class="jl-item-avatar">
-                            <img src="images/garage.png" width="48" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Название</a></div>
-                        <h2 class="jl-item-title">Идейный и опытный PR-менеджер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jl-item-info">
-                            <div><span>город:</span> Москва</div>
-                            <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
-                        </div>
-                        <div class="jl-item-tags">
-                            <div class="jl-item-tags-title">функции:</div>
-                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
-                        <div class="jl-item-avatar">
-                            <img src="images/strelka.png" width="48" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
-                        <h2 class="jl-item-title">Креативный и ответственный дизайнер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="jl-item-info">
-                            <div><span>город:</span> Москва</div>
-                            <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
-                        </div>
-                        <div class="jl-item-tags">
-                            <div class="jl-item-tags-title">функции:</div>
-                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row big-btns-row">
-                    <div class="col-xs-12">
-                        <a class="big-btns vacancy-new" href="#">
-                            <span class="big-btns-title">Разместите свою вакансию</span>
-                            <span class="big-btns-text">Да, это платно. Зато эффективно — в нашей базе самые ответственные и талантливые соискатели, именно такие, как вам нужны.</span>
-                        </a>
-                        <a class="big-btns new-profile" href="#">
-                            <div class="big-btns-title">Создайте свой профиль соискателя</div>
-                            <span class="big-btns-text">Да, это платно. Зато эффективно — в нашей базе самые ответственные и талантливые соискатели, именно такие, как вам нужны.</span>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
                         </a>
                     </div>
+                    <div class="list-right-block">
+                        <div class="jl-item-info">
+                            <div><span>город:</span> Москва</div>
+                            <div><span>cфера:</span> Образование</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
+                        </div>
+                        <div class="jl-item-tags">
+                            <div class="jl-item-tags-title">функции:</div>
+                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="row jobs-list-item white-bg">
-                    <div class="col-md-1">
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
                         <div class="jl-item-avatar">
                             <img src="images/strelka.png" width="48" alt="">
                         </div>
                     </div>
-                    <div class="col-md-8">
+                    <div class="list-jobs-content">
                         <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
-                        <h2 class="jl-item-title">Креативный и ответственный дизайнер</h2>
-                        <p class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы раб ... <a href="#">перейти</a></p>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
+                        </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="list-right-block">
                         <div class="jl-item-info">
                             <div><span>город:</span> Москва</div>
                             <div><span>cфера:</span> Образование</div>
-                            <div><span>график:</span> Полный день в офисе</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
+                        </div>
+                        <div class="jl-item-tags">
+                            <div class="jl-item-tags-title">функции:</div>
+                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
+                        <div class="jl-item-avatar">
+                            <img src="images/strelka.png" width="48" alt="">
+                        </div>
+                    </div>
+                    <div class="list-jobs-content">
+                        <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
+                        </a>
+                    </div>
+                    <div class="list-right-block">
+                        <div class="jl-item-info">
+                            <div><span>город:</span> Москва</div>
+                            <div><span>cфера:</span> Образование</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
+                        </div>
+                        <div class="jl-item-tags">
+                            <div class="jl-item-tags-title">функции:</div>
+                            <a href="#" class="label label-tag">верстальщик</a> <a href="#" class="label label-tag">графический дизайнер</a> <a href="#" class="label label-tag">информационный дизайнер</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-row white-bg jobs-list-item">
+                    <div class="list-jobs-avatar">
+                        <div class="jl-item-avatar">
+                            <img src="images/strelka.png" width="48" alt="">
+                        </div>
+                    </div>
+                    <div class="list-jobs-content">
+                        <div class="jl-item-employer"><span>работодатель:</span> <a href="#">Горки ленинские</a></div>
+                        <a class="jl-item-link" href="vacancy3">
+                           <span class="jl-item-title">Креативный и ответственный дизайнер!</span>
+                           <span class="jl-item-text">Ищу опытного, доброго и терпеливого графического дизайнера, который готов учить своему благородному ремеслу Серого Волка. Главным образом, важно быстро и доходчиво объяснить основные принципы работы InDesign / Ai... <span class="span-link">перейти</span></span>
+                        </a>
+                    </div>
+                    <div class="list-right-block">
+                        <div class="jl-item-info">
+                            <div><span>город:</span> Москва</div>
+                            <div><span>cфера:</span> Образование</div>
+                            <div><span>график:</span> <span class="jl-item-info-details">Полный день в офисе <br> Фриланс <br> Подработка</span></div>
                         </div>
                         <div class="jl-item-tags">
                             <div class="jl-item-tags-title">функции:</div>

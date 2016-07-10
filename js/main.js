@@ -19,7 +19,7 @@ $(function(){
           $('.vacancy-meta-wrapper').affix({
             offset: {
               top: $('.vacancy-meta-wrapper').offset().top + 67 - $('header').height(),
-              bottom: 1500
+              bottom: document.documentElement.offsetHeight - $('.job-details').offset().top - $('.job-details').height()
             }
           }).on('affix.bs.affix', function(){
             $(this).width($(this).width());

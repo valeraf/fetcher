@@ -1,12 +1,19 @@
-.profile-page {margin-top: 2*$x;}
+.profile-page {
+    margin-top: 2*$x;
+    .white-bg {overflow: hidden;}
+}
 .profile-menu {
-    padding-top: 1.5*$x;border-bottom: 1px solid #191919;
+    padding-top: 1.5*$x;border-bottom: 1px solid #191919;margin-left: $x;margin-right: $x;
+    @include bp(max-width, 768px){
+        margin-left: 0;margin-right: 0;
+    }
     .nav {
         & > li {
             padding-right: 1.5*$x;
             a {
                 @include h2;color: #d7d7d7;text-decoration: none;padding-left: 0;padding-right: 0;
                 &:hover {background: none;}
+                &:focus {background: none;}
             }
             &.active {
                 a {color: #191919;background: none;}
@@ -16,7 +23,12 @@
 }
 
 
-.profile-submenu-text {padding-top: $x;}
+.profile-submenu-text {
+    padding-top: $x;padding-left: $x;padding-right: $x;
+    @include bp(max-width, 768px){
+        padding-left: 0;padding-right: 0;
+    }
+}
 
 .form-info-text {
     margin-top: -4px;
@@ -24,7 +36,7 @@
 }
 
 .profile-subscribtion-btn {
-    max-width: 26*$x;margin: 0 auto 8*$x;
+    max-width: 26*$x;margin: 1.5*$x auto 4*$x;
 }
 
 .profile-payment-history-list {

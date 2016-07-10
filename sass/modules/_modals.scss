@@ -42,14 +42,14 @@ button.close {
     .input-box {margin-bottom: 8px;}
 
     .checkboxed {
-        color: #d7d7d7;transition: all 0.2s ease-in-out;
+        color: #d7d7d7;
         &:hover {color: #919191;}
-        &:after {background: #e1dcdc;}
+        &:after {background-color: #e1dcdc;}
         &.checked {
             color: #919191;
-            &:after {background: #4b4b4b;}
+            &:after {background-color: #4b4b4b;}
         }
-        &:before {background-image: url("../images/svg/checkbox_on_white.svg");}
+        &:before {background: url("../images/svg/checkbox_on_white.svg") center no-repeat;}
     }
     .labeled {
         color: #919191;

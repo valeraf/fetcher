@@ -23,7 +23,13 @@
 .spec-btns-block {display: inline-block;padding: 0 12px;width: 49%;box-sizing: border-box;}
 .spec-price-block {
     padding-top: 2*$x;@include label;color: #191919;text-align: center;
-    strong {@include h1;color: #191919;display: block;text-transform: none;}
+    strong {@include h1;color: #191919;display: block;text-transform: none;padding-top: 3px;}
     & + .spec-promo-text {padding-top: 2.5*$x;}
 }
 .spec-promo-text {@include small;padding-top: 2*$x;}
+.cancel-subscription {
+    padding-top: $x;overflow: hidden;padding-bottom: 1px;
+    a {@include small;}
+    .grey-link {float: right;}
+    .orange-link {float: left;}
+}

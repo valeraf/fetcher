@@ -400,6 +400,7 @@ $mq-fixed-value: 1024;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   box-shadow: none;
   cursor: default;
+  line-height: 48px;
 }
 /* line 32, ../sass/_var.scss */
 .disabled-btn:hover {
@@ -999,6 +1000,8 @@ button.close:hover {
   letter-spacing: 2px;
   color: #919191;
   color: #ff5014;
+  position: relative;
+  top: -1px;
 }
 
 /* line 20, ../sass/modules/_modals.scss */
@@ -1652,6 +1655,7 @@ button.close:hover {
   color: #191919;
   display: block;
   text-transform: none;
+  padding-top: 3px;
 }
 /* line 27, ../sass/pages/_specs.scss */
 .spec-price-block + .spec-promo-text {
@@ -1664,6 +1668,27 @@ button.close:hover {
   font-weight: 400;
   font-size: 14px;
   padding-top: 32px;
+}
+
+/* line 30, ../sass/pages/_specs.scss */
+.cancel-subscription {
+  padding-top: 16px;
+  overflow: hidden;
+  padding-bottom: 1px;
+}
+/* line 32, ../sass/pages/_specs.scss */
+.cancel-subscription a {
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+/* line 33, ../sass/pages/_specs.scss */
+.cancel-subscription .grey-link {
+  float: right;
+}
+/* line 34, ../sass/pages/_specs.scss */
+.cancel-subscription .orange-link {
+  float: left;
 }
 
 /* line 1, ../sass/pages/_profile.scss */
@@ -1748,7 +1773,7 @@ button.close:hover {
 }
 
 /* line 38, ../sass/pages/_profile.scss */
-.profile-subscribtion-btn {
+.profile-subscription-btn {
   max-width: 416px;
   margin: 24px auto 64px;
 }
@@ -2741,4 +2766,14 @@ a:focus {
   height: 17px;
   width: 24px;
   position: relative;
+}
+
+/* line 321, ../sass/_main.scss */
+.grey-link {
+  color: #919191;
+}
+
+/* line 322, ../sass/_main.scss */
+.orange-link {
+  color: #ff5014;
 }

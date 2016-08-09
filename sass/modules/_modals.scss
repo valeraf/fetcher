@@ -15,7 +15,7 @@ button.close {
 }
 .pre-modal-text {
     @include small;margin-bottom: 80px;
-    a {@include label;color: $orange;}
+    a {@include label;color: $orange;position: relative;top: -1px;}
 }
 .modal-lg {
     max-width: 928px;width: 100%;

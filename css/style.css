@@ -2382,9 +2382,11 @@ a:focus {
   letter-spacing: 2px;
   color: #919191;
   line-height: 24px;
-  letter-spacing: 0;
+  letter-spacing: 2px;
   color: #ff5014;
   text-decoration: underline;
+  position: relative;
+  top: -1px;
 }
 
 /* line 188, ../sass/_main.scss */

@@ -183,7 +183,7 @@ a {
 }
 .jl-item-text {
     @include p-text;color: #191919;
-    a, .span-link {@include label;line-height: 24px;letter-spacing: 0;color: #ff5014;text-decoration: underline;}
+    a, .span-link {@include label;line-height: 24px;letter-spacing: 2px;color: #ff5014;text-decoration: underline;position: relative;top: -1px;}
 }
 .jl-item-link {
     text-decoration: none;display: block;

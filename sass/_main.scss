@@ -193,7 +193,8 @@ a {
     padding-top: 16px;
 }
 .jl-item-info {
-    padding-top: 83px;margin-bottom: 32px;
+    margin-bottom: 32px;padding-top: 32px;
+    .job-details & {padding-top: 83px;}
     span:first-child {
         display: inline-block;margin-right: 4px;width: 80px;color: #919191;@include label;
         @include bp(max-width, 768px){

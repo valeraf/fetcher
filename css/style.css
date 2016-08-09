@@ -1002,6 +1002,7 @@ button.close:hover {
   color: #ff5014;
   position: relative;
   top: -1px;
+  margin-left: 2px;
 }
 
 /* line 20, ../sass/modules/_modals.scss */

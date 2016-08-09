@@ -164,7 +164,12 @@ a {
     .jl-item-title, .jl-item-text {color: #919191;}
     .label-tag {background: #919191;}
 }
-.jobs-list {margin-bottom: 3*$x;}
+.jobs-list {
+    margin-bottom: 3*$x;
+    &.loading {
+        height: 3*$x;background: inline-image('../images/ajax-loader.gif') center no-repeat;
+    }
+}
 
 .jl-item-employer {
     font-family: $effra;margin-bottom: 24px;font-size: 14px;color: #919191;margin-bottom: 32px;padding-top: 32px;

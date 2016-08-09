@@ -1,5 +1,5 @@
 .top-filter {
-    background: #64463c;padding: 32px 0;margin-bottom: 32px;
+    background: #64463c;padding: 32px 0 0;margin-bottom: 32px;
     .checkboxed {
         color: #281414;transition: all 0.2s ease-in-out;
         &:hover:after {background-color: #000}
@@ -99,4 +99,9 @@
         & + .tf-col-small {padding: 0;}
         &:last-child {margin-bottom: 0;}
     }
+}
+
+.tf-action {
+    text-align: right;border-top: 1px solid $body-bg;padding-top: $x;padding-bottom: $x;
+    .btn {background: $body-bg;text-decoration: none;font-family: $effra;color: #fff;font-size: 19px;height: 40px;line-height: 26px;}
 }

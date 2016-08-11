@@ -1,6 +1,7 @@
 body {background: $body-bg;font-family: $pt-serif;padding-bottom: 50px;color: #191919;}
 h1 {@include h1;}
 p {@include p-text;}
+strong {font-weight: bold;}
 header {
     background: #000;color: #fff;
     nav.navbar-collapse {
@@ -204,7 +205,7 @@ a {
         }
     }
     div {
-        @include small;margin-bottom: 6px;color: #4b4b4b;
+        @include small;margin-bottom: 7px;color: #4b4b4b;
         @include bp(max-width, 768px){
             @include bp(min-width, 641px){
                 margin-bottom: 12px;
@@ -213,7 +214,7 @@ a {
     }
     .jl-item-info-details {
         width: auto;display: inline-block;vertical-align: top;@include small;color: #4b4b4b;text-transform: none;
-        br {margin-bottom: 6px;}
+        br {margin-bottom: 7px;}
     }
 }
 .jl-item-tags-title {

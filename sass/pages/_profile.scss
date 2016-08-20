@@ -24,10 +24,11 @@
 
 
 .profile-submenu-text {
-    padding-top: $x;padding-left: $x;padding-right: $x;
+    padding-top: 13px;padding-left: $x;padding-right: $x;line-height: 20px;margin-bottom: 75px;
     @include bp(max-width, 768px){
         padding-left: 0;padding-right: 0;
     }
+    .label {vertical-align: top;margin-right: 6px;}
 }
 
 .form-info-text {

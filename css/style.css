@@ -1765,9 +1765,11 @@ button.close:hover {
 
 /* line 26, ../sass/pages/_profile.scss */
 .profile-submenu-text {
-  padding-top: 16px;
+  padding-top: 13px;
   padding-left: 16px;
   padding-right: 16px;
+  line-height: 20px;
+  margin-bottom: 75px;
 }
 @media only screen and (max-width: 768px) {
   /* line 26, ../sass/pages/_profile.scss */
@@ -1776,12 +1778,17 @@ button.close:hover {
     padding-right: 0;
   }
 }
+/* line 31, ../sass/pages/_profile.scss */
+.profile-submenu-text .label {
+  vertical-align: top;
+  margin-right: 6px;
+}
 
-/* line 33, ../sass/pages/_profile.scss */
+/* line 34, ../sass/pages/_profile.scss */
 .form-info-text {
   margin-top: -4px;
 }
-/* line 35, ../sass/pages/_profile.scss */
+/* line 36, ../sass/pages/_profile.scss */
 .form-info-text p {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -1792,37 +1799,37 @@ button.close:hover {
   margin-top: 0;
 }
 
-/* line 38, ../sass/pages/_profile.scss */
+/* line 39, ../sass/pages/_profile.scss */
 .profile-subscription-btn {
   max-width: 416px;
   margin: 24px auto 64px;
 }
 
-/* line 42, ../sass/pages/_profile.scss */
+/* line 43, ../sass/pages/_profile.scss */
 .profile-payment-history-list {
   font-family: "effra", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #919191;
 }
-/* line 44, ../sass/pages/_profile.scss */
+/* line 45, ../sass/pages/_profile.scss */
 .profile-payment-history-list li {
   border-bottom: 1px solid #e1dcdc;
   margin-bottom: 16px;
   padding-bottom: 16px;
   line-height: 24px;
 }
-/* line 45, ../sass/pages/_profile.scss */
+/* line 46, ../sass/pages/_profile.scss */
 .profile-payment-history-list li:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 50, ../sass/pages/_profile.scss */
+/* line 51, ../sass/pages/_profile.scss */
 .profile-payment-history-list .payment-date {
   margin-right: 16px;
 }
-/* line 51, ../sass/pages/_profile.scss */
+/* line 52, ../sass/pages/_profile.scss */
 .profile-payment-history-list .payment-total {
   float: right;
   font-family: "effra", sans-serif;

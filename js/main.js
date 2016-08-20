@@ -9,9 +9,15 @@ $(function(){
               app.radioed(this);
         });
         $('select.selectized').selectize();
-        $('select.selectized-multi').selectize({
-          maxItems: null
+        $('select.selectized-multi').each(function(){
+          var $this = $(this).selectize({
+            maxItems: null,
+            onChange: function(e){
+              app.checkReset(e, $this[0].selectize);
+            }
+          });
         });
+        
         $('.modal-auth input').on('blur', app.checkAuthFormInputs);
         app.accordionHeadingClass();
 
@@ -37,6 +43,13 @@ $(function(){
         $('body').on('click', '.disabled-jobs .label', function(){
           return false;
         });
+    },
+    checkReset: function(array, el){
+      if(array.indexOf('reset') >= 0){
+        el.clear(true);
+        el.close();
+        el.blur();
+      }
     },
     checkboxed: function(el){
         $(el).parent().removeClass('checked');

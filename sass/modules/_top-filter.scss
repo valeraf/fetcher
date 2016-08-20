@@ -105,3 +105,7 @@
     text-align: right;border-top: 1px solid $body-bg;padding-top: $x;padding-bottom: $x;
     .btn {background: $body-bg;text-decoration: none;font-family: $effra;color: #fff;font-size: 19px;height: 40px;line-height: 26px;}
 }
+
+.selectize-control {
+    input {cursor: pointer !important;}
+}

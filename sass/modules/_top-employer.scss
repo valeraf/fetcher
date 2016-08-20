@@ -1,6 +1,9 @@
 .top-employer {
-    max-width: 1312px;margin: 0 auto 32px;
+    max-width: 1376px;margin: 0 auto 32px;padding: 0 2*$x;
     &:after {@include clearfix;}
+    @include bp(max-width, 1024px){
+        padding: 0 $x;
+    }
     @include bp(max-width, 768px){
         margin-bottom: 0;
     }
@@ -9,7 +12,7 @@
     }
 }
 .te-item {
-    height: 416px;position: relative;padding-top: 208px;position: relative;float: left;width: 416px;margin-left: 32px;
+    height: 416px;position: relative;padding-top: 208px;position: relative;float: left;max-width: 416px;margin-left: 32px;width: calc(33.3% - 21px);    
     &:first-child {margin-left: 0;}
     @include bp(max-width, 768px){
         margin-bottom: 32px;height: auto;padding-top: 112px;

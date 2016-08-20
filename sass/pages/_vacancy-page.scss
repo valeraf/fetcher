@@ -75,16 +75,60 @@
         &:first-child {margin-left: 0px;}
     }
 }
+// .vp-social-btns {
+//     float: right;
+//     .main-btn {
+//         margin-left: 5px;margin-bottom: $x;position: relative;
+//         &:first-child {margin-left: 0px;}
+//         span {
+//             position: absolute;left: 0;right: 0;top: 100%;text-align: center;display: block;margin-top: $x;@include small;color: #919191;line-height: 1;
+//         }
+//     }
+//     .fb-ico {top: 3px;}
+//     .vk-ico {top: 1px;}
+//     .tw-ico {top: 1px;}
+// }
+
 .vp-social-btns {
     float: right;
     .main-btn {
         margin-left: 5px;margin-bottom: $x;position: relative;
         &:first-child {margin-left: 0px;}
-        span {
-            position: absolute;left: 0;right: 0;top: 100%;text-align: center;display: block;margin-top: $x;@include small;color: #919191;line-height: 1;
+    }
+    .fb-ico {top: 1px;}
+    .vk-ico {top: 1px;left: 1px;}
+    .tw-ico {top: 1px;}
+    .ya-share2__container {
+        .ya-share2__item {
+            margin-right: 9px;text-align: center;
+            &:hover {opacity: 1;}
+            .ya-share2__badge {
+                @extend .main-btn;
+                @extend .xxsmall-btn;
+                overflow: visible;margin-bottom: 0;
+                .ya-share2__icon {vertical-align: middle;}
+            }
+            span.ya-share2__counter {
+                position: absolute;left: 0;right: 0;top: 100%;text-align: center;display: block;@include small;color: #919191;line-height: 1;margin-top: $x;
+            }
+            &.ya-share2__item_service_twitter {
+                .ya-share2__icon {@extend .tw-ico;}
+                .ya-share2__badge {
+                    @extend .tw-blue-btn;
+                }
+            }
+            &.ya-share2__item_service_facebook {
+                .ya-share2__icon {@extend .fb-ico;}
+                .ya-share2__badge {
+                    @extend .fb-blue-btn;
+                }
+            }
+            &.ya-share2__item_service_vkontakte {
+                .ya-share2__icon {@extend .vk-ico;}
+                .ya-share2__badge {
+                    @extend .vk-blue-btn;
+                }
+            }
         }
     }
-    .fb-ico {top: 3px;}
-    .vk-ico {top: 1px;}
-    .tw-ico {top: 1px;}
 }

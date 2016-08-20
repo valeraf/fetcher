@@ -63,10 +63,9 @@ button.close {
     padding-top: 24px;margin-bottom: 88px;
 }
 .form-btn {
-    border-radius: 2px;height: 40px;display: block;text-align: center;@include h3;color: #fff;border: none;background: #191919;width: 100%;transition: all 0.2s ease-in-out;text-decoration: none;line-height: 36px;
-    &:hover {color: #fff;background: #53729c;}
+    height: 48px;
 }
-.cancel-btn {background: #919191;color: #fff;@include h3;}
+.cancel-btn {background: #919191;color: #fff;@include h3;line-height: 48px;}
 .auth-vk {background: #53729c;}
 .auth-fb {background: #455ca1;}
 .already-registered {line-height: 32px;text-align: center;@include label;}

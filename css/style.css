@@ -1323,6 +1323,11 @@ button.close:hover {
 }
 
 /* line 6, ../sass/pages/_vacancy-page.scss */
+.vp-description {
+  margin-bottom: 40px;
+}
+
+/* line 9, ../sass/pages/_vacancy-page.scss */
 .vp-item-title {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1332,7 +1337,7 @@ button.close:hover {
   color: #191919;
 }
 
-/* line 9, ../sass/pages/_vacancy-page.scss */
+/* line 12, ../sass/pages/_vacancy-page.scss */
 .vp-details {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1340,7 +1345,7 @@ button.close:hover {
   line-height: 24px;
   margin-bottom: 40px;
 }
-/* line 12, ../sass/pages/_vacancy-page.scss */
+/* line 15, ../sass/pages/_vacancy-page.scss */
 .vp-details-label {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1349,18 +1354,22 @@ button.close:hover {
   letter-spacing: 2px;
   color: #919191;
 }
+/* line 18, ../sass/pages/_vacancy-page.scss */
+.vp-details .label {
+  margin-right: 2px;
+}
 
-/* line 16, ../sass/pages/_vacancy-page.scss */
+/* line 20, ../sass/pages/_vacancy-page.scss */
 .vp-apply {
   padding-top: 48px;
 }
-/* line 18, ../sass/pages/_vacancy-page.scss */
+/* line 22, ../sass/pages/_vacancy-page.scss */
 .vp-apply:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 19, ../sass/pages/_vacancy-page.scss */
+/* line 23, ../sass/pages/_vacancy-page.scss */
 .vp-apply small {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -1373,52 +1382,52 @@ button.close:hover {
   line-height: 1.2;
 }
 
-/* line 21, ../sass/pages/_vacancy-page.scss */
+/* line 25, ../sass/pages/_vacancy-page.scss */
 .vp-apply-btn {
   margin-bottom: 16px;
 }
 
-/* line 24, ../sass/pages/_vacancy-page.scss */
+/* line 28, ../sass/pages/_vacancy-page.scss */
 .vp-top {
   position: relative;
 }
-/* line 26, ../sass/pages/_vacancy-page.scss */
+/* line 30, ../sass/pages/_vacancy-page.scss */
 .vp-top img {
   vertical-align: top;
   width: 100%;
 }
 
-/* line 28, ../sass/pages/_vacancy-page.scss */
+/* line 32, ../sass/pages/_vacancy-page.scss */
 .vp-userpic {
   position: absolute;
   left: 32px;
   top: 16px;
 }
 
-/* line 32, ../sass/pages/_vacancy-page.scss */
+/* line 36, ../sass/pages/_vacancy-page.scss */
 .bg-page {
   padding-top: 208px;
   background: url(../images/profile_cover.png) center 0 no-repeat;
   background-attachment: fixed;
   margin-top: 0;
 }
-/* line 34, ../sass/pages/_vacancy-page.scss */
+/* line 38, ../sass/pages/_vacancy-page.scss */
 .bg-page .jl-item-info {
   padding-top: 0;
 }
 
-/* line 36, ../sass/pages/_vacancy-page.scss */
+/* line 40, ../sass/pages/_vacancy-page.scss */
 .details-top {
   padding-bottom: 72px;
 }
-/* line 38, ../sass/pages/_vacancy-page.scss */
+/* line 42, ../sass/pages/_vacancy-page.scss */
 .details-top:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 42, ../sass/pages/_vacancy-page.scss */
+/* line 46, ../sass/pages/_vacancy-page.scss */
 .details-top-avatar {
   float: left;
   width: 160px;
@@ -1426,17 +1435,17 @@ button.close:hover {
   margin-top: -32px;
   background: #fff;
 }
-/* line 44, ../sass/pages/_vacancy-page.scss */
+/* line 48, ../sass/pages/_vacancy-page.scss */
 .details-top-avatar img {
   width: 100%;
 }
 
-/* line 46, ../sass/pages/_vacancy-page.scss */
+/* line 50, ../sass/pages/_vacancy-page.scss */
 .details-top-name {
   overflow: hidden;
   padding-top: 24px;
 }
-/* line 48, ../sass/pages/_vacancy-page.scss */
+/* line 52, ../sass/pages/_vacancy-page.scss */
 .details-top-name h1 {
   color: #191919;
   font-family: "effra", sans-serif;
@@ -1448,13 +1457,13 @@ button.close:hover {
   padding-bottom: 8px;
 }
 
-/* line 50, ../sass/pages/_vacancy-page.scss */
+/* line 54, ../sass/pages/_vacancy-page.scss */
 .details-top-info {
   font-family: "effra", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
-/* line 52, ../sass/pages/_vacancy-page.scss */
+/* line 56, ../sass/pages/_vacancy-page.scss */
 .details-top-info span {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1465,7 +1474,7 @@ button.close:hover {
   color: #919191;
 }
 
-/* line 54, ../sass/pages/_vacancy-page.scss */
+/* line 58, ../sass/pages/_vacancy-page.scss */
 .jl-item-contacts {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1477,27 +1486,27 @@ button.close:hover {
   margin-bottom: 32px;
 }
 
-/* line 57, ../sass/pages/_vacancy-page.scss */
+/* line 61, ../sass/pages/_vacancy-page.scss */
 .jl-item-contacts-list {
   display: inline-block;
   vertical-align: top;
 }
-/* line 59, ../sass/pages/_vacancy-page.scss */
+/* line 63, ../sass/pages/_vacancy-page.scss */
 .jl-item-contacts-list a {
   display: block;
   line-height: 1.8;
 }
 
-/* line 63, ../sass/pages/_vacancy-page.scss */
+/* line 67, ../sass/pages/_vacancy-page.scss */
 .vacancy-meta-wrapper.affix {
   top: -10px;
 }
-/* line 64, ../sass/pages/_vacancy-page.scss */
+/* line 68, ../sass/pages/_vacancy-page.scss */
 .vacancy-meta-wrapper.affix-bottom {
   position: absolute;
 }
 
-/* line 67, ../sass/pages/_vacancy-page.scss */
+/* line 71, ../sass/pages/_vacancy-page.scss */
 .close-ico {
   display: inline-block;
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMTNweCIgaGVpZ2h0PSIxM3B4IiB2aWV3Qm94PSIwIDAgMTMgMTMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEzIDEzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik04LjIzNiw2LjQ1bDQuMjEyLTQuMzRjMC4yMzQtMC4yNDIsMC4zNTEtMC41NTcsMC4zNTEtMC44NzNzLTAuMTE2LTAuNjM0LTAuMzUxLTAuODc1DQoJYy0wLjQ2OC0wLjQ4Mi0xLjIyOS0wLjQ4Mi0xLjY5NiwwTDYuNCw0Ljg0NkwyLjA0OCwwLjM2MmMtMC40NjgtMC40ODItMS4yMjktMC40ODItMS42OTYsMGMtMC40NywwLjQ4NC0wLjQ3LDEuMjY2LDAsMS43NDgNCglsNC4yMTEsNC4zNGwtNC4yMTEsNC4zMzljLTAuNDcsMC40ODItMC40NywxLjI2NiwwLDEuNzVjMC40NjcsMC40OCwxLjIyOCwwLjQ4LDEuNjk2LDBMNi40LDguMDU1bDQuMzUyLDQuNDg0DQoJYzAuNDY3LDAuNDgsMS4yMjksMC40OCwxLjY5NiwwYzAuMjM0LTAuMjQyLDAuMzUxLTAuNTYxLDAuMzUxLTAuODc1YzAtMC4zMTYtMC4xMTYtMC42MzMtMC4zNTEtMC44NzVMOC4yMzYsNi40NXoiLz4NCjwvc3ZnPg0K') center no-repeat;
@@ -1506,66 +1515,66 @@ button.close:hover {
   background-size: cover;
 }
 
-/* line 71, ../sass/pages/_vacancy-page.scss */
+/* line 75, ../sass/pages/_vacancy-page.scss */
 .vp-edit-btns {
   float: left;
 }
-/* line 73, ../sass/pages/_vacancy-page.scss */
+/* line 77, ../sass/pages/_vacancy-page.scss */
 .vp-edit-btns .main-btn, .vp-edit-btns .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge, .vp-social-btns .ya-share2__container .ya-share2__item .vp-edit-btns .ya-share2__badge {
   margin-left: 5px;
   margin-bottom: 16px;
 }
-/* line 75, ../sass/pages/_vacancy-page.scss */
+/* line 79, ../sass/pages/_vacancy-page.scss */
 .vp-edit-btns .main-btn:first-child, .vp-edit-btns .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge:first-child, .vp-social-btns .ya-share2__container .ya-share2__item .vp-edit-btns .ya-share2__badge:first-child {
   margin-left: 0px;
 }
 
-/* line 92, ../sass/pages/_vacancy-page.scss */
+/* line 96, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns {
   float: right;
 }
-/* line 94, ../sass/pages/_vacancy-page.scss */
+/* line 98, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .main-btn, .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge {
   margin-left: 5px;
   margin-bottom: 16px;
   position: relative;
 }
-/* line 96, ../sass/pages/_vacancy-page.scss */
+/* line 100, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .main-btn:first-child, .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge:first-child {
   margin-left: 0px;
 }
-/* line 98, ../sass/pages/_vacancy-page.scss */
+/* line 102, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .fb-ico, .vp-social-btns .ya-share2__container .ya-share2__item.ya-share2__item_service_facebook .ya-share2__icon {
   top: 1px;
 }
-/* line 99, ../sass/pages/_vacancy-page.scss */
+/* line 103, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .vk-ico, .vp-social-btns .ya-share2__container .ya-share2__item.ya-share2__item_service_vkontakte .ya-share2__icon {
   top: 1px;
   left: 1px;
 }
-/* line 100, ../sass/pages/_vacancy-page.scss */
+/* line 104, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .tw-ico, .vp-social-btns .ya-share2__container .ya-share2__item.ya-share2__item_service_twitter .ya-share2__icon {
   top: 1px;
 }
-/* line 102, ../sass/pages/_vacancy-page.scss */
+/* line 106, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item {
   margin-right: 9px;
   text-align: center;
 }
-/* line 104, ../sass/pages/_vacancy-page.scss */
+/* line 108, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item:hover {
   opacity: 1;
 }
-/* line 105, ../sass/pages/_vacancy-page.scss */
+/* line 109, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge {
   overflow: visible;
   margin-bottom: 0;
 }
-/* line 109, ../sass/pages/_vacancy-page.scss */
+/* line 113, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge .ya-share2__icon {
   vertical-align: middle;
 }
-/* line 111, ../sass/pages/_vacancy-page.scss */
+/* line 115, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item span.ya-share2__counter {
   position: absolute;
   left: 0;

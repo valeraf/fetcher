@@ -3,6 +3,9 @@
     p {@include p-text;color: #191919;margin-bottom: 24px;}
     .jobs-list-item {margin-bottom: 0;}
 }
+.vp-description {
+    margin-bottom: 2.5*$x;
+}
 .vp-item-title {
     @include h1;margin-bottom: 16px;color: #191919;
 }
@@ -12,6 +15,7 @@
     &-label {
         @include label;
     }
+    .label {margin-right: 2px;}
 }
 .vp-apply {
     padding-top: 48px;

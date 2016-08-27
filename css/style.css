@@ -1320,6 +1320,10 @@ button.close:hover {
   max-width: 1312px;
   margin: 0 auto 16px;
 }
+/* line 3, ../sass/modules/_messages.scss */
+.global-msg a, .global-msg a:hover {
+  color: #fff;
+}
 @media only screen and (max-width: 1376px) {
   /* line 1, ../sass/modules/_messages.scss */
   .global-msg {
@@ -1332,22 +1336,22 @@ button.close:hover {
     margin: 0 16px 16px;
   }
 }
-/* line 9, ../sass/modules/_messages.scss */
+/* line 10, ../sass/modules/_messages.scss */
 .list-container .global-msg {
   margin: 0 auto 16px;
 }
-/* line 12, ../sass/modules/_messages.scss */
+/* line 13, ../sass/modules/_messages.scss */
 .global-msg table {
   opacity: 0;
 }
-/* line 13, ../sass/modules/_messages.scss */
+/* line 14, ../sass/modules/_messages.scss */
 .global-msg table, .global-msg td {
   height: 100%;
   vertical-align: middle;
   text-align: center;
   width: 100%;
 }
-/* line 14, ../sass/modules/_messages.scss */
+/* line 15, ../sass/modules/_messages.scss */
 .global-msg .close-msg {
   position: absolute;
   right: 48px;
@@ -1363,15 +1367,15 @@ button.close:hover {
   cursor: pointer;
   margin-top: -16px;
 }
-/* line 15, ../sass/modules/_messages.scss */
+/* line 16, ../sass/modules/_messages.scss */
 .global-msg.blue-msg {
   background: #14b4dc;
 }
-/* line 16, ../sass/modules/_messages.scss */
+/* line 17, ../sass/modules/_messages.scss */
 .global-msg.green-msg {
   background: #50c864;
 }
-/* line 17, ../sass/modules/_messages.scss */
+/* line 18, ../sass/modules/_messages.scss */
 .global-msg.red-msg {
   background: #ff5014;
 }

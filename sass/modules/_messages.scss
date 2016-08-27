@@ -1,5 +1,6 @@
 .global-msg {
     display: none;color: #fff;@include h3;height: 128px;position: relative;max-width: 1312px;margin: 0 auto $x;
+    a, a:hover {color: #fff;}
     @include bp(max-width, 1376px){
         margin: 0 32px $x;
     }

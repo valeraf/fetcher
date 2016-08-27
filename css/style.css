@@ -2118,7 +2118,6 @@ button.close:hover {
   color: #919191;
   line-height: 24px;
   margin-top: -4px;
-  overflow: hidden;
 }
 /* line 47, ../sass/pages/_chat.scss */
 .chat-list-item-name p {

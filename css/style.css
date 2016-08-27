@@ -2089,7 +2089,6 @@ button.close:hover {
 .chat-list-item {
   border-bottom: 1px solid #e1dcdc;
   padding: 16px;
-  cursor: pointer;
 }
 /* line 39, ../sass/pages/_chat.scss */
 .chat-list-item:after {
@@ -2097,19 +2096,27 @@ button.close:hover {
   display: table;
   clear: both;
 }
-
+/* line 40, ../sass/pages/_chat.scss */
+.chat-list-item.chat-list-item_active {
+  background: #f0f0f0;
+}
 /* line 41, ../sass/pages/_chat.scss */
+.chat-list-item a {
+  text-decoration: none;
+}
+
+/* line 43, ../sass/pages/_chat.scss */
 .chat-list-item-avatar {
   float: left;
   margin-right: 16px;
   width: 48px;
 }
-/* line 43, ../sass/pages/_chat.scss */
+/* line 45, ../sass/pages/_chat.scss */
 .chat-list-item-avatar img {
   vertical-align: top;
 }
 
-/* line 45, ../sass/pages/_chat.scss */
+/* line 47, ../sass/pages/_chat.scss */
 .chat-list-item-name {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -2119,7 +2126,7 @@ button.close:hover {
   line-height: 24px;
   margin-top: -4px;
 }
-/* line 47, ../sass/pages/_chat.scss */
+/* line 49, ../sass/pages/_chat.scss */
 .chat-list-item-name p {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -2128,9 +2135,43 @@ button.close:hover {
   margin-top: -1px;
   display: block;
 }
-/* line 48, ../sass/pages/_chat.scss */
+/* line 50, ../sass/pages/_chat.scss */
 .chat-list-item_unread .chat-list-item-name, .chat-list-item_active .chat-list-item-name {
   color: #191919;
+}
+
+/* line 53, ../sass/pages/_chat.scss */
+.chat-history {
+  padding: 0 96px;
+}
+
+/* line 56, ../sass/pages/_chat.scss */
+.chat-item-vacancy-name {
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+}
+
+/* line 59, ../sass/pages/_chat.scss */
+.chat-history-item {
+  margin-bottom: 48px;
+}
+
+/* line 60, ../sass/pages/_chat.scss */
+.chat-history-text {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  font-family: "effra", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 24px;
+  color: #191919;
+  border-radius: 4px;
+}
+/* line 62, ../sass/pages/_chat.scss */
+.chat-history-text p {
+  margin-bottom: 16px;
 }
 
 /* line 1, ../sass/_main.scss */

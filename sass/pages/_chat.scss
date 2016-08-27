@@ -35,8 +35,10 @@
 }
 
 .chat-list-item {
-    border-bottom: 1px solid #e1dcdc;padding: $x;cursor: pointer;
+    border-bottom: 1px solid #e1dcdc;padding: $x;
     &:after {@include clearfix;}
+    &.chat-list-item_active {background: #f0f0f0;}
+    a {text-decoration: none;}
 }
 .chat-list-item-avatar {
     float: left;margin-right: $x;width: 48px;
@@ -46,4 +48,16 @@
     @include h3;color: #919191;line-height: 24px;margin-top: -4px;
     p {@include small;line-height: 16px;margin-top: -1px;display: block;}
     .chat-list-item_unread &, .chat-list-item_active & {color: #191919;}
+}
+
+.chat-history {
+    padding: 0 6*$x;
+}
+.chat-item-vacancy-name {
+    @include small;line-height: 15px;
+}
+.chat-history-item {margin-bottom: 3*$x;}
+.chat-history-text {
+    background: #f0f0f0;padding: 6px 12px;@include h4;color: #191919;border-radius: 4px;
+    p {margin-bottom: 16px;}
 }

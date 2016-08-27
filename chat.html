@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Mono&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <script src="https://use.typekit.net/qzc2xlv.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/selectize.default.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header class="navbar bs-docs-nav logged-in" data-spy="affix" data-offset-top="0">
+            <div class="logo navbar-brand"><a href="/">Fetcher</a></div>
+            <button class="navbar-toggle collapsed" type=button data-toggle=collapse data-target=#bs-navbar aria-controls=bs-navbar aria-expanded=false> <span class=sr-only>Toggle navigation</span> <span class=icon-bar></span> <span class=icon-bar></span> <span class=icon-bar></span> </button>
+            <nav class="collapse navbar-collapse" id="bs-navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Специалисты</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#" data-toggle="modal" data-target=".create-modal">Разместить вакансию</a></li>
+                    <li><a href="#" class="active">Переписка</a></li>
+                </ul>
+            </nav>
+            <div class="header-avatar">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/strelka.png" width="48" alt=""></a>
+                <ul class="dropdown-menu user-menu dropdown-menu-right">
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="#">Настройки профиля</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Функционал</a></li>
+                    <li><a href="#">Предпочтения</a></li>
+                    <li><a href="#">Выйти</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="chat-page">
+            <div class="chat-left">
+                <p class="empty-chat">Вы еще не ведете ни одной переписки</p>
+                <ul class="chat-list">
+                    <li class="chat-list-item chat-list-item_unread">
+                        <div class="chat-list-item-avatar">
+                            <img src="images/strelka.png" width="48" alt="">
+                        </div>
+                        <div class="chat-list-item-name">
+                            Максим Головорезов
+                            <p>Вакансия, на которую он подал заявку, если беседа началась с заявки</p>
+                        </div>
+                    </li>
+                    <li class="chat-list-item">
+                        <div class="chat-list-item-avatar">
+                            <img src="images/strelka.png" width="48" alt="">
+                        </div>
+                        <div class="chat-list-item-name">
+                            Студия дизайна
+                            <p>Вакансия, на которую он подал заявку, если беседа началась с заявки</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="chat-right">
+                <div class="white-bg">
+                    <div class="details-top">
+                        <div class="details-top-avatar">
+                            <img src="images/userpic_company.png" width="160" alt="">
+                        </div>
+                        <div class="details-top-name">
+                            <h1>Strelka Institute</h1>
+                            <div class="details-top-info">
+                                Название вакансии, на которую откликается юзер
+                            </div>
+                            <a href="#" class="go-to-prof">Перейти в профиль</a>
+                        </div>
+                    </div>
+                    <div class="send-msg-form">
+                        <div class="send-msg-top">
+                            <div class="send-msg-avatar">
+                                <img src="images/strelka.png" width="32" alt="">
+                            </div>
+                            <div class="send-msg-name">
+                                Елизавета Орешкина
+                                <time>4 апреля 2016</time> 
+                            </div>
+                        </div>
+                        <div class="send-msg-bottom">
+                            <textarea name="" id="" class="form-control" placeholder="Напишите ваше сообщение здесь"></textarea>
+                            <button class="main-btn black-btn small-btn">Отправить сообщение</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/selectize.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

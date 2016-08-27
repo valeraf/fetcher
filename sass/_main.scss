@@ -13,6 +13,7 @@ header {
     .navbar-nav > li > a {
         @include h3;color: #4b4b4b;transition: color 0.3s ease-in-out;text-decoration: none;font-weight: 300;
         &:hover, &:focus {background: none;color: #fff;}
+        &.active {color: #fff;background: none;}
     }
     .logo {
         padding: 0 2*$x;

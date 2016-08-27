@@ -48,8 +48,9 @@
     img {width: 100%;}
 }
 .details-top-name {
-    overflow: hidden;padding-top: 1.5*$x;
+    overflow: hidden;padding-top: 1.5*$x;position: relative;
     h1 {color: #191919;@include h2;border-bottom: 1px solid #191919;margin-bottom: $x;padding-bottom: 0.5 * $x;}
+    .go-to-prof {position: absolute;text-transform: uppercase;right: 0;top: 43px;@include label;color: $orange;}
 }
 .details-top-info {
     @include small;

@@ -1,0 +1,18 @@
+.global-msg {
+    display: none;color: #fff;@include h3;height: 128px;position: relative;max-width: 1312px;margin: 0 auto $x;
+    @include bp(max-width, 1376px){
+        margin: 0 32px $x;
+    }
+    @include bp(max-width, 1024px){
+        margin: 0 16px $x;
+    }
+    .list-container & {
+        margin: 0 auto $x;
+    }
+    table {opacity: 0;}
+    table, td {height: 100%;vertical-align: middle;text-align: center;width: 100%;}
+    .close-msg {position: absolute;right: 3*$x;top: 50%;width: 32px;height: 32px;text-align: center;line-height: 32px;overflow: hidden;display: block;text-indent: -9999px;background: inline-image('../images/svg/close.svg') center center no-repeat;cursor: pointer;margin-top: -16px;}
+    &.blue-msg {background: $blue;}
+    &.green-msg {background: $green;}
+    &.red-msg {background: $red;}
+}

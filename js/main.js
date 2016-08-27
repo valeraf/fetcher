@@ -2,6 +2,7 @@ $(function(){
   var app = {};
   app = {
     init: function(){
+        $('.close-msg').click(app.closeMsg)
         $('body').on('change', '.checkboxed input', function(){
             if($(this).attr('type') == 'checkbox')
               app.checkboxed(this);
@@ -33,6 +34,7 @@ $(function(){
             $(this).removeAttr('style');
           });
         }
+        app.showMsg('.global-msg')
 
         $('header').on('affixed.bs.affix', function(){
           $('body').css('padding-top', $('header').height());
@@ -87,6 +89,21 @@ $(function(){
       }).on('show.bs.collapse', function (e) {
           $(e.target).prev().addClass('active');
       });
+    },
+    showMsg: function(msg){
+        $(msg).slideDown(500);
+        setTimeout(function(){
+            $(msg).find('table').animate({
+                opacity: 1
+            },350)
+        },150)
+    },
+    closeMsg: function(){
+        $(this).parent().slideUp();
+        $(this).parent().find('table').animate({
+            opacity: 0
+        },350)
+        return false;
     }
   }
   app.init();

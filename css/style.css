@@ -541,6 +541,7 @@ $mq-fixed-value: 1024;
   background: #64463c;
   padding: 32px 0 0;
   margin-bottom: 32px;
+  margin-top: -32px;
 }
 /* line 3, ../sass/modules/_top-filter.scss */
 .top-filter .checkboxed {
@@ -1383,7 +1384,6 @@ button.close:hover {
 /* line 1, ../sass/pages/_vacancy-page.scss */
 .vacancy-page {
   margin-bottom: 48px;
-  margin-top: 32px;
 }
 /* line 3, ../sass/pages/_vacancy-page.scss */
 .vacancy-page p {
@@ -1486,7 +1486,7 @@ button.close:hover {
   padding-top: 208px;
   background: url(../images/profile_cover.png) center 0 no-repeat;
   background-attachment: fixed;
-  margin-top: 0;
+  margin-top: -32px;
 }
 /* line 38, ../sass/pages/_vacancy-page.scss */
 .bg-page .jl-item-info {
@@ -1703,23 +1703,19 @@ button.close:hover {
   margin-bottom: 48px;
 }
 
-/* line 14, ../sass/pages/_specs.scss */
-.specialist-page {
-  margin-top: 32px;
-}
-/* line 16, ../sass/pages/_specs.scss */
+/* line 15, ../sass/pages/_specs.scss */
 .specialist-page .white-bg {
   padding-bottom: 144px;
 }
 
-/* line 18, ../sass/pages/_specs.scss */
+/* line 17, ../sass/pages/_specs.scss */
 .spec-top-left {
   padding: 32px;
   max-width: 50%;
   margin-bottom: 72px;
 }
 
-/* line 19, ../sass/pages/_specs.scss */
+/* line 18, ../sass/pages/_specs.scss */
 .spec-top-total {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1727,7 +1723,7 @@ button.close:hover {
   line-height: 52px;
 }
 
-/* line 20, ../sass/pages/_specs.scss */
+/* line 19, ../sass/pages/_specs.scss */
 .spec-top-text {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1735,26 +1731,26 @@ button.close:hover {
   line-height: 1;
 }
 
-/* line 22, ../sass/pages/_specs.scss */
+/* line 21, ../sass/pages/_specs.scss */
 .spec-promo-btns {
   max-width: 864px;
   text-align: left;
   margin: 0 auto;
 }
 
-/* line 23, ../sass/pages/_specs.scss */
+/* line 22, ../sass/pages/_specs.scss */
 .spec-btns-block {
   display: inline-block;
   padding: 0;
   box-sizing: border-box;
   text-align: center;
 }
-/* line 25, ../sass/pages/_specs.scss */
+/* line 24, ../sass/pages/_specs.scss */
 .spec-btns-block + .spec-btns-block {
   float: right;
 }
 
-/* line 27, ../sass/pages/_specs.scss */
+/* line 26, ../sass/pages/_specs.scss */
 .spec-price-block {
   padding-top: 32px;
   font-family: "PT Mono";
@@ -1766,7 +1762,7 @@ button.close:hover {
   color: #191919;
   text-align: center;
 }
-/* line 29, ../sass/pages/_specs.scss */
+/* line 28, ../sass/pages/_specs.scss */
 .spec-price-block strong {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1777,12 +1773,12 @@ button.close:hover {
   text-transform: none;
   padding-top: 5px;
 }
-/* line 30, ../sass/pages/_specs.scss */
+/* line 29, ../sass/pages/_specs.scss */
 .spec-price-block + .spec-promo-text {
   padding-top: 48px;
 }
 
-/* line 32, ../sass/pages/_specs.scss */
+/* line 31, ../sass/pages/_specs.scss */
 .spec-promo-text {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -1791,37 +1787,33 @@ button.close:hover {
   line-height: 20px;
 }
 
-/* line 33, ../sass/pages/_specs.scss */
+/* line 32, ../sass/pages/_specs.scss */
 .cancel-subscription {
   padding-top: 16px;
   overflow: hidden;
   padding-bottom: 1px;
 }
-/* line 35, ../sass/pages/_specs.scss */
+/* line 34, ../sass/pages/_specs.scss */
 .cancel-subscription a {
   font-family: "effra", sans-serif;
   font-weight: 400;
   font-size: 14px;
 }
-/* line 36, ../sass/pages/_specs.scss */
+/* line 35, ../sass/pages/_specs.scss */
 .cancel-subscription .grey-link {
   float: right;
 }
-/* line 37, ../sass/pages/_specs.scss */
+/* line 36, ../sass/pages/_specs.scss */
 .cancel-subscription .orange-link {
   float: left;
 }
 
-/* line 1, ../sass/pages/_profile.scss */
-.profile-page {
-  margin-top: 32px;
-}
-/* line 3, ../sass/pages/_profile.scss */
+/* line 2, ../sass/pages/_profile.scss */
 .profile-page .white-bg {
   overflow: hidden;
 }
 
-/* line 5, ../sass/pages/_profile.scss */
+/* line 4, ../sass/pages/_profile.scss */
 .profile-menu {
   padding-top: 24px;
   border-bottom: 1px solid #191919;
@@ -1829,17 +1821,17 @@ button.close:hover {
   margin-right: 16px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 5, ../sass/pages/_profile.scss */
+  /* line 4, ../sass/pages/_profile.scss */
   .profile-menu {
     margin-left: 0;
     margin-right: 0;
   }
 }
-/* line 11, ../sass/pages/_profile.scss */
+/* line 10, ../sass/pages/_profile.scss */
 .profile-menu .nav > li {
   padding-right: 24px;
 }
-/* line 13, ../sass/pages/_profile.scss */
+/* line 12, ../sass/pages/_profile.scss */
 .profile-menu .nav > li a {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1850,21 +1842,21 @@ button.close:hover {
   padding-left: 0;
   padding-right: 0;
 }
-/* line 15, ../sass/pages/_profile.scss */
+/* line 14, ../sass/pages/_profile.scss */
 .profile-menu .nav > li a:hover {
   background: none;
 }
-/* line 16, ../sass/pages/_profile.scss */
+/* line 15, ../sass/pages/_profile.scss */
 .profile-menu .nav > li a:focus {
   background: none;
 }
-/* line 19, ../sass/pages/_profile.scss */
+/* line 18, ../sass/pages/_profile.scss */
 .profile-menu .nav > li.active a {
   color: #191919;
   background: none;
 }
 
-/* line 26, ../sass/pages/_profile.scss */
+/* line 25, ../sass/pages/_profile.scss */
 .profile-submenu-text {
   padding-top: 13px;
   padding-left: 16px;
@@ -1873,23 +1865,23 @@ button.close:hover {
   margin-bottom: 75px;
 }
 @media only screen and (max-width: 768px) {
-  /* line 26, ../sass/pages/_profile.scss */
+  /* line 25, ../sass/pages/_profile.scss */
   .profile-submenu-text {
     padding-left: 0;
     padding-right: 0;
   }
 }
-/* line 31, ../sass/pages/_profile.scss */
+/* line 30, ../sass/pages/_profile.scss */
 .profile-submenu-text .label {
   vertical-align: top;
   margin-right: 6px;
 }
 
-/* line 34, ../sass/pages/_profile.scss */
+/* line 33, ../sass/pages/_profile.scss */
 .form-info-text {
   margin-top: -4px;
 }
-/* line 36, ../sass/pages/_profile.scss */
+/* line 35, ../sass/pages/_profile.scss */
 .form-info-text p {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -1900,37 +1892,37 @@ button.close:hover {
   margin-top: 0;
 }
 
-/* line 39, ../sass/pages/_profile.scss */
+/* line 38, ../sass/pages/_profile.scss */
 .profile-subscription-btn {
   max-width: 416px;
   margin: 24px auto 64px;
 }
 
-/* line 43, ../sass/pages/_profile.scss */
+/* line 42, ../sass/pages/_profile.scss */
 .profile-payment-history-list {
   font-family: "effra", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #919191;
 }
-/* line 45, ../sass/pages/_profile.scss */
+/* line 44, ../sass/pages/_profile.scss */
 .profile-payment-history-list li {
   border-bottom: 1px solid #e1dcdc;
   margin-bottom: 16px;
   padding-bottom: 16px;
   line-height: 24px;
 }
-/* line 46, ../sass/pages/_profile.scss */
+/* line 45, ../sass/pages/_profile.scss */
 .profile-payment-history-list li:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 51, ../sass/pages/_profile.scss */
+/* line 50, ../sass/pages/_profile.scss */
 .profile-payment-history-list .payment-date {
   margin-right: 16px;
 }
-/* line 52, ../sass/pages/_profile.scss */
+/* line 51, ../sass/pages/_profile.scss */
 .profile-payment-history-list .payment-total {
   float: right;
   font-family: "effra", sans-serif;
@@ -1939,26 +1931,22 @@ button.close:hover {
   line-height: 24px;
 }
 
-/* line 1, ../sass/pages/_about.scss */
-.about-page {
-  margin-top: 32px;
-}
-/* line 3, ../sass/pages/_about.scss */
+/* line 2, ../sass/pages/_about.scss */
 .about-page .spec-promo-btns {
   padding-bottom: 160px;
 }
 
-/* line 5, ../sass/pages/_about.scss */
+/* line 4, ../sass/pages/_about.scss */
 .about-content {
   max-width: 784px;
   padding: 24px 32px 0;
   margin-bottom: 152px;
 }
-/* line 7, ../sass/pages/_about.scss */
+/* line 6, ../sass/pages/_about.scss */
 .about-content h1 {
   margin-bottom: 32px;
 }
-/* line 8, ../sass/pages/_about.scss */
+/* line 7, ../sass/pages/_about.scss */
 .about-content h4 {
   font-family: "PT Mono";
   font-weight: 400;
@@ -1969,14 +1957,14 @@ button.close:hover {
   padding-top: 16px;
   margin-bottom: 8px;
 }
-/* line 9, ../sass/pages/_about.scss */
+/* line 8, ../sass/pages/_about.scss */
 .about-content p {
   margin-bottom: 32px;
 }
 
 /* line 1, ../sass/pages/_chat.scss */
 .chat-page {
-  padding: 32px 32px 0;
+  padding: 0 32px;
   max-width: 1376px;
   margin: 0 auto;
 }
@@ -2211,6 +2199,7 @@ strong {
 header {
   background: #000;
   color: #fff;
+  margin-bottom: 32px;
 }
 /* line 7, ../sass/_main.scss */
 header nav.navbar-collapse {
@@ -2350,7 +2339,7 @@ a:focus {
 
 /* line 58, ../sass/_main.scss */
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 32px;
 }
 
 /* line 61, ../sass/_main.scss */
@@ -2775,10 +2764,6 @@ a:focus {
 .jl-item-info {
   margin-bottom: 32px;
   padding-top: 32px;
-}
-/* line 199, ../sass/_main.scss */
-.job-details .jl-item-info {
-  padding-top: 83px;
 }
 /* line 200, ../sass/_main.scss */
 .jl-item-info span:first-child {

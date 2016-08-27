@@ -1,5 +1,5 @@
 .vacancy-page {
-    margin-bottom: 3*$x;margin-top: 32px;
+    margin-bottom: 3*$x;
     p {@include p-text;color: #191919;margin-bottom: 24px;}
     .jobs-list-item {margin-bottom: 0;}
 }
@@ -34,7 +34,7 @@
 }
 
 .bg-page {
-    padding-top: 208px;background: url(../images/profile_cover.png) center 0 no-repeat;background-attachment: fixed;margin-top: 0;
+    padding-top: 208px;background: url(../images/profile_cover.png) center 0 no-repeat;background-attachment: fixed;margin-top: -32px;
     .jl-item-info {padding-top: 0;}
 }
 .details-top {

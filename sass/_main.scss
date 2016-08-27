@@ -3,7 +3,7 @@ h1 {@include h1;}
 p {@include p-text;}
 strong {font-weight: bold;}
 header {
-    background: #000;color: #fff;
+    background: #000;color: #fff;margin-bottom: 32px;
     nav.navbar-collapse {
         float: right;padding: 0 2*$x;
         @include bp(max-width, 768px){
@@ -55,7 +55,7 @@ a {
 }
 
 .bs-docs-nav .navbar-toggle .icon-bar {background-color: #fff;}
-.navbar {margin-bottom: 0}
+.navbar {margin-bottom: 32px}
 
 
 .checkboxed {
@@ -196,7 +196,7 @@ a {
 }
 .jl-item-info {
     margin-bottom: 32px;padding-top: 32px;
-    .job-details & {padding-top: 83px;}
+    
     span:first-child {
         display: inline-block;margin-right: 4px;width: 80px;color: #919191;@include label;
         @include bp(max-width, 768px){

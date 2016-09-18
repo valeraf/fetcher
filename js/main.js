@@ -22,7 +22,7 @@ $(function(){
         $('.modal-auth input').on('blur', app.checkAuthFormInputs);
         app.accordionHeadingClass();
 
-        if($(document).width() > 640 && $('.vacancy-meta-wrapper').length > 0 ){
+        if($(document).width() > 1024 && $('.vacancy-meta-wrapper').length > 0 ){
           $('.vacancy-meta-wrapper').affix({
             offset: {
               top: $('.vacancy-meta-wrapper').offset().top + 67 - $('header').height(),
@@ -45,6 +45,21 @@ $(function(){
         $('body').on('click', '.disabled-jobs .label', function(){
           return false;
         });
+
+        enquire.register("screen and (max-width: 1015px)", {
+
+          deferSetup : true,
+          match : function() {
+            $('.job-details .vacancy-meta-wrapper').insertBefore($('.vp-apply').eq(0));
+            $('.job-details .vacancy-meta-wrapper').removeAttr('class').addClass('vacancy-meta-wrapper');
+          },
+          unmatch : function() {
+            $('.job-details .list-right-block').append($('.job-details .vacancy-meta-wrapper'));
+          }  
+
+        });
+
+        
     },
     checkReset: function(array, el){
       if(array.indexOf('reset') >= 0){

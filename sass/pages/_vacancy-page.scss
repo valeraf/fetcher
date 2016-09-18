@@ -8,10 +8,16 @@
 }
 .vp-item-title {
     @include h1;margin-bottom: 16px;color: #191919;
+    @include bp(max-width, 480px){
+        font-size: 32px;line-height: 1;
+    }
 }
 .vp-details {
     @include h3;
-    margin-bottom: 40px;
+    margin-bottom: $x;
+    @include bp(max-width, 1015px){
+        margin-bottom: 2*$x;
+    }
     &-label {
         @include label;
     }
@@ -19,6 +25,9 @@
 }
 .vp-apply {
     padding-top: 48px;
+    @include bp(max-width, 1015px){
+        padding-top: 64px;
+    }
     &:after {@include clearfix;}
     small {@include small;text-transform: none;text-align: center;letter-spacing: 0;display: block;color: #919191;line-height: 1.2;}
 }
@@ -28,6 +37,10 @@
 .vp-top {
     position: relative;
     img {vertical-align: top;width: 100%}
+    @include bp(max-width, 769px){
+        height: 112px;overflow: hidden;
+        .vp-userpic {display: none;}
+    }
 }
 .vp-userpic {
     position: absolute;left: 32px;top: 16px;
@@ -96,6 +109,9 @@
 
 .vp-social-btns {
     float: right;
+    @include bp(max-width, 1280px){
+        width: 100%;float: none;clear: both;padding-top: $x;text-align: center;
+    }
     .main-btn {
         margin-left: 5px;margin-bottom: $x;position: relative;
         &:first-child {margin-left: 0px;}

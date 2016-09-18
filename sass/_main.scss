@@ -55,7 +55,15 @@ a {
 }
 
 .bs-docs-nav .navbar-toggle .icon-bar {background-color: #fff;}
-.navbar {margin-bottom: 32px}
+.navbar {
+    margin-bottom: 32px;
+    @include bp(max-width, 769px){
+        margin-bottom: 16px;
+    }
+    @include bp(max-width, 480px){
+        margin-bottom: 0;
+    }
+}
 
 
 .checkboxed {
@@ -161,7 +169,12 @@ a {
     &:after, &:before {display: none;opacity: 0;}
 }
 
-.jobs-list-item {padding-bottom: 40px;margin: 0 0 8px;}
+.jobs-list-item {
+    padding-bottom: 40px;margin: 0 0 8px;
+    @include bp(max-width, 769px){
+        margin-bottom: 16px;
+    }
+}
 .disabled-jobs {
     .jl-item-title, .jl-item-text {color: #919191;}
     .label-tag {background: #919191;}
@@ -177,6 +190,9 @@ a {
     font-family: $effra;margin-bottom: 24px;font-size: 14px;color: #919191;margin-bottom: 32px;padding-top: 32px;
     span {
         @include label;margin-right: 4px;
+        @include bp(max-width, 480px){
+            display: none;
+        }
     }
 }
 .jl-item-title {
@@ -196,14 +212,18 @@ a {
 }
 .jl-item-info {
     margin-bottom: 32px;padding-top: 32px;
+
+    .job-details & {
+        padding-top: 95px;
+        .bg-page & {padding-top: 0;}
+        @include bp(max-width, 1015px){
+            padding-top: 0;
+        }
+    }
     
     span:first-child {
         display: inline-block;margin-right: 4px;width: 80px;color: #919191;@include label;
-        @include bp(max-width, 768px){
-            @include bp(min-width, 641px){
-                display: block;margin-bottom: 4px;
-            }
-        }
+        
     }
     div {
         @include small;margin-bottom: 7px;color: #4b4b4b;
@@ -276,7 +296,12 @@ a {
     background: #008cff;
 }
 
-.big-btns-title {font-size: 56px;line-height: 52px;display: block;margin-bottom: 88px;}
+.big-btns-title {
+    font-size: 56px;line-height: 52px;display: block;margin-bottom: 88px;
+    @include bp(max-width, 769px){
+        font-size: 32px;line-height: 1;
+    }
+}
 .big-btns-text {display: block;font-size: 19px;line-height: 24px;}
 
 .span-link {}

@@ -1,8 +1,14 @@
-.sp-item-avatar {
-    img {position: relative;top: -($x);}
+.sp-item-avatar {    
+    @include bp(min-width, 1025px){
+        img {position: relative;top: -($x);}
+    }
+    img {vertical-align: top;}
 }
 .sp-item-title {
     @extend .jl-item-title;margin-top: 1.5*$x;
+    @include bp(max-width, 910px){
+        margin: 0;
+    }
 }
 
 .sp-item-info-links {
@@ -34,4 +40,11 @@
     a {@include small;}
     .grey-link {float: right;}
     .orange-link {float: left;}
+}
+
+.spec-info-for-mobile {
+    display: none;
+    @include bp(max-width, 480px){
+        display: block;clear: both;
+    }
 }

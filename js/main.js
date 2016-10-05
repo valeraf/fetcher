@@ -36,11 +36,11 @@ $(function(){
         }
         app.showMsg('.global-msg')
 
-        $('header').on('affixed.bs.affix', function(){
-          $('body').css('padding-top', $('header').height());
-        }).on('affix-top.bs.affix', function(){
-          $('body').css('padding-top', 0);
-        });
+        // $('header').on('affixed.bs.affix', function(){
+        //   $('body').css('padding-top', $('header').height());
+        // }).on('affix-top.bs.affix', function(){
+        //   $('body').css('padding-top', 0);
+        // });
 
         $('body').on('click', '.disabled-jobs .label', function(){
           return false;

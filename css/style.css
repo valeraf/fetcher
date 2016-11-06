@@ -1448,39 +1448,43 @@ button.close:hover {
 /* line 107, ../sass/modules/_modals.scss */
 #acc-func .panel {
   border-bottom: 1px solid #e1dcdc;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
-/* line 108, ../sass/modules/_modals.scss */
+/* line 109, ../sass/modules/_modals.scss */
+#acc-func .panel:first-child {
+  margin-top: -4px;
+}
+/* line 111, ../sass/modules/_modals.scss */
 #acc-func .panel-body {
-  padding-bottom: 16px;
+  padding-bottom: 12px;
 }
 
-/* line 112, ../sass/modules/_modals.scss */
+/* line 115, ../sass/modules/_modals.scss */
 .links-list .form-label {
   line-height: 40px;
 }
 
-/* line 115, ../sass/modules/_modals.scss */
+/* line 118, ../sass/modules/_modals.scss */
 .empl-thumb {
   float: left;
   width: 64px;
   margin-right: 8px;
 }
-/* line 117, ../sass/modules/_modals.scss */
+/* line 120, ../sass/modules/_modals.scss */
 .empl-thumb img {
   width: 100%;
 }
 
-/* line 119, ../sass/modules/_modals.scss */
+/* line 122, ../sass/modules/_modals.scss */
 .empl-descr {
   overflow: hidden;
 }
-/* line 121, ../sass/modules/_modals.scss */
+/* line 124, ../sass/modules/_modals.scss */
 .empl-descr .label-tag {
   margin-right: 2px;
 }
 
-/* line 123, ../sass/modules/_modals.scss */
+/* line 126, ../sass/modules/_modals.scss */
 .empl-name {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1489,13 +1493,25 @@ button.close:hover {
   margin-bottom: 8px;
 }
 
-/* line 127, ../sass/modules/_modals.scss */
+/* line 130, ../sass/modules/_modals.scss */
 .checked-box p {
   color: #919191;
 }
-/* line 128, ../sass/modules/_modals.scss */
+/* line 131, ../sass/modules/_modals.scss */
 .checked-box .subscr-price {
   color: #000;
+}
+
+/* line 135, ../sass/modules/_modals.scss */
+.remun .input-box {
+  width: 304px;
+  float: left;
+}
+/* line 136, ../sass/modules/_modals.scss */
+.remun .remun-select {
+  width: 160px;
+  margin-left: 8px;
+  float: left;
 }
 
 /* line 1, ../sass/modules/_messages.scss */

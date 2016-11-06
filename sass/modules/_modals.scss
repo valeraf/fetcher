@@ -104,8 +104,11 @@ button.close {
     border: none;box-shadow: none;
 }
 #acc-func {
-    .panel {border-bottom: 1px solid #e1dcdc;margin-bottom: 16px;}
-    .panel-body {padding-bottom: 16px;}
+    .panel {
+        border-bottom: 1px solid #e1dcdc;margin-bottom: 12px;
+        &:first-child {margin-top: -4px;}
+    }
+    .panel-body {padding-bottom: 12px;}
 }
 
 .links-list {
@@ -126,4 +129,9 @@ button.close {
 .checked-box {
     p {color: #919191}
     .subscr-price {color: #000;}
+}
+
+.remun {
+    .input-box {width: 304px;float: left;}
+    .remun-select {width: 160px;margin-left: 8px;float: left;}
 }

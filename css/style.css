@@ -2185,6 +2185,11 @@ button.close:hover {
   line-height: 24px;
 }
 
+/* line 55, ../sass/pages/_profile.scss */
+.skills-form .row {
+  margin-bottom: 40px;
+}
+
 /* line 2, ../sass/pages/_about.scss */
 .about-page .spec-promo-btns {
   padding-bottom: 160px;
@@ -2557,8 +2562,9 @@ a:focus {
 }
 
 /* line 43, ../sass/_main.scss */
-.btn:focus, .btn:hover, .btn:active {
+.btn:focus, .btn:hover, .btn:active, .btn.active {
   outline: none;
+  box-shadow: none;
 }
 
 /* line 46, ../sass/_main.scss */

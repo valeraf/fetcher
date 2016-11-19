@@ -1962,72 +1962,88 @@ button.close:hover {
 .vp-edit-btns {
   float: left;
 }
-/* line 91, ../sass/pages/_vacancy-page.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 89, ../sass/pages/_vacancy-page.scss */
+  .vp-edit-btns {
+    float: none;
+    text-align: center;
+  }
+}
+/* line 94, ../sass/pages/_vacancy-page.scss */
 .vp-edit-btns .main-btn, .vp-edit-btns .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge, .vp-social-btns .ya-share2__container .ya-share2__item .vp-edit-btns .ya-share2__badge {
   margin-left: 5px;
   margin-bottom: 16px;
 }
-/* line 93, ../sass/pages/_vacancy-page.scss */
+/* line 96, ../sass/pages/_vacancy-page.scss */
 .vp-edit-btns .main-btn:first-child, .vp-edit-btns .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge:first-child, .vp-social-btns .ya-share2__container .ya-share2__item .vp-edit-btns .ya-share2__badge:first-child {
   margin-left: 0px;
 }
 
-/* line 110, ../sass/pages/_vacancy-page.scss */
+/* line 113, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns {
   float: right;
 }
 @media only screen and (max-width: 1280px) {
-  /* line 110, ../sass/pages/_vacancy-page.scss */
+  /* line 113, ../sass/pages/_vacancy-page.scss */
   .vp-social-btns {
-    width: 100%;
     float: none;
-    clear: both;
-    padding-top: 16px;
     text-align: center;
+    margin-right: -220px;
   }
 }
-/* line 115, ../sass/pages/_vacancy-page.scss */
+@media only screen and (max-width: 1200px) {
+  /* line 113, ../sass/pages/_vacancy-page.scss */
+  .vp-social-btns {
+    float: none;
+    text-align: center;
+    margin-right: 0;
+    clear: both;
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+}
+/* line 121, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .main-btn, .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge {
   margin-left: 5px;
   margin-bottom: 16px;
   position: relative;
 }
-/* line 117, ../sass/pages/_vacancy-page.scss */
+/* line 123, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .main-btn:first-child, .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge:first-child {
   margin-left: 0px;
 }
-/* line 119, ../sass/pages/_vacancy-page.scss */
+/* line 125, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .fb-ico, .vp-social-btns .ya-share2__container .ya-share2__item.ya-share2__item_service_facebook .ya-share2__icon {
   top: 1px;
 }
-/* line 120, ../sass/pages/_vacancy-page.scss */
+/* line 126, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .vk-ico, .vp-social-btns .ya-share2__container .ya-share2__item.ya-share2__item_service_vkontakte .ya-share2__icon {
   top: 1px;
   left: 1px;
 }
-/* line 121, ../sass/pages/_vacancy-page.scss */
+/* line 127, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .tw-ico, .vp-social-btns .ya-share2__container .ya-share2__item.ya-share2__item_service_twitter .ya-share2__icon {
   top: 1px;
 }
-/* line 123, ../sass/pages/_vacancy-page.scss */
+/* line 129, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item {
   margin-right: 9px;
   text-align: center;
 }
-/* line 125, ../sass/pages/_vacancy-page.scss */
+/* line 131, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item:hover {
   opacity: 1;
 }
-/* line 126, ../sass/pages/_vacancy-page.scss */
+/* line 132, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge {
   overflow: visible;
   margin-bottom: 0;
 }
-/* line 130, ../sass/pages/_vacancy-page.scss */
+/* line 136, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge .ya-share2__icon {
   vertical-align: middle;
 }
-/* line 132, ../sass/pages/_vacancy-page.scss */
+/* line 138, ../sass/pages/_vacancy-page.scss */
 .vp-social-btns .ya-share2__container .ya-share2__item span.ya-share2__counter {
   position: absolute;
   left: 0;

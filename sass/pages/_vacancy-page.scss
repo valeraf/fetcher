@@ -88,6 +88,9 @@
 
 .vp-edit-btns {
     float: left;
+    @include bp(max-width, 1200px){
+        float: none;text-align: center;
+    }
     .main-btn {
         margin-left: 5px;margin-bottom: $x;
         &:first-child {margin-left: 0px;}
@@ -110,7 +113,10 @@
 .vp-social-btns {
     float: right;
     @include bp(max-width, 1280px){
-        width: 100%;float: none;clear: both;padding-top: $x;text-align: center;
+        float: none;text-align: center;margin-right: -220px;
+    }
+    @include bp(max-width, 1200px){
+        float: none;text-align: center;margin-right: 0;clear: both;padding-top: $x;padding-bottom: 30px;
     }
     .main-btn {
         margin-left: 5px;margin-bottom: $x;position: relative;

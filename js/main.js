@@ -66,10 +66,23 @@ $(function(){
 
         var $document = $(document), scrTop;
 
-        $(window).on('scroll', function(){
-          scrTop = $document.scrollTop();
-          if(scrTop < 450){
-            app.toggleTopFilter('hide');
+        var waypoint = new Waypoint({
+            element: $('.top-filter'),
+            handler: function(direction) {
+              if(direction == 'up'){
+                app.toggleTopFilter('hide');
+              }else{
+                $('.top-filter-toggle').css('transform', 'translateY('+ parseInt($('header').height()) +'px)')
+              }
+            },
+            offset: function() {
+              return -this.element[0].clientHeight
+            }
+        });
+
+        $(window).on('resize', function(){
+          if($('.top-filter').hasClass('in')){
+            $('.top-filter-toggle').css('transform', 'translateY('+ ( parseInt($('.top-filter').position().top) + parseInt($('.top-filter').height()) ) +'px)')
           }
         });
 
@@ -80,7 +93,8 @@ $(function(){
           $this = $('.top-filter-toggle');
       if($('.top-filter-wrapper').length || event == 'hide'){
         $filter.removeClass('in');
-        $this.removeClass('active');
+        $this.removeClass('active').removeAttr('style');
+        $this.css('transform', 'translateY('+ parseInt($('header').height()) +'px)')
         setTimeout(function(){
           $filter.unwrap('.top-filter-wrapper');
         },300)
@@ -89,6 +103,7 @@ $(function(){
         setTimeout(function(){
           $filter.addClass('in');
           $this.addClass('active');
+          $('.top-filter-toggle').css('transform', 'translateY('+ ( parseInt(88) + parseInt($('.top-filter').height()) ) +'px)')
         },10)
       }
     },

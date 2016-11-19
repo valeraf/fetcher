@@ -744,7 +744,7 @@ $mq-fixed-value: 1024;
   padding: 32px 0 0;
   margin-bottom: 32px;
   margin-top: -32px;
-  z-index: 1;
+  z-index: 2;
   position: relative;
 }
 /* line 3, ../sass/modules/_top-filter.scss */
@@ -1025,7 +1025,13 @@ $mq-fixed-value: 1024;
   padding-top: 16px;
   padding-bottom: 16px;
 }
-/* line 106, ../sass/modules/_top-filter.scss */
+@media (max-width: 1366px) {
+  /* line 104, ../sass/modules/_top-filter.scss */
+  .tf-action {
+    margin: 0 16px;
+  }
+}
+/* line 109, ../sass/modules/_top-filter.scss */
 .tf-action .grey-btn {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -1054,7 +1060,7 @@ $mq-fixed-value: 1024;
   color: #fff;
   text-decoration: none;
 }
-/* line 109, ../sass/modules/_top-filter.scss */
+/* line 112, ../sass/modules/_top-filter.scss */
 .tf-action .btn {
   text-decoration: none;
   font-family: "effra", sans-serif;
@@ -1063,12 +1069,12 @@ $mq-fixed-value: 1024;
   line-height: 26px;
 }
 
-/* line 113, ../sass/modules/_top-filter.scss */
+/* line 116, ../sass/modules/_top-filter.scss */
 .selectize-control input {
   cursor: pointer !important;
 }
 
-/* line 116, ../sass/modules/_top-filter.scss */
+/* line 119, ../sass/modules/_top-filter.scss */
 .top-filter-toggle {
   position: fixed;
   left: 0;
@@ -1087,8 +1093,10 @@ $mq-fixed-value: 1024;
   font-size: 11px;
   transition: transform 0.3s ease-in-out;
   transform: translateY(56px);
+  text-align: left;
+  z-index: 1;
 }
-/* line 118, ../sass/modules/_top-filter.scss */
+/* line 121, ../sass/modules/_top-filter.scss */
 .top-filter-toggle:after {
   content: "";
   position: absolute;
@@ -1099,27 +1107,27 @@ $mq-fixed-value: 1024;
   top: 50%;
   margin-top: -4px;
 }
-/* line 122, ../sass/modules/_top-filter.scss */
+/* line 125, ../sass/modules/_top-filter.scss */
 .top-filter-toggle.active {
   transform: translateY(468px);
 }
-/* line 124, ../sass/modules/_top-filter.scss */
+/* line 127, ../sass/modules/_top-filter.scss */
 .top-filter-toggle.active:after {
   transform: rotate(180deg);
 }
 
-/* line 130, ../sass/modules/_top-filter.scss */
+/* line 133, ../sass/modules/_top-filter.scss */
 .top-filter-wrapper {
   height: 388px;
 }
-/* line 132, ../sass/modules/_top-filter.scss */
+/* line 135, ../sass/modules/_top-filter.scss */
 .top-filter-wrapper .top-filter {
   position: fixed;
   width: 100%;
   transition: transform 0.3s ease-in-out;
   transform: translateY(-412px);
 }
-/* line 134, ../sass/modules/_top-filter.scss */
+/* line 137, ../sass/modules/_top-filter.scss */
 .top-filter-wrapper .top-filter.in {
   transform: translateY(0px);
 }
@@ -3448,6 +3456,9 @@ body {
 .uploaded-thumb {
   float: left;
   margin-right: 16px;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
 }
 
 /* line 327, ../sass/_main.scss */

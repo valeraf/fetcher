@@ -59,7 +59,38 @@ $(function(){
 
         });
 
+        $('.top-filter-toggle').click(function(e){
+          e.preventDefault();
+          app.toggleTopFilter();
+        });
+
+        var $document = $(document), scrTop;
+
+        $(window).on('scroll', function(){
+          scrTop = $document.scrollTop();
+          if(scrTop < 450){
+            app.toggleTopFilter('hide');
+          }
+        });
+
         
+    },
+    toggleTopFilter: function(event){
+      var $filter = $('.top-filter'),
+          $this = $('.top-filter-toggle');
+      if($('.top-filter-wrapper').length || event == 'hide'){
+        $filter.removeClass('in');
+        $this.removeClass('active');
+        setTimeout(function(){
+          $filter.unwrap('.top-filter-wrapper');
+        },300)
+      }else{
+        $filter.wrap('<div class="top-filter-wrapper"></div>');
+        setTimeout(function(){
+          $filter.addClass('in');
+          $this.addClass('active');
+        },10)
+      }
     },
     checkReset: function(array, el){
       if(array.indexOf('reset') >= 0){

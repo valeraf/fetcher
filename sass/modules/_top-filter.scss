@@ -1,5 +1,5 @@
 .top-filter {
-    background: #64463c;padding: 32px 0 0;margin-bottom: 32px;margin-top: -32px;
+    background: #64463c;padding: 32px 0 0;margin-bottom: 32px;margin-top: -32px;z-index: 1;position: relative;
     .checkboxed {
         color: #281414;transition: all 0.2s ease-in-out;
         &:hover:after {background-color: #000}
@@ -103,9 +103,34 @@
 
 .tf-action {
     text-align: right;border-top: 1px solid $body-bg;padding-top: $x;padding-bottom: $x;
-    .btn {background: $body-bg;text-decoration: none;font-family: $effra;color: #fff;font-size: 19px;height: 40px;line-height: 26px;}
+    .grey-btn {
+        @include btn(#919191, #fff, #a5a5a5, #fff, #a5a5a5);
+    }
+    .btn {text-decoration: none;font-family: $effra;font-size: 19px;height: 40px;line-height: 26px;}
 }
 
 .selectize-control {
     input {cursor: pointer !important;}
+}
+
+.top-filter-toggle {
+    position: fixed;left: 0;top: 0;left: 32px;background: #63463B;color: #281414;text-transform: uppercase;padding: 0 40px 0 $x;border: none;height: 32px;line-height: 32px;text-transform: uppercase;font-family: $mono;border-radius: 0 0 4px 4px;font-size: 11px;transition: transform 0.3s ease-in-out;transform: translateY(56px);
+    &:after {
+        content: "";
+        position: absolute;background: url('../images/svg/dropdown-brown.svg') 0 0 no-repeat;width: 13px;height: 8px;right: 8px;top: 50%;margin-top: -4px;
+    }
+    &.active {
+        transform: translateY(468px);
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
+
+}
+.top-filter-wrapper {
+    height: 388px;
+    .top-filter {
+        position: fixed;width: 100%;transition: transform 0.3s ease-in-out;transform: translateY(-412px);
+        &.in {transform: translateY(0px);}
+    }
 }

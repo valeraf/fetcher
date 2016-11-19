@@ -11,6 +11,10 @@
     @include btn(#919191, #fff, #a5a5a5, #fff, #64463c);
 }
 
+.brown-btn {
+    @include btn($body-bg, #fff, $h-bg-color : #191919, $h-color : #fff, $f-bg-color : #191919);
+}
+
 .orange-btn {
     @include btn(#ffa000, #fff, $h-bg-color : #e18200, $h-color : #fff, $f-bg-color : #3c50b4);
 }

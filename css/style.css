@@ -196,6 +196,36 @@ $mq-fixed-value: 1024;
 }
 
 /* line 14, ../sass/modules/_btns.scss */
+.brown-btn {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  line-height: 40px;
+  color: #fff;
+  background: #281414;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+/* line 35, ../sass/_var.scss */
+.brown-btn:hover {
+  background: #191919;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 38, ../sass/_var.scss */
+.brown-btn:active, .brown-btn:focus {
+  background: #191919;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 18, ../sass/modules/_btns.scss */
 .orange-btn {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -225,7 +255,7 @@ $mq-fixed-value: 1024;
   text-decoration: none;
 }
 
-/* line 18, ../sass/modules/_btns.scss */
+/* line 22, ../sass/modules/_btns.scss */
 .blue-btn {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -255,7 +285,7 @@ $mq-fixed-value: 1024;
   text-decoration: none;
 }
 
-/* line 22, ../sass/modules/_btns.scss */
+/* line 26, ../sass/modules/_btns.scss */
 .fb-blue-btn, .vp-social-btns .ya-share2__container .ya-share2__item.ya-share2__item_service_facebook .ya-share2__badge {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -285,7 +315,7 @@ $mq-fixed-value: 1024;
   text-decoration: none;
 }
 
-/* line 26, ../sass/modules/_btns.scss */
+/* line 30, ../sass/modules/_btns.scss */
 .vk-blue-btn, .vp-social-btns .ya-share2__container .ya-share2__item.ya-share2__item_service_vkontakte .ya-share2__badge {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -315,7 +345,7 @@ $mq-fixed-value: 1024;
   text-decoration: none;
 }
 
-/* line 30, ../sass/modules/_btns.scss */
+/* line 34, ../sass/modules/_btns.scss */
 .tw-blue-btn, .vp-social-btns .ya-share2__container .ya-share2__item.ya-share2__item_service_twitter .ya-share2__badge {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -345,7 +375,7 @@ $mq-fixed-value: 1024;
   text-decoration: none;
 }
 
-/* line 34, ../sass/modules/_btns.scss */
+/* line 38, ../sass/modules/_btns.scss */
 .xxsmall-btn, .vp-social-btns .ya-share2__container .ya-share2__item .ya-share2__badge {
   width: 48px;
   height: 48px;
@@ -354,7 +384,7 @@ $mq-fixed-value: 1024;
   vertical-align: top;
 }
 
-/* line 35, ../sass/modules/_btns.scss */
+/* line 39, ../sass/modules/_btns.scss */
 .xsmall-btn {
   width: 192px;
   height: 48px;
@@ -363,26 +393,26 @@ $mq-fixed-value: 1024;
   vertical-align: top;
 }
 
-/* line 36, ../sass/modules/_btns.scss */
+/* line 40, ../sass/modules/_btns.scss */
 .small-btn {
   width: 304px;
 }
 
-/* line 37, ../sass/modules/_btns.scss */
+/* line 41, ../sass/modules/_btns.scss */
 .medium-btn {
   width: 416px;
   height: 48px;
   line-height: 48px;
 }
 
-/* line 38, ../sass/modules/_btns.scss */
+/* line 42, ../sass/modules/_btns.scss */
 .big-btn {
   width: 100%;
   height: 48px;
   line-height: 48px;
 }
 
-/* line 39, ../sass/modules/_btns.scss */
+/* line 43, ../sass/modules/_btns.scss */
 .disabled-btn {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -714,6 +744,8 @@ $mq-fixed-value: 1024;
   padding: 32px 0 0;
   margin-bottom: 32px;
   margin-top: -32px;
+  z-index: 1;
+  position: relative;
 }
 /* line 3, ../sass/modules/_top-filter.scss */
 .top-filter .checkboxed {
@@ -994,19 +1026,102 @@ $mq-fixed-value: 1024;
   padding-bottom: 16px;
 }
 /* line 106, ../sass/modules/_top-filter.scss */
+.tf-action .grey-btn {
+  font-family: "effra", sans-serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  line-height: 40px;
+  color: #fff;
+  background: #919191;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+/* line 35, ../sass/_var.scss */
+.tf-action .grey-btn:hover {
+  background: #a5a5a5;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 38, ../sass/_var.scss */
+.tf-action .grey-btn:active, .tf-action .grey-btn:focus {
+  background: #a5a5a5;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 109, ../sass/modules/_top-filter.scss */
 .tf-action .btn {
-  background: #281414;
   text-decoration: none;
   font-family: "effra", sans-serif;
-  color: #fff;
   font-size: 19px;
   height: 40px;
   line-height: 26px;
 }
 
-/* line 110, ../sass/modules/_top-filter.scss */
+/* line 113, ../sass/modules/_top-filter.scss */
 .selectize-control input {
   cursor: pointer !important;
+}
+
+/* line 116, ../sass/modules/_top-filter.scss */
+.top-filter-toggle {
+  position: fixed;
+  left: 0;
+  top: 0;
+  left: 32px;
+  background: #63463B;
+  color: #281414;
+  text-transform: uppercase;
+  padding: 0 40px 0 16px;
+  border: none;
+  height: 32px;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-family: "PT Mono";
+  border-radius: 0 0 4px 4px;
+  font-size: 11px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(56px);
+}
+/* line 118, ../sass/modules/_top-filter.scss */
+.top-filter-toggle:after {
+  content: "";
+  position: absolute;
+  background: url("../images/svg/dropdown-brown.svg") 0 0 no-repeat;
+  width: 13px;
+  height: 8px;
+  right: 8px;
+  top: 50%;
+  margin-top: -4px;
+}
+/* line 122, ../sass/modules/_top-filter.scss */
+.top-filter-toggle.active {
+  transform: translateY(468px);
+}
+/* line 124, ../sass/modules/_top-filter.scss */
+.top-filter-toggle.active:after {
+  transform: rotate(180deg);
+}
+
+/* line 130, ../sass/modules/_top-filter.scss */
+.top-filter-wrapper {
+  height: 388px;
+}
+/* line 132, ../sass/modules/_top-filter.scss */
+.top-filter-wrapper .top-filter {
+  position: fixed;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(-412px);
+}
+/* line 134, ../sass/modules/_top-filter.scss */
+.top-filter-wrapper .top-filter.in {
+  transform: translateY(0px);
 }
 
 /* line 1, ../sass/modules/_top-employer.scss */

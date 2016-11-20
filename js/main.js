@@ -101,7 +101,7 @@ $(function(){
           $filter.removeAttr('style');
         },300)
       }else{
-        $filter.wrap('<div class="top-filter-wrapper"><div class="mobile-filter"></div></div>');
+        $filter.wrap('<div class="top-filter-wrapper" style="height: '+ parseInt($filter.height()+32) +'px"><div class="mobile-filter"></div></div>');
         setTimeout(function(){
           $filter.parent().addClass('in');
           $this.addClass('active');

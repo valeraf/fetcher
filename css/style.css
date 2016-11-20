@@ -1876,6 +1876,8 @@ button.close:hover {
 /* line 37, ../sass/pages/_vacancy-page.scss */
 .vp-top {
   position: relative;
+  overflow: hidden;
+  height: 406px;
 }
 /* line 39, ../sass/pages/_vacancy-page.scss */
 .vp-top img {

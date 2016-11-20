@@ -35,7 +35,7 @@
     margin-bottom: $x;
 }
 .vp-top {
-    position: relative;
+    position: relative;overflow: hidden;height: 406px;
     img {vertical-align: top;width: 100%}
     @include bp(max-width, 769px){
         height: 112px;overflow: hidden;

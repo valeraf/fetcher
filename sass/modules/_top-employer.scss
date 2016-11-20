@@ -23,6 +23,9 @@
     @include bp(max-width, 640px){
         margin-bottom: 16px;
     }
+    @include bp(max-width, 480px){
+        min-height: 368px;padding-top: 50%;
+    }
 }
 .te-item-avatar {
     position: absolute;top: 16px;left: 16px;
@@ -31,6 +34,9 @@
     padding: 16px;height: 100%;
     @include bp(max-width, 980px){
         padding-bottom: 2*$x;
+    }
+    @include bp(max-width, 480px){
+        min-height: 163px;
     }
 }
 .te-item-name {

@@ -4,6 +4,7 @@ $(function() {
 
     app = {
         init: function() {
+            app.showMsg('.global-msg');
             $('.close-msg').click(app.closeMsg)
             $('body').on('change', '.checkboxed input', function() {
                 if ($(this).attr('type') == 'checkbox')

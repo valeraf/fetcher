@@ -146,6 +146,9 @@
     }
     .top-filter-container & {display: none;}
     .in & {display: inline-block;transform: translateY(0px) !important;position: absolute;top: 100%;}
+    @media (max-width: 480px){
+        .in & {left: 50%;margin-left: -96px;}
+    }
 }
 .top-filter-wrapper {
     height: 388px;

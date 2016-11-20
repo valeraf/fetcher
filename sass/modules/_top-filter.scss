@@ -147,7 +147,12 @@
     .top-filter-container & {display: none;}
     .in & {display: inline-block;transform: translateY(0px) !important;position: absolute;top: 100%;}
     @media (max-width: 480px){
-        .in & {left: 50%;margin-left: -96px;}
+        .in & {
+            left: 50%;margin-left: -96px;background: #281414;color: #fff;
+            &:after {
+                background: url('../images/svg/dropdown-white.svg') 0 0 no-repeat;
+            }
+        }
     }
 }
 .top-filter-wrapper {

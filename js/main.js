@@ -69,22 +69,23 @@ $(function(){
         var waypoint = new Waypoint({
             element: $('.top-filter'),
             handler: function(direction) {
+              console.log(direction);
               if(direction == 'up'){
+                if($('.top-filter-wrapper').length){
+                  $('.top-filter').parent().css('transform', 'translateY(0px)')
+                }
                 app.toggleTopFilter('hide');
               }else{
-                $('.top-filter-toggle').css('transform', 'translateY('+ parseInt($('header').height()) +'px)')
+                //$('.top-filter-toggle').css('transform', 'translateY('+ parseInt($('header').height()) +'px)')
               }
-            },
-            offset: function() {
-              return -this.element[0].clientHeight
             }
         });
 
-        $(window).on('resize', function(){
-          if($('.top-filter').hasClass('in')){
-            $('.top-filter-toggle').css('transform', 'translateY('+ ( parseInt($('.top-filter').position().top) + parseInt($('.top-filter').height()) ) +'px)')
-          }
-        });
+        // $(window).on('resize', function(){
+        //   if($('.top-filter').hasClass('in')){
+        //     $('.top-filter-toggle').css('transform', 'translateY('+ ( parseInt($('.top-filter').position().top) + parseInt($('.top-filter').height()) ) +'px)')
+        //   }
+        // });
 
         
     },
@@ -92,18 +93,19 @@ $(function(){
       var $filter = $('.top-filter'),
           $this = $('.top-filter-toggle');
       if($('.top-filter-wrapper').length || event == 'hide'){
-        $filter.removeClass('in');
+        $filter.parent().removeClass('in');
         $this.removeClass('active').removeAttr('style');
         $this.css('transform', 'translateY('+ parseInt($('header').height()) +'px)')
         setTimeout(function(){
-          $filter.unwrap('.top-filter-wrapper');
+          $filter.unwrap('.mobile-filter').unwrap('.top-filter-wrapper');
+          $filter.removeAttr('style');
         },300)
       }else{
-        $filter.wrap('<div class="top-filter-wrapper"></div>');
+        $filter.wrap('<div class="top-filter-wrapper"><div class="mobile-filter"></div></div>');
         setTimeout(function(){
-          $filter.addClass('in');
+          $filter.parent().addClass('in');
           $this.addClass('active');
-          $('.top-filter-toggle').css('transform', 'translateY('+ ( parseInt(88) + parseInt($('.top-filter').height()) ) +'px)')
+          // $this.css('transform', 'translateY('+ ( parseInt(88) + parseInt($('.top-filter').height()) ) +'px)')
         },10)
       }
     },

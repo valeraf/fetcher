@@ -397,22 +397,28 @@ $mq-fixed-value: 1024;
 .small-btn {
   width: 304px;
 }
+@media (max-width: 480px) {
+  /* line 40, ../sass/modules/_btns.scss */
+  .small-btn {
+    width: 100%;
+  }
+}
 
-/* line 41, ../sass/modules/_btns.scss */
+/* line 46, ../sass/modules/_btns.scss */
 .medium-btn {
   width: 416px;
   height: 48px;
   line-height: 48px;
 }
 
-/* line 42, ../sass/modules/_btns.scss */
+/* line 47, ../sass/modules/_btns.scss */
 .big-btn {
   width: 100%;
   height: 48px;
   line-height: 48px;
 }
 
-/* line 43, ../sass/modules/_btns.scss */
+/* line 48, ../sass/modules/_btns.scss */
 .disabled-btn {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -2485,69 +2491,144 @@ button.close:hover {
   background: #fff;
   height: 688px;
 }
+@media (max-width: 1300px) {
+  /* line 5, ../sass/pages/_chat.scss */
+  .chat-left {
+    width: 25%;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 5, ../sass/pages/_chat.scss */
+  .chat-left {
+    width: 100%;
+    float: none;
+    height: auto;
+    min-height: 1px;
+  }
+}
 
-/* line 6, ../sass/pages/_chat.scss */
+/* line 14, ../sass/pages/_chat.scss */
 .chat-right {
   padding-left: 32px;
   width: calc(100% - 416px);
   float: right;
   padding-top: 32px;
 }
-/* line 8, ../sass/pages/_chat.scss */
+/* line 16, ../sass/pages/_chat.scss */
 .chat-right .white-bg {
   padding-bottom: 80px;
 }
-/* line 9, ../sass/pages/_chat.scss */
+/* line 17, ../sass/pages/_chat.scss */
 .chat-right .details-top {
   padding-bottom: 64px;
   padding-right: 32px;
 }
-/* line 13, ../sass/pages/_chat.scss */
+/* line 21, ../sass/pages/_chat.scss */
 .chat-right .details-top-name h1 {
   padding-right: 30%;
 }
-/* line 15, ../sass/pages/_chat.scss */
+/* line 23, ../sass/pages/_chat.scss */
 .chat-right .small-btn {
   height: 40px;
   line-height: 40px;
   float: right;
 }
+@media (max-width: 1300px) {
+  /* line 14, ../sass/pages/_chat.scss */
+  .chat-right {
+    width: 75%;
+  }
+}
+@media (max-width: 1000px) {
+  /* line 14, ../sass/pages/_chat.scss */
+  .chat-right {
+    width: 100%;
+    float: none;
+    padding-left: 0;
+  }
+  /* line 29, ../sass/pages/_chat.scss */
+  .chat-right .details-top-avatar {
+    margin-top: 0;
+  }
+}
+@media (max-width: 768px) {
+  /* line 32, ../sass/pages/_chat.scss */
+  .chat-right .details-top-avatar {
+    margin-top: 0;
+    display: none;
+  }
+  /* line 33, ../sass/pages/_chat.scss */
+  .chat-right .details-top {
+    padding: 0 16px;
+    text-align: right;
+  }
+  /* line 35, ../sass/pages/_chat.scss */
+  .chat-right .details-top h1 {
+    padding-right: 0;
+    text-align: left;
+  }
+  /* line 37, ../sass/pages/_chat.scss */
+  .chat-right .details-top-info {
+    text-align: left;
+  }
+  /* line 38, ../sass/pages/_chat.scss */
+  .chat-right .go-to-prof {
+    position: static;
+  }
+}
+@media (max-width: 480px) {
+  /* line 42, ../sass/pages/_chat.scss */
+  .chat-right .details-top h1 {
+    font-size: 22px;
+  }
+  /* line 44, ../sass/pages/_chat.scss */
+  .chat-right .details-top-name {
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+}
 
-/* line 17, ../sass/pages/_chat.scss */
+/* line 50, ../sass/pages/_chat.scss */
 .send-msg-form {
   padding: 0 96px;
 }
-/* line 19, ../sass/pages/_chat.scss */
+/* line 52, ../sass/pages/_chat.scss */
 .send-msg-form textarea {
   width: 100%;
   height: 128px;
   margin-bottom: 16px;
   resize: none;
 }
+@media (max-width: 768px) {
+  /* line 50, ../sass/pages/_chat.scss */
+  .send-msg-form {
+    padding: 0 16px;
+  }
+}
 
-/* line 21, ../sass/pages/_chat.scss */
+/* line 57, ../sass/pages/_chat.scss */
 .send-msg-top {
   margin-bottom: 16px;
 }
-/* line 23, ../sass/pages/_chat.scss */
+/* line 59, ../sass/pages/_chat.scss */
 .send-msg-top:after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 25, ../sass/pages/_chat.scss */
+/* line 61, ../sass/pages/_chat.scss */
 .send-msg-avatar {
   float: left;
   width: 32px;
   margin-right: 16px;
 }
-/* line 27, ../sass/pages/_chat.scss */
+/* line 63, ../sass/pages/_chat.scss */
 .send-msg-avatar img {
   vertical-align: top;
 }
 
-/* line 29, ../sass/pages/_chat.scss */
+/* line 65, ../sass/pages/_chat.scss */
 .send-msg-name {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -2558,7 +2639,7 @@ button.close:hover {
   float: left;
   margin-top: -5px;
 }
-/* line 31, ../sass/pages/_chat.scss */
+/* line 67, ../sass/pages/_chat.scss */
 .send-msg-name time {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -2569,7 +2650,7 @@ button.close:hover {
   margin-top: -1px;
 }
 
-/* line 33, ../sass/pages/_chat.scss */
+/* line 69, ../sass/pages/_chat.scss */
 .empty-chat {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -2580,38 +2661,44 @@ button.close:hover {
   padding-top: 112px;
 }
 
-/* line 37, ../sass/pages/_chat.scss */
+/* line 73, ../sass/pages/_chat.scss */
 .chat-list-item {
   border-bottom: 1px solid #e1dcdc;
   padding: 16px;
 }
-/* line 39, ../sass/pages/_chat.scss */
+/* line 75, ../sass/pages/_chat.scss */
 .chat-list-item:after {
   content: '';
   display: table;
   clear: both;
 }
-/* line 40, ../sass/pages/_chat.scss */
+/* line 76, ../sass/pages/_chat.scss */
 .chat-list-item.chat-list-item_active {
   background: #f0f0f0;
 }
-/* line 41, ../sass/pages/_chat.scss */
+/* line 77, ../sass/pages/_chat.scss */
 .chat-list-item a {
   text-decoration: none;
 }
 
-/* line 43, ../sass/pages/_chat.scss */
+/* line 79, ../sass/pages/_chat.scss */
 .chat-list-item-avatar {
   float: left;
   margin-right: 16px;
   width: 48px;
 }
-/* line 45, ../sass/pages/_chat.scss */
+/* line 81, ../sass/pages/_chat.scss */
 .chat-list-item-avatar img {
   vertical-align: top;
 }
+@media (max-width: 1300px) {
+  /* line 79, ../sass/pages/_chat.scss */
+  .chat-list-item-avatar {
+    display: none;
+  }
+}
 
-/* line 47, ../sass/pages/_chat.scss */
+/* line 86, ../sass/pages/_chat.scss */
 .chat-list-item-name {
   font-family: "effra", sans-serif;
   font-weight: 500;
@@ -2621,7 +2708,7 @@ button.close:hover {
   line-height: 24px;
   margin-top: -4px;
 }
-/* line 49, ../sass/pages/_chat.scss */
+/* line 88, ../sass/pages/_chat.scss */
 .chat-list-item-name p {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -2630,17 +2717,23 @@ button.close:hover {
   margin-top: -1px;
   display: block;
 }
-/* line 50, ../sass/pages/_chat.scss */
+/* line 89, ../sass/pages/_chat.scss */
 .chat-list-item_unread .chat-list-item-name, .chat-list-item_active .chat-list-item-name {
   color: #191919;
 }
 
-/* line 53, ../sass/pages/_chat.scss */
+/* line 92, ../sass/pages/_chat.scss */
 .chat-history {
   padding: 0 96px;
 }
+@media (max-width: 768px) {
+  /* line 92, ../sass/pages/_chat.scss */
+  .chat-history {
+    padding: 0 16px;
+  }
+}
 
-/* line 56, ../sass/pages/_chat.scss */
+/* line 98, ../sass/pages/_chat.scss */
 .chat-item-vacancy-name {
   font-family: "effra", sans-serif;
   font-weight: 400;
@@ -2648,12 +2741,12 @@ button.close:hover {
   line-height: 15px;
 }
 
-/* line 59, ../sass/pages/_chat.scss */
+/* line 101, ../sass/pages/_chat.scss */
 .chat-history-item {
   margin-bottom: 48px;
 }
 
-/* line 60, ../sass/pages/_chat.scss */
+/* line 102, ../sass/pages/_chat.scss */
 .chat-history-text {
   background: #f0f0f0;
   padding: 6px 12px;
@@ -2664,7 +2757,7 @@ button.close:hover {
   color: #191919;
   border-radius: 4px;
 }
-/* line 62, ../sass/pages/_chat.scss */
+/* line 104, ../sass/pages/_chat.scss */
 .chat-history-text p {
   margin-bottom: 16px;
 }

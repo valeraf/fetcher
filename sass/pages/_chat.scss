@@ -2,7 +2,15 @@
     padding: 0 2*$x;max-width: 1376px;margin: 0 auto;
     &:after {@include clearfix;}
 }
-.chat-left {float: left;width: 416px;background: #fff;height: 688px;}
+.chat-left {
+    float: left;width: 416px;background: #fff;height: 688px;
+    @media (max-width: 1300px){
+        width: 25%;
+    }
+    @media (max-width: 1000px){
+        width: 100%;float: none;height: auto;min-height: 1px;
+    }
+}
 .chat-right {
     padding-left: 32px;width: calc(100% - 416px);float: right;padding-top: 2*$x;
     .white-bg {padding-bottom: 5*$x;}
@@ -13,10 +21,38 @@
         h1 {padding-right: 30%;}
     }
     .small-btn {height: 40px;line-height: 40px;float: right;}
+    @media (max-width: 1300px){
+        width: 75%;
+    }
+    @media (max-width: 1000px){
+        width: 100%;float: none;padding-left: 0;
+        .details-top-avatar {margin-top: 0;}
+    }
+    @media (max-width: 768px){
+        .details-top-avatar {margin-top: 0;display: none;}
+        .details-top {
+            padding: 0 $x;text-align: right;
+            h1 {padding-right: 0;text-align: left;}
+        }
+        .details-top-info {text-align: left;}
+        .go-to-prof {position: static;}
+    }
+    @media (max-width: 480px){
+        .details-top {
+            h1 {font-size: 22px;}
+        }
+        .details-top-name {
+            padding-bottom: 0.5*$x;
+            margin-bottom: 0.5*$x;
+        }
+    }
 }
 .send-msg-form {
     padding: 0 6*$x;
     textarea {width: 100%;height: 128px;margin-bottom: $x;resize: none;}
+    @media (max-width: 768px){
+        padding: 0 $x;
+    }
 }
 .send-msg-top {
     margin-bottom: $x;
@@ -43,6 +79,9 @@
 .chat-list-item-avatar {
     float: left;margin-right: $x;width: 48px;
     img {vertical-align: top;}
+    @media (max-width: 1300px){
+        display: none;
+    }
 }
 .chat-list-item-name {
     @include h3;color: #919191;line-height: 24px;margin-top: -4px;
@@ -52,6 +91,9 @@
 
 .chat-history {
     padding: 0 6*$x;
+    @media (max-width: 768px){
+        padding: 0 $x;
+    }
 }
 .chat-item-vacancy-name {
     @include small;line-height: 15px;

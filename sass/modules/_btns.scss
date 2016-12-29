@@ -37,7 +37,12 @@
 
 .xxsmall-btn {width: 3*$x;height: 48px;line-height: 48px;display: inline-block;vertical-align: top;}
 .xsmall-btn {width: 12*$x;height: 48px;line-height: 48px;display: inline-block;vertical-align: top;}
-.small-btn {width: 19*$x;}
+.small-btn {
+    width: 19*$x;
+    @media (max-width: 480px){
+        width: 100%;
+    }
+}
 .medium-btn {width: 26*$x;height: 48px;line-height: 48px;}
 .big-btn {width: 100%;height: 48px;line-height: 48px;}
 .disabled-btn {

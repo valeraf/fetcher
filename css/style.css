@@ -2489,7 +2489,7 @@ button.close:hover {
   float: left;
   width: 416px;
   background: #fff;
-  height: 688px;
+  min-height: 688px;
 }
 @media (max-width: 1300px) {
   /* line 5, ../sass/pages/_chat.scss */

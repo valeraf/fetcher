@@ -3,7 +3,7 @@
     &:after {@include clearfix;}
 }
 .chat-left {
-    float: left;width: 416px;background: #fff;height: 688px;
+    float: left;width: 416px;background: #fff;min-height: 688px;
     @media (max-width: 1300px){
         width: 25%;
     }

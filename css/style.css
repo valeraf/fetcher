@@ -2746,7 +2746,12 @@ button.close:hover {
   margin-bottom: 48px;
 }
 
-/* line 102, ../sass/pages/_chat.scss */
+/* line 103, ../sass/pages/_chat.scss */
+.new-message .send-msg-name, .new-message time {
+  color: #000;
+}
+
+/* line 105, ../sass/pages/_chat.scss */
 .chat-history-text {
   background: #f0f0f0;
   padding: 6px 12px;
@@ -2757,7 +2762,7 @@ button.close:hover {
   color: #191919;
   border-radius: 4px;
 }
-/* line 104, ../sass/pages/_chat.scss */
+/* line 107, ../sass/pages/_chat.scss */
 .chat-history-text p {
   margin-bottom: 16px;
 }

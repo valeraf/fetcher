@@ -99,6 +99,9 @@
     @include small;line-height: 15px;
 }
 .chat-history-item {margin-bottom: 3*$x;}
+.new-message {
+    .send-msg-name, time {color: #000;}
+}
 .chat-history-text {
     background: #f0f0f0;padding: 6px 12px;@include h4;color: #191919;border-radius: 4px;
     p {margin-bottom: 16px;}
